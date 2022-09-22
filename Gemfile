@@ -73,3 +73,4 @@ group :test do
   gem 'database_cleaner'
 end
 gem "rspec-rails", group: [:development, :test]
+gem 'coveralls', require: false
