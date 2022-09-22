@@ -72,5 +72,8 @@ group :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
 end
+
 gem "rspec-rails", group: [:development, :test]
-gem 'coveralls', require: false
+
+gem 'simplecov-lcov', '~> 0.8.0'
+
