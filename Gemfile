@@ -70,10 +70,10 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
   gem 'cucumber-rails', require: false
+  gem 'simplecov', '~> 0.21.2', require: false
+  gem 'simplecov_json_formatter', '~> 0.1.2', require: false
   gem 'database_cleaner'
 end
 
 gem "rspec-rails", group: [:development, :test]
-
-gem 'simplecov-lcov', '~> 0.8.0'
 
