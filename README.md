@@ -1,5 +1,7 @@
 # README
 
+[![Ruby Tests](https://github.com/FernandoFenley-dev/projeto-semestral-ESI/actions/workflows/ruby.yml/badge.svg)](https://github.com/FernandoFenley-dev/projeto-semestral-ESI/actions/workflows/ruby.yml)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
