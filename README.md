@@ -17,7 +17,7 @@ Sistema SaS que possibilita automatizar e centralizar o agendamento de horários
 | Jalmir Iago Alves da Silva       | 11808999|
 | Guilherme Dias Jimenes           |  |   
 | Augusto Xavier Neto              | 11367581|
-| Juan Kineipe                     |  |
+| Juan Kineipe                     | 11894610|
 
 
 
