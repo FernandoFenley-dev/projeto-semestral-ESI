@@ -29,6 +29,16 @@
         "branches": {
         }
       },
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/main_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/home/ferk/Desktop/projeto/barbershop/app/helpers/application_helper.rb": {
         "lines": [
           0,
@@ -70,6 +80,6 @@
         }
       }
     },
-    "timestamp": 1663876458
+    "timestamp": 1663955429
   }
 }
