@@ -1,28 +1,23 @@
-# README
+# Barbearia GoBarber
 
 [![Ruby Tests](https://github.com/FernandoFenley-dev/projeto-semestral-ESI/actions/workflows/ruby.yml/badge.svg)](https://github.com/FernandoFenley-dev/projeto-semestral-ESI/actions/workflows/ruby.yml)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![Maintainability](https://api.codeclimate.com/v1/badges/5d225158bfe03f113f7a/maintainability)](https://codeclimate.com/github/FernandoFenley-dev/projeto-semestral-ESI/maintainability)
 
-Things you may want to cover:
+Sistema SaS que possibilita automatizar e centralizar o agendamento de horários de atendimento para clientes de uma barbearia.
 
-* Ruby version
+- Heroku: 
 
-* System dependencies
+### Integrantes
 
-* Configuration
+| Nome                             | N. USP  |
+| ---------------------------------|:------: |
+| Fernando José Germinio Fenley    | 11207630|
+| Felipe Oliveira do Espirito Santo|  |
+| Jalmir Iago Alves da Silva       | 11808999|
+| Guilherme Dias Jimenes           |  |   
+| Augusto Xavier Neto              | 11367581|
+| Juan Kineipe                     |  |
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-oi
