@@ -6,7 +6,7 @@
 
 Sistema SaS que possibilita automatizar e centralizar o agendamento de horários de atendimento para clientes de uma barbearia.
 
-- Heroku: 
+- Heroku: a
 
 ### Integrantes
 
