@@ -22,8 +22,8 @@ jobs:
         ruby-version: 3.0.2
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Run tests
-      run: |
-        rake
+      run: 
+        bundle exec rake
         bundle exec cucumber    
     - name: Coveralls
       uses: coverallsapp/github-action@master
