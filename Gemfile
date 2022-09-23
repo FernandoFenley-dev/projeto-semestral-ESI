@@ -75,4 +75,5 @@ group :test do
   gem "rspec-rails", group: [:development, :test]
   gem 'coveralls_reborn', '~> 0.25.0', require: false
   gem 'simplecov-lcov', '~> 0.8.0'
+  gem 'coveralls', require: false
 end
