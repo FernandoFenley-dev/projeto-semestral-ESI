@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "*" ]
 
 jobs:
   test:
@@ -25,3 +25,9 @@ jobs:
       run: |
         bundle exec rake
         bundle exec cucumber
+    - name: Coveralls
+        env:
+          RAILS_ENV: test
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.REPO_TOKEN_COVERALLS }}
