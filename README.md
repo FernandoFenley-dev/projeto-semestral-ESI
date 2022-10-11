@@ -8,6 +8,7 @@
 
 Sistema SaS que possibilita automatizar e centralizar o agendamento de horários de atendimento para clientes de uma barbearia.
 
+- Pivotal Tracker: https://www.pivotaltracker.com/n/projects/2603046
 - Heroku: https://engenharia-app.herokuapp.com/
 
 ### Integrantes
