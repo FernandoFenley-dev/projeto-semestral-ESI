@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dd165f9-0474-43e3-9b95-af70f5f4b3f5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/projeto-semestral-ESI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projeto-semestral-ESI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/.resultset.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.resultset.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/helpers/clientes_helper_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/cliente_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/cliente_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/rails_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +68,7 @@
       <command value="rails g model" />
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.Clientes">
+  <component name="RunManager" selected="RSpec.Cliente">
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file enabled="true" id="RUBY_CUCUMBER" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -438,8 +446,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="RSpec.Clientes" />
         <item itemvalue="RSpec.Cliente" />
+        <item itemvalue="RSpec.Clientes" />
         <item itemvalue="Cucumber.cadastrar_clientes.feature" />
       </list>
     </recent_temporary>
@@ -455,7 +463,7 @@
       <updated>1665237929865</updated>
       <workItem from="1665237932539" duration="8634000" />
       <workItem from="1665330278878" duration="6329000" />
-      <workItem from="1665839584749" duration="889000" />
+      <workItem from="1665839584749" duration="3536000" />
     </task>
     <servers />
   </component>
@@ -474,7 +482,8 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/projeto_semestral_ESI@Cliente.rcov" NAME="Cliente Coverage Results" MODIFIED="1665327932085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="projeto-semestral-ESI" />
+    <SUITE FILE_PATH="coverage/projeto_semestral_ESI@Clientes.rcov" NAME="Clientes Coverage Results" MODIFIED="1665841619216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="projeto-semestral-ESI" />
+    <SUITE FILE_PATH="coverage/projeto_semestral_ESI@Cliente.rcov" NAME="Cliente Coverage Results" MODIFIED="1665843333583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="projeto-semestral-ESI" />
     <SUITE FILE_PATH="coverage/projeto_semestral_ESI@Development__projeto_semestral_ESI.rcov" NAME="Development: projeto-semestral-ESI Coverage Results" MODIFIED="1665840071443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="projeto-semestral-ESI" />
     <SUITE FILE_PATH="coverage/projeto_semestral_ESI@cadastrar_clientes_feature.rcov" NAME="cadastrar_clientes.feature Coverage Results" MODIFIED="1665322873512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="projeto-semestral-ESI" />
   </component>
