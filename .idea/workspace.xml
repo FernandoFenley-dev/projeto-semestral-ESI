@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dd165f9-0474-43e3-9b95-af70f5f4b3f5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/projeto-semestral-ESI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projeto-semestral-ESI.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/.resultset.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.resultset.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/helpers/clientes_helper_spec.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/cliente_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/cliente_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/rails_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/requests/clientes_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/clientes_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/clientes/create.html.erb_spec.rb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +60,7 @@
       <command value="rails g model" />
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.Cliente">
+  <component name="RunManager" selected="Rails.Development: projeto-semestral-ESI">
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file enabled="true" id="RUBY_CUCUMBER" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -464,7 +455,7 @@
       <updated>1665237929865</updated>
       <workItem from="1665237932539" duration="8634000" />
       <workItem from="1665330278878" duration="6329000" />
-      <workItem from="1665839584749" duration="3844000" />
+      <workItem from="1665839584749" duration="5138000" />
     </task>
     <servers />
   </component>

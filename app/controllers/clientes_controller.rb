@@ -6,6 +6,7 @@ class ClientesController < ApplicationController
   def create
     @cliente = Cliente.new(cliente_params)
     if @cliente.save
+      # TODO Depois que a página de dashboard estiver criada, devemos mudar esse redirect para lá
       redirect_to @cliente
     else
       render :new, status: :unprocessable_entity, content_type: "text/html"
@@ -13,7 +14,7 @@ class ClientesController < ApplicationController
     end
   end
 
-    def show
+  def show
     @cliente = Cliente.find(params[:id])
   end
 
