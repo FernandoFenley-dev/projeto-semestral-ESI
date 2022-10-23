@@ -1,7 +1,45 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/channels/application_cable/channel.rb": {
+      "/home/iago/Public/faculdade/6 semestre/engenharia projeto semestral/projeto-semestral-ESI/app/helpers/agendamentos_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/iago/Public/faculdade/6 semestre/engenharia projeto semestral/projeto-semestral-ESI/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/iago/Public/faculdade/6 semestre/engenharia projeto semestral/projeto-semestral-ESI/app/helpers/clientes_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/iago/Public/faculdade/6 semestre/engenharia projeto semestral/projeto-semestral-ESI/app/models/agendamento.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/iago/Public/faculdade/6 semestre/engenharia projeto semestral/projeto-semestral-ESI/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/iago/Public/faculdade/6 semestre/engenharia projeto semestral/projeto-semestral-ESI/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -11,7 +49,7 @@
         "branches": {
         }
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/channels/application_cable/connection.rb": {
+      "/home/iago/Public/faculdade/6 semestre/engenharia projeto semestral/projeto-semestral-ESI/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -21,15 +59,7 @@
         "branches": {
         }
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/application_controller.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/clientes_controller.rb": {
+      "/home/iago/Public/faculdade/6 semestre/engenharia projeto semestral/projeto-semestral-ESI/app/controllers/agendamentos_controller.rb": {
         "lines": [
           0,
           0,
@@ -47,6 +77,47 @@
           0,
           null,
           0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/iago/Public/faculdade/6 semestre/engenharia projeto semestral/projeto-semestral-ESI/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/iago/Public/faculdade/6 semestre/engenharia projeto semestral/projeto-semestral-ESI/app/controllers/clientes_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
           0,
           0,
           null,
@@ -60,7 +131,7 @@
         "branches": {
         }
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/main_controller.rb": {
+      "/home/iago/Public/faculdade/6 semestre/engenharia projeto semestral/projeto-semestral-ESI/app/controllers/main_controller.rb": {
         "lines": [
           0,
           0,
@@ -70,23 +141,7 @@
         "branches": {
         }
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/helpers/application_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/helpers/clientes_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/jobs/application_job.rb": {
+      "/home/iago/Public/faculdade/6 semestre/engenharia projeto semestral/projeto-semestral-ESI/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -99,7 +154,7 @@
         "branches": {
         }
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/mailers/application_mailer.rb": {
+      "/home/iago/Public/faculdade/6 semestre/engenharia projeto semestral/projeto-semestral-ESI/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -109,16 +164,7 @@
         "branches": {
         }
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/models/application_record.rb": {
-        "lines": [
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/models/cliente.rb": {
+      "/home/iago/Public/faculdade/6 semestre/engenharia projeto semestral/projeto-semestral-ESI/app/models/cliente.rb": {
         "lines": [
           0,
           0,
@@ -132,6 +178,6 @@
         }
       }
     },
-    "timestamp": 1665842788
+    "timestamp": 1666564848
   }
 }
