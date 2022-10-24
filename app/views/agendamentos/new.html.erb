@@ -1,0 +1,35 @@
+<h1>Cadastro agendamento</h1>
+
+<% if @agendamento.errors.any? %>
+  <div id="error_explanation">
+    <ul>
+    <% @agendamento.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+<%= form_with scope: :agendamento, url: agendamentos_path, local: true do |form| %>
+
+  <p>
+    <%= form.label :"Nome Barbeiro"%><br>
+    <%= form.text_field :nomeBarbeiro %>
+  </p>
+
+  <p>
+    <%= form.label :"Nome Serviço"%><br>
+    <%= form.text_field :nomeServico %>
+  </p>
+
+
+  <p>
+    <%= form.label :"Data Serviço"%><br>
+    <%= form.datetime_select :dataAgendada %>
+  </p>
+
+  <p>
+    <%= form.submit 'Agendar' %>
+  </p>
+<% end %>
+
+
