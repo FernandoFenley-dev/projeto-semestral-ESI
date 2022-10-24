@@ -12,18 +12,18 @@
 <%= form_with scope: :agendamento, url: agendamentos_path, local: true do |form| %>
 
   <p>
-    <%= form.label :Barbeiro%><br>
+    <%= form.label :"Nome Barbeiro"%><br>
     <%= form.text_field :nomeBarbeiro %>
   </p>
 
   <p>
-    <%= form.label :nomeServico%><br>
+    <%= form.label :"Nome Serviço"%><br>
     <%= form.text_field :nomeServico %>
   </p>
 
 
   <p>
-    <%= form.label :dataAgendada%><br>
+    <%= form.label :"Data Serviço"%><br>
     <%= form.datetime_select :dataAgendada %>
   </p>
 
