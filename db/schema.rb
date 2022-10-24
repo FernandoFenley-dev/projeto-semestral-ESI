@@ -20,6 +20,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_23_210139) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "barbeiros", force: :cascade do |t|
+    t.string "nome"
+    t.string "email"
+    t.string "senha"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "clientes", force: :cascade do |t|
     t.string "nome"
     t.string "email"
