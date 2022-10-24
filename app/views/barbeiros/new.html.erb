@@ -1,0 +1,31 @@
+<h1>Cadastro barbeiro</h1>
+
+<% if @barbeiros.errors.any? %>
+  <div id="error_explanation">
+    <ul>
+    <% @barbeiros.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+<%= form_with scope: :barbeiro, url: barbeiros_path, local: true do |form| %>
+  <p>
+    <%= form.label :nome %><br>
+    <%= form.text_field :nome %>
+  </p>
+
+  <p>
+    <%= form.label :email %><br>
+    <%= form.text_field :email %>
+  </p>
+
+  <p>
+    <%= form.label :senha %><br>
+    <%= form.password_field :senha %>
+  </p>
+
+  <p>
+    <%= form.submit 'cadastrar' %>
+  </p>
+<% end %>
