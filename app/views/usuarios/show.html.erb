@@ -1,0 +1,12 @@
+<html>
+              <body>
+                          <h3> Perfil <%= @usuario.nome %> </h3>
+                          <%= @usuario.email %>
+                          <% if usuario_atual == @usuario %>
+                                     <ul>
+                                                 <li><%= link_to "Editar", edit_usuario_path(usuario_atual) %></li>
+                                                 <li><%= link_to "Deletar", @usuario, method: :delete%></li>
+                                     </ul>
+                          <%end%>
+              </body>
+  </html>

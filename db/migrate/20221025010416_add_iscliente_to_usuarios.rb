@@ -1,0 +1,5 @@
+class AddIsclienteToUsuarios < ActiveRecord::Migration[7.0]
+  def change
+    add_column :usuarios, :iscliente, :boolean
+  end
+end

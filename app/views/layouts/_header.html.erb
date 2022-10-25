@@ -1,0 +1,18 @@
+<header>
+  <div>
+    <nav>
+      <ul>
+        <% if logado? %>
+          <ul>
+              <li><%= link_to "Meu perfil", usuario_atual %></li>
+              <li>
+                <%= link_to "Sair", logout, method: "delete" %>
+              </li>
+          </ul>
+        <% else %>
+          <li><%= link_to "Entrar", root_path %></li>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
+</header>

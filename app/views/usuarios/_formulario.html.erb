@@ -1,0 +1,38 @@
+<%= form_for @usuario do |f| %>
+            <% if @usuario.errors.any? %>
+            <div id="error_explanation">
+                        <div class="alert-error">
+                                   O formulário contém <%= pluralize(@usuario.errors.count, "erro") %>.
+                        </div>
+                        <ul>
+                                   <% @usuario.errors.full_messages.each do |msg| %>
+                                   <li><%= msg %></li>
+                                   <% end %>
+                        </ul>
+            </div>
+<% end %>
+            <div class="field">
+                        <%= f.label :nome %>
+                        <%= f.text_field :nome %>
+            </div>
+            <div class="field">
+                        <%= f.label :email %>
+                        <%= f.email_field :email %>
+            </div>
+            <div class="field">
+                        <%= f.label :password %>
+                        <%= f.password_field :password %>
+            </div>
+            <% if !pagina_edicao %>
+                <div class="field">
+
+                    <%= f.radio_button :iscliente, true %>
+                    <%= f.label :iscliente, "Sou cliente" %>
+                    <%= f.radio_button :iscliente, false %>
+                    <%= f.label :iscliente, "Sou cabeleireiro" %>
+                </div>
+            <% end %>
+            <div class="actions">
+                <%= f.submit pagina_edicao ? "Confirmar": "Cadastrar" %>
+            </div>
+<% end %>
