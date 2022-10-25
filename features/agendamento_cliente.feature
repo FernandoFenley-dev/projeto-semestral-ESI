@@ -46,4 +46,3 @@ Quando preencho o campo "agendamento_nomeServico" com "corte"
 Quando seleciono o ano "2024"
 E clico em Agendar
 Então deverei ver a mensagem de erro "A data agendada precisa ser em até um ano!"
-
