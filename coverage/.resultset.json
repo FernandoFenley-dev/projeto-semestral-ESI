@@ -228,7 +228,7 @@
         }
       }
     },
-    "timestamp": 1666580716
+    "timestamp": 1666657606
   },
   "Cucumber Features": {
     "coverage": {
@@ -240,27 +240,27 @@
           null,
           null,
           1,
-          0,
-          0,
+          5,
+          5,
           null,
-          0,
-          0,
-          0,
+          5,
+          1,
+          1,
           null,
-          0,
-          0,
-          0,
+          4,
+          4,
+          4,
           null,
           null,
           null,
           null,
           1,
-          0,
+          1,
           null,
           null,
           1,
           1,
-          0,
+          5,
           null,
           null,
           null,
@@ -301,11 +301,11 @@
           1,
           null,
           1,
-          0,
-          0,
+          5,
+          1,
           null,
-          0,
-          0,
+          5,
+          1,
           null,
           null,
           null,
@@ -320,48 +320,6 @@
           null
         ]
       },
-      "C:/Users/guilh/Desktop/Eng Software/projeto-semestral-ESI/app/controllers/barbeiros_controller.rb": {
-        "lines": [
-          1,
-          1,
-          5,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          1,
-          0,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "C:/Users/guilh/Desktop/Eng Software/projeto-semestral-ESI/app/models/barbeiro.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
       "C:/Users/guilh/Desktop/Eng Software/projeto-semestral-ESI/app/controllers/clientes_controller.rb": {
         "lines": [
           1,
@@ -370,23 +328,23 @@
           null,
           null,
           1,
-          0,
-          0,
+          5,
+          5,
           null,
-          0,
+          1,
           null,
-          0,
-          0,
+          4,
+          4,
           null,
           null,
           null,
           1,
-          0,
+          1,
           null,
           null,
           1,
           1,
-          0,
+          5,
           null,
           null,
           null
@@ -423,6 +381,38 @@
         "branches": {
         }
       },
+      "C:/Users/guilh/Desktop/Eng Software/projeto-semestral-ESI/app/controllers/barbeiros_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null
+        ],
+        "branches": {
+        }
+      },
       "C:/Users/guilh/Desktop/Eng Software/projeto-semestral-ESI/app/controllers/main_controller.rb": {
         "lines": [
           0,
@@ -455,8 +445,22 @@
         ],
         "branches": {
         }
+      },
+      "C:/Users/guilh/Desktop/Eng Software/projeto-semestral-ESI/app/models/barbeiro.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1666580731
+    "timestamp": 1666657926
   }
 }
