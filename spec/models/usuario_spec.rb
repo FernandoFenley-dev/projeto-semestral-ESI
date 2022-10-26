@@ -13,4 +13,9 @@ RSpec.describe Usuario, type: :model do
     usuario.email = "a,@gmail.com"    
     expect(usuario).not_to be_valid
   end
+  it 'invalido sem senha' do
+    usuario = Usuario.new
+    usuario.email = "emailteste@gmail.com"
+    expect(usuario).not_to be_valid
+  end
 end
