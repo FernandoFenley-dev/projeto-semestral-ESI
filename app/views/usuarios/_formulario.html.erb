@@ -35,4 +35,11 @@
             <div class="actions">
                 <%= f.submit pagina_edicao ? "Confirmar": "Cadastrar" %>
             </div>
+
+            <% flash.each do |type, msg| %>
+                <div>
+                    <p><%= msg %> </p>
+                </div>
+            <% end %>
+            </div>
 <% end %>
