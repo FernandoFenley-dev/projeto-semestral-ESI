@@ -1,12 +1,13 @@
 class SessoesController < ApplicationController
   before_action :bloquear_acesso, except: [:destroy]
     def create
-        @usuario = Usuario.find_by(email: params[:session][:email].downcase)
+        @usuario = Usuario.find_by(email: params[:session][:email])
         if @usuario && @usuario.authenticate(params[:session][:password])
           sign_in 
           redirect_to @usuario
         else
-          render 'new'
+          # Cria variável de erro
+          redirect_to root_url, notice: "Usuário ou senha inválidos"
         end
     end
 

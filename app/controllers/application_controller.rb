@@ -8,9 +8,9 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  def checa_usuario
+  def checa_usuario?
     @usuario = Usuario.find(params[:id])
-    unless @usuario == usuario_atual
+    unless usuario_atual == @usuario
       redirect_to usuarios_path
     end
   end

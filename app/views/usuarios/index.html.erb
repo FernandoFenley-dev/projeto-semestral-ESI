@@ -8,9 +8,9 @@
       </tr>
     </thead>
     <tbody>
-      <% @usuarios.each do |user| %>
+      <% @usuarios.each do |usuario| %>
         <tr>
-          <td><%= usuario.name %></td>
+          <td><%= usuario.nome %></td>
           <td><%= usuario.email %></td>
           <td><%= link_to "Mostrar usuário", usuario %></td>
         </tr>
