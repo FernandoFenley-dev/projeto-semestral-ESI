@@ -1,5 +1,5 @@
 class UsuariosController < ApplicationController
-  before_action :checa_usuario, except: [:new, :create]
+  # before_action :checa_usuario?, except: [:new, :create]
   def index
     @usuarios = Usuario.all
   end
@@ -29,10 +29,15 @@ class UsuariosController < ApplicationController
 
   def update
     @usuario = Usuario.find(params[:id])
-    if @usuario.update_attributes(usuario_params)
-      redirect_to usuarios_path
+    @usuario.updating = true
+    
+    if @usuario.update(usuario_params)
+      # Mensagem de sucesso
+      flash[:success] = "Perfil atualizado com sucesso!"
+      redirect_to @usuario
     else
-      render action: :edit
+      render :edit, status: :unprocessable_entity, content_type: "text/html"
+      headers["Content-Type"] = "text/html"
     end
   end
 

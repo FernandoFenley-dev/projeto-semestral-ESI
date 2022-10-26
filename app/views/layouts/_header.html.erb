@@ -4,13 +4,15 @@
       <ul>
         <% if logado? %>
           <ul>
-              <li><%= link_to "Meu perfil", usuario_atual %></li>
+              <li><%= link_to "Meu perfil", perfil_path(usuario_atual) %></li>
               <li>
                 <%= link_to "Sair", logout, method: "delete" %>
               </li>
           </ul>
         <% else %>
-          <li><%= link_to "Entrar", root_path %></li>
+          <% if controller_name == "usuarios" && action_name == "new" %>
+            <li><%= link_to "Entrar", root_path %></li>
+          <% end %>
         <% end %>
       </ul>
     </nav>
