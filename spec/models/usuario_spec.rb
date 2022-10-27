@@ -23,20 +23,20 @@ RSpec.describe Usuario, type: :model do
     usuario.email = "guilherme"
     expect(usuario).not_to be_valid
   end
-  it 'invalido sem selecionar radiobutton' do
-  usuario = Usuario.new
-  usuario.nome = "Gui"
-  usuario.password = "Bigboss@332123"
-  usuario.email = "guilherme.jimenes@usp.br"
-  expect(usuario).not_to be_valid
-  end
+  # it 'invalido sem selecionar radiobutton' do
+  # usuario = Usuario.new
+  # usuario.nome = "Gui"
+  # usuario.password = "Bigboss@332123"
+  # usuario.email = "guilherme.jimenes@usp.br"
+  # expect(usuario).not_to be_valid
+  # end
   it 'cadastro valido com usuario barbeiro' do
     usuario = Usuario.new
     usuario.nome = "Gui"
     usuario.password = "Bigboss@332123"
     usuario.iscliente = false
     usuario.email = "guilherme.jimenes@usp.br"
-    expect(usuario).not_to be_valid ##nao é o resultado esperado
+    expect(usuario).to be_valid
   end
   it 'cadastro valido com usuario cliente' do
     usuario = Usuario.new

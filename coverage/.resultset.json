@@ -61,14 +61,14 @@
           1,
           null,
           1,
-          6,
+          0,
           null,
           null,
           1,
           1,
           null,
           1,
-          1,
+          null,
           null
         ]
       },
@@ -143,38 +143,6 @@
           null,
           0,
           0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "C:/Users/guilh/Desktop/branch esi mvc corrigido/projeto-semestral-ESI/app/controllers/clientes_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
           0,
           0,
           0,
@@ -335,22 +303,9 @@
         ],
         "branches": {
         }
-      },
-      "C:/Users/guilh/Desktop/branch esi mvc corrigido/projeto-semestral-ESI/app/models/cliente.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1666760683
+    "timestamp": 1666837613
   },
   "Cucumber Features": {
     "coverage": {
@@ -433,26 +388,26 @@
         "lines": [
           1,
           1,
-          0,
+          1,
           null,
           null,
           1,
-          10,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          null,
-          null,
-          1,
-          10,
+          21,
           null,
           null,
           1,
           0,
           0,
+          null,
+          null,
+          null,
+          1,
+          20,
+          null,
+          null,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -507,7 +462,7 @@
           1,
           null,
           1,
-          1,
+          null,
           null
         ]
       },
@@ -524,8 +479,30 @@
           null,
           null,
           1,
+          5,
+          5,
+          1,
+          1,
+          null,
+          4,
+          4,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
           0,
           0,
+          null,
+          0,
+          null,
           0,
           0,
           null,
@@ -536,28 +513,6 @@
           null,
           1,
           0,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          1,
-          0,
           0,
           0,
           0,
@@ -565,7 +520,7 @@
           null,
           1,
           1,
-          0,
+          5,
           null,
           null
         ]
@@ -693,6 +648,6 @@
         }
       }
     },
-    "timestamp": 1666759044
+    "timestamp": 1666837279
   }
 }
