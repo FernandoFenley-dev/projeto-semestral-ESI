@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'spec_helper'
 
 RSpec.describe Usuario, type: :model do
   it 'invalido sem nome' do
@@ -13,6 +14,7 @@ RSpec.describe Usuario, type: :model do
     usuario.nome = "Gui"
     usuario.password = "Bigboss@332123"
     usuario.iscliente = false
+
     expect(usuario).not_to be_valid
   end
   it 'invalido com email com formato invalido' do

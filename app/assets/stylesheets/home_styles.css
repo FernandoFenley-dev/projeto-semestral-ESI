@@ -1,0 +1,72 @@
+#container{
+  height: 100vh; /* Ocupe toda a tela */
+
+  display: flex;
+  align-items: stretch;
+}
+
+#content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 700px;
+}
+
+#AnimationContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#AnimationContainer form {
+    margin: 80px 0;
+    width: 340px;
+    text-align: center;
+}
+
+#AnimationContainer form  h1 {
+    margin-bottom: 24px;
+}
+
+#AnimationContainer form  h1  a {
+    color: #f4ede8;
+    display: block;
+    margin-top: 24px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+
+#AnimationContainer form  h1 a:hover {
+    color: #f4ede8;
+}
+    
+#AnimationContainer > a {
+    color: #ff9000;
+    display: block;
+    margin-top: 24px;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    display: flex;
+    align-items: center;
+}
+
+#AnimationContainer > a svg {
+    margin-right: 16px;
+}
+
+#AnimationContainer > a:hover {
+    color: #ff9000;
+}
+
+.background{
+  flex: 1;
+
+  background: url('../../assets/sign-up-background.png') no-repeat center;
+  background-size: cover; /* Cubra a div inteira com a img */
+}
