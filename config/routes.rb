@@ -10,8 +10,11 @@ Rails.application.routes.draw do
   # PÁGINA PERFIL
   get 'perfil/:id' => 'usuarios#edit', as: :perfil
 
-  resources :clientes
+  get 'agendamentos/:nomeBarbeiro/', to: 'agendamentos#barbeador'
+
+  # AGENDAMENTOS DE UM BARBEADOR
   resources :agendamentos
+  resources :clientes
   resources :usuarios
 
   root to:"sessoes#new"

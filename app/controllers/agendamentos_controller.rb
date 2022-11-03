@@ -22,10 +22,21 @@ class AgendamentosController < ApplicationController
         @agendamento = Agendamento.find(params[:id])
     end
 
+    def barbeador
+        ##Book.where("created_at >= :start_date AND created_at <= :end_date",
+        ##{start_date: params[:start_date], end_date: params[:end_date]})   
+        @agendamentos = Agendamento.where("UPPER(nomeBarbeiro) = UPPER(:nomeBarbeiro)",
+            nomeBarbeiro: params[:nomeBarbeiro]
+        )
+        logger.debug "ENTREIIIII"
+        logger.debug "Article should be valid: #{params[:nomeBarbeiro]}"
+        logger.debug "Article should be valid: #{Usuario.column_names}"
+        
+    end
+
     private
     def agendamento_params
         params.require(:agendamento).permit(:nomeCliente, :nomeBarbeiro, :nomeServico,:dataAgendada)
     end
 
-  
 end
