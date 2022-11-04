@@ -31,6 +31,7 @@ class AgendamentosController < ApplicationController
         logger.debug "ENTREIIIII"
         logger.debug "Article should be valid: #{params[:nomeBarbeiro]}"
         logger.debug "Article should be valid: #{Usuario.column_names}"
+        logger.debug "Article should be valid: #{Agendamento.column_names}"
         
     end
 

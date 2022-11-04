@@ -1,7 +1,4 @@
 class Usuario < ActiveRecord::Base
-
-    has_many :agendamentos                 
-
     has_secure_password
 
     attr_accessor :updating

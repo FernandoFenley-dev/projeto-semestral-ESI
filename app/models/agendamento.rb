@@ -1,7 +1,5 @@
 class Agendamento < ApplicationRecord
 
-    belongs_to :usuario
-
     validates :nomeCliente, presence: { message: "Não possui nome do cliente!" }
     validates :nomeBarbeiro, presence: { message: "Digite o nome do Barbeiro!" }
     validates :nomeServico, presence: { message: "Digite o nome do Serviço!" }

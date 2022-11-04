@@ -1,5 +1,28 @@
 <% if @agendamentos.blank? %>
-<p>There are not any books currently in the system.</p>
+    <p>Não há agendamentos neste dia.</p>
 <% else %>
-<p>These are the current books in our system</p>
+    <h1>Listagem de agendamentos - <%= Date.parse(params[:data]).to_fs(:long) %></h1>
+
+    <%= form_with scope: :agendamento, url: agendamentos_path, local: true do |form| %>
+
+    <p>
+        <%= form.label :"Nome Cliente"%><br>
+        <span> <%=  %> </span>
+    </p>
+
+    <p>
+        <%= form.label :"Nome Serviço"%><br>
+        <%= form.text_field :nomeServico %>
+    </p>
+
+
+    <p>
+        <%= form.label :"Data Serviço"%><br>
+        <%= form.datetime_select :dataAgendada %>
+    </p>
+
+    <p>
+        <%= form.submit 'Agendar' %>
+    </p>
+    <% end %>
 <% end %>
