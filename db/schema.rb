@@ -10,14 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_25_010416) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_04_152005) do
   create_table "agendamentos", force: :cascade do |t|
     t.string "nomeCliente"
     t.string "nomeBarbeiro"
     t.string "nomeServico"
-    t.datetime "dataAgendada"
+    t.date "dataAgendada"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.time "horario"
   end
 
   create_table "clientes", force: :cascade do |t|

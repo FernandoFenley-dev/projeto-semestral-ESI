@@ -3,26 +3,25 @@
 <% else %>
     <h1>Listagem de agendamentos - <%= Date.parse(params[:data]).to_fs(:long) %></h1>
 
-    <%= form_with scope: :agendamento, url: agendamentos_path, local: true do |form| %>
-
-    <p>
-        <%= form.label :"Nome Cliente"%><br>
-        <span> <%=  %> </span>
-    </p>
-
-    <p>
-        <%= form.label :"Nome Serviço"%><br>
-        <%= form.text_field :nomeServico %>
-    </p>
+    <%= link_to "<", "/agendamentos-barbeiro/#{params[:nomeBarbeiro]}?data=#{(params[:data].to_date-1).to_s}" %>
 
 
-    <p>
-        <%= form.label :"Data Serviço"%><br>
-        <%= form.datetime_select :dataAgendada %>
-    </p>
+    <% @agendamentos.each do |agendamento| %>
+        <p>
+            <strong>Nome Cliente</strong><br>
+            <%= agendamento.nomeCliente %>
+        </p>
 
-    <p>
-        <%= form.submit 'Agendar' %>
-    </p>
+        <p>
+            <strong>Nome Serviço</strong><br>
+            <%= agendamento.nomeServico %>
+        </p>
+
+
+        <p>
+            <strong>Horário Serviço</strong><br>
+            <%= agendamento.dataAgendada.strftime("%I:%M%p") %>
+        </p>
+
     <% end %>
 <% end %>

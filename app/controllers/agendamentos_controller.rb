@@ -25,11 +25,13 @@ class AgendamentosController < ApplicationController
     def barbeador
         ##Book.where("created_at >= :start_date AND created_at <= :end_date",
         ##{start_date: params[:start_date], end_date: params[:end_date]})   
-        @agendamentos = Agendamento.where("UPPER(nomeBarbeiro) = UPPER(:nomeBarbeiro)",
-            nomeBarbeiro: params[:nomeBarbeiro]
+        @agendamentos = Agendamento.where("UPPER(nomeBarbeiro) = UPPER(:nomeBarbeiro) 
+            AND date(dataAgendada) in (:data)",
+            nomeBarbeiro: params[:nomeBarbeiro],
+            data: params[:data]
         )
         logger.debug "ENTREIIIII"
-        logger.debug "Article should be valid: #{params[:nomeBarbeiro]}"
+        logger.debug "Article should be valid: #{params[:data]}"
         logger.debug "Article should be valid: #{Usuario.column_names}"
         logger.debug "Article should be valid: #{Agendamento.column_names}"
         

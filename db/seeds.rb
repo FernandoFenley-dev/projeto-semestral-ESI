@@ -7,6 +7,6 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 Agendamento.create!(nomeCliente: 'Fefa', nomeBarbeiro: 'ferk', 
-    nomeServico: 'Cabelo', dataAgendada: Date.current())
+    nomeServico: 'Cabelo', dataAgendada: Date.current(), horario: Time.current())
 
     
