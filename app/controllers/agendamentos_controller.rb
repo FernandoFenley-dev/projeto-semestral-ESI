@@ -5,7 +5,7 @@ class AgendamentosController < ApplicationController
 
     def create
         @agendamento = Agendamento.new(agendamento_params)
-        @agendamento.nomeCliente="Cliente"#todo alterar para o nome do cliente, ou id do cliente logado
+        @agendamento.idCliente=session[:usuario_id]
 
         if @agendamento.save
             puts "SUCESSO"
@@ -24,7 +24,7 @@ class AgendamentosController < ApplicationController
 
     private
     def agendamento_params
-        params.require(:agendamento).permit(:nomeCliente, :nomeBarbeiro, :nomeServico,:dataAgendada)
+        params.require(:agendamento).permit(:idCliente, :idBarbeiro, :idServico,:dataAgendamento)
     end
 
   
