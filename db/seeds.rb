@@ -6,7 +6,6 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-Agendamento.create!(nomeCliente: 'Fefa', nomeBarbeiro: 'ferk', 
-    nomeServico: 'Cabelo', dataAgendada: Date.current(), horario: Time.current())
-
+Agendamento.create!(nomeServico: "Cabelo", cliente_id: 1, 
+    barbeiro_id: 2, dataAgendamento: Date.current())
     

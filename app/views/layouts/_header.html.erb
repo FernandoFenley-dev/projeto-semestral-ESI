@@ -5,7 +5,7 @@
         <% if logado? %>
           <ul>
               <li><%= link_to "Meu perfil", perfil_path(usuario_atual) %></li>
-              <li><%= link_to "Meus Agendamentos",  "/agendamentos-barbeiro/#{@usuario.nome}?data=#{Date.current()}" %></li>
+              <li><%= link_to "Meus Agendamentos",  "/agendamentos-barbeiro/#{@usuario.id}?data=#{Date.current()}" %></li>
               <li><%= link_to 'agendar servico', agendamentos_new_path %></li>
 
               <li>

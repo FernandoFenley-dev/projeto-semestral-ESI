@@ -1,27 +1,30 @@
+<h1>Listagem de agendamentos - <%= Date.parse(params[:data]).to_fs(:long) %></h1>
+<%= link_to "<", "/agendamentos-barbeiro/#{session[:idUsuario]}?data=#{(params[:data].to_date-1).to_s}" %>
+<span><%= Date.parse(params[:data]).strftime('%m/%d/%Y') %></span>
+<%= link_to ">", "/agendamentos-barbeiro/#{session[:idUsuario]}?data=#{(params[:data].to_date+1).to_s}" %>
+<br>
 <% if @agendamentos.blank? %>
+ 
     <p>Não há agendamentos neste dia.</p>
+
 <% else %>
-    <h1>Listagem de agendamentos - <%= Date.parse(params[:data]).to_fs(:long) %></h1>
-
-    <%= link_to "<", "/agendamentos-barbeiro/#{params[:nomeBarbeiro]}?data=#{(params[:data].to_date-1).to_s}" %>
-
-
+    <br>
     <% @agendamentos.each do |agendamento| %>
         <p>
-            <strong>Nome Cliente</strong><br>
-            <%= agendamento.nomeCliente %>
+            <strong>Cliente:</strong>
+            <%= agendamento.cliente.nome %>
         </p>
 
         <p>
-            <strong>Nome Serviço</strong><br>
+            <strong>Serviço:</strong>
             <%= agendamento.nomeServico %>
         </p>
 
 
         <p>
-            <strong>Horário Serviço</strong><br>
-            <%= agendamento.dataAgendada.strftime("%I:%M%p") %>
+            <strong>Horário:</strong>
+            <%= agendamento.dataAgendamento.strftime("%I:%M%p") %>
         </p>
-
+        <br>
     <% end %>
 <% end %>

@@ -3,6 +3,7 @@ class SessoesController < ApplicationController
     def create
         @usuario = Usuario.find_by(email: params[:session][:email])
         if @usuario && @usuario.authenticate(params[:session][:password])
+          session[:idUsuario] = @usuario.id
           sign_in 
           redirect_to @usuario
         else

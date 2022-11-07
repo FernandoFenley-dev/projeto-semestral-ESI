@@ -12,7 +12,6 @@ Dado('que estou na página de agendamento de serviço') do
     expect(agendamento.idBarbeiro).to eq(1)
 
   end
-  
 
   Quando('seleciono o ano {string}') do |string|
     select string, :from => "agendamento[dataAgendamento(1i)]"
