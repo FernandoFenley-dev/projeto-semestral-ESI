@@ -8,12 +8,12 @@ Dado('que estou na página de agendamento de serviço') do
   
   Então('o Agendamento deve ter sido salvo no banco de dados') do
     agendamento = Agendamento.order("id").last
-    expect(agendamento.nomeServico).to eq('corte')
-    expect(agendamento.nomeBarbeiro).to eq('jalmir')
+    expect(agendamento.idServico).to eq(1)
+    expect(agendamento.idBarbeiro).to eq(1)
 
   end
   
 
   Quando('seleciono o ano {string}') do |string|
-    select string, :from => "agendamento[dataAgendada(1i)]"
+    select string, :from => "agendamento[dataAgendamento(1i)]"
   end
