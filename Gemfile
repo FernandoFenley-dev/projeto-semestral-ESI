@@ -78,4 +78,11 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem 'cucumber-rails', require: false
+  gem 'simplecov'
+  gem 'database_cleaner'
+  gem "rspec-rails", group: [:development, :test]
+  gem 'coveralls_reborn', '~> 0.25.0', require: false
+  gem 'simplecov-lcov', '~> 0.8.0'
+  gem 'coveralls', require: false
 end
