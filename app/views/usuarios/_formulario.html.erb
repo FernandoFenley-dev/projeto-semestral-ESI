@@ -11,28 +11,24 @@
                         </ul>
             </div>
 <% end %>
-            <div class="field">
-                        <%= f.label :nome %>
-                        <%= f.text_field :nome %>
-            </div>
-            <div class="field">
-                        <%= f.label :email %>
-                        <%= f.email_field :email %>
-            </div>
-            <div class="field">
-                        <%= f.label :senha %>
-                        <%= f.password_field :password %>
-            </div>
             <% if !pagina_edicao %>
-                <div class="field">
-
-                    <%= f.radio_button :iscliente, true %>
-                    <%= f.label :iscliente, "Sou cliente" %>
+                <div class="content__radio">
+                    <%= f.radio_button :iscliente, true, {checked: true} %>
+                    <%= f.label :iscliente_true, "Sou cliente" %>
                     <%= f.radio_button :iscliente, false %>
-                    <%= f.label :iscliente, "Sou cabeleireiro" %>
+                    <%= f.label :iscliente_false, "Sou cabeleireiro" %>
                 </div>
             <% end %>
-            <div class="actions">
+            <div class="content__field">
+                <%= f.text_field :nome, placeholder: "Nome" %>
+            </div>
+            <div class="content__field">
+                <%= f.email_field :email, placeholder: "E-mail" %>
+            </div>
+            <div class="content__field">
+                <%= f.password_field :password, placeholder: "Senha" %>
+            </div>
+            <div class="content__btn">
                 <%= f.submit pagina_edicao ? "Confirmar": "Cadastrar" %>
             </div>
 
@@ -41,5 +37,4 @@
                     <p><%= msg %> </p>
                 </div>
             <% end %>
-            </div>
 <% end %>

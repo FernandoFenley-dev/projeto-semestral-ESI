@@ -1,72 +1,83 @@
-#container{
-  height: 100vh; /* Ocupe toda a tela */
-
-  display: flex;
-  align-items: stretch;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
 }
 
-#content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
-  max-width: 700px;
-}
-
-#AnimationContainer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#AnimationContainer form {
-    margin: 80px 0;
-    width: 340px;
-    text-align: center;
-}
-
-#AnimationContainer form  h1 {
-    margin-bottom: 24px;
-}
-
-#AnimationContainer form  h1  a {
-    color: #f4ede8;
-    display: block;
-    margin-top: 24px;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-
-#AnimationContainer form  h1 a:hover {
-    color: #f4ede8;
-}
-    
-#AnimationContainer > a {
-    color: #ff9000;
-    display: block;
-    margin-top: 24px;
-    text-decoration: none;
-    transition: color 0.2s;
-
-    display: flex;
-    align-items: center;
-}
-
-#AnimationContainer > a svg {
-    margin-right: 16px;
-}
-
-#AnimationContainer > a:hover {
-    color: #ff9000;
-}
-
-.background{
-  flex: 1;
-
+.background {
   background: url('../../assets/sign-up-background.png') no-repeat center;
-  background-size: cover; /* Cubra a div inteira com a img */
+  background-size: cover;
+}
+
+.content {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  background: #312E38;
+}
+
+.content__logo {
+  margin-bottom: 75px;
+}
+
+.content__radio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin-bottom: 25px;
+}
+
+.content__radio input {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.content__radio label {
+  color: #999591;
+  padding-bottom: 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.content__radio input:checked + label,
+.content__radio label:hover {
+  color: #fff;
+  border-bottom: 2px solid #FF9000;
+  cursor: pointer;
+}
+
+.content__field input {
+  width: 340px;
+  height: 56px;
+  background: #232129;
+  color: #666360;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 5px 0;
+}
+
+.content__btn input {
+  width: 340px;
+  height: 56px;
+  background: #FF9000;
+  border-radius: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.content__link {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    grid-template-columns: auto;
+  }
+
+  .background {
+    display: none;
+  }  
 }
