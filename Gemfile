@@ -9,10 +9,6 @@ gem "rails", "~> 7.0.4"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-# Use sqlite3 as the database for Active Record
-# gem "sqlite3", "~> 1.4"
-gem 'pg'
-
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
@@ -36,7 +32,6 @@ gem "jbuilder"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
-gem 'bcrypt', platforms: :ruby
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
@@ -50,9 +45,21 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+gem 'pg'
+
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'rspec-rails'
+  gem 'cucumber-rails', require: false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+  # Use sqlite3 as the database for Active Record
+  gem "sqlite3", "~> 1.4"
+  gem 'simplecov',      require: false
+  gem 'simplecov-lcov', require: false
+
 end
 
 group :development do
@@ -71,11 +78,4 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
-  gem 'cucumber-rails', require: false
-  gem 'simplecov'
-  gem 'database_cleaner'
-  gem "rspec-rails", group: [:development, :test]
-  gem 'coveralls_reborn', '~> 0.25.0', require: false
-  gem 'simplecov-lcov', '~> 0.8.0'
-  gem 'coveralls', require: false
 end
