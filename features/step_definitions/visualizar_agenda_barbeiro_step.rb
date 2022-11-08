@@ -10,8 +10,8 @@ Dado('que estou na página inicial para barbeiros') do
     
     visit 'login'
 
-    fill_in 'Email', :with => 'luiz@gmail.com'
-    fill_in 'Password', :with => '123senha'
+    fill_in 'email', :with => 'luiz@gmail.com'
+    fill_in 'password', :with => '123senha'
 
     click_on 'Login'
     visit 'usuarios/1'

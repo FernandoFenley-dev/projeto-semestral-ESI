@@ -1,0 +1,18 @@
+<%= form_for :session, url: login_path do |f| %>
+    <div class="field">
+        <div class="content__field">
+            <%= f.email_field :email, placeholder: "E-mail", id:"email" %>
+        </div>
+        <div class="content__field">
+            <%= f.password_field :password, autocomplete: "off", placeholder: "Senha", id:"password" %>
+        </div>
+        <div class="content__btn">
+            <%= f.submit 'Login' %>
+        </div>
+
+        <% flash.each do |type, msg| %>
+            <div>
+                <p><%= msg %> </p>
+            </div>
+        <% end %>
+<% end %>
