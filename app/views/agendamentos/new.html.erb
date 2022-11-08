@@ -13,14 +13,8 @@
 
   <p>
     <%= form.label :"Nome Barbeiro"%><br>
-    <%= form.number_field :idBarbeiro %>
+    <%= form.select(:idBarbeiro, options_for_select(@barbeirosDDL || Usuario.all.map { |c| [ c.nome, c.id ] }), :prompt => "Selecione o Barbeiro!") %> 
   </p>
-
-  <p>
-    <%= form.label :"Nome Serviço"%><br>
-    <%= form.number_field :idServico %>
-  </p>
-
 
   <p>
     <%= form.label :"Data Serviço"%><br>

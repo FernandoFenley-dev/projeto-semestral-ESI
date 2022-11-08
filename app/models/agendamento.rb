@@ -1,7 +1,6 @@
 class Agendamento < ApplicationRecord
     validates :idCliente, presence: { message: "Não possui nome do cliente!" }
     validates :idBarbeiro, presence: { message: "Digite o nome do Barbeiro!" }
-    validates :idServico, presence: { message: "Digite o nome do Serviço!" }
 
     validate :valid_date?
 

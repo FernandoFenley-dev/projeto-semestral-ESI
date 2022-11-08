@@ -1,5 +1,8 @@
 class AgendamentosController < ApplicationController
     def new
+        @barbeiros = Usuario.where("iscliente = 1")
+        @barbeirosDDL = @barbeiros.pluck(:nome,:id)
+
         @agendamento = Agendamento.new
     end
 
@@ -21,11 +24,12 @@ class AgendamentosController < ApplicationController
 
     def show
         @agendamento = Agendamento.find(params[:id])
+        @barbeiros = Usuario.where("iscliente = 1")
     end
 
     private
     def agendamento_params
-        params.require(:agendamento).permit(:idCliente, :idBarbeiro, :idServico,:dataAgendamento)
+        params.require(:agendamento).permit(:idCliente, :idBarbeiro,:dataAgendamento)
     end
 
   

@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/ferk/Desktop/projeto/barbershop/lib/tasks/cucumber.rake": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/lib/tasks/cucumber.rake": {
         "lines": [
           null,
           null,
@@ -74,7 +74,7 @@
           null
         ]
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/channels/application_cable/channel.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -84,7 +84,7 @@
         "branches": {
         }
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/channels/application_cable/connection.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -94,7 +94,7 @@
         "branches": {
         }
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/controllers/agendamentos_controller.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/controllers/agendamentos_controller.rb": {
         "lines": [
           0,
           0,
@@ -105,18 +105,22 @@
           0,
           null,
           0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
           0,
           null,
           0,
           null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
           0,
           0,
           0,
@@ -132,7 +136,7 @@
         "branches": {
         }
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/controllers/application_controller.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/controllers/application_controller.rb": {
         "lines": [
           0,
           0,
@@ -146,38 +150,6 @@
           null,
           0,
           0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/ferk/Desktop/projeto/barbershop/app/controllers/clientes_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
           0,
           0,
           0,
@@ -188,7 +160,39 @@
         "branches": {
         }
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/controllers/main_controller.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/controllers/clientes_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/controllers/main_controller.rb": {
         "lines": [
           0,
           0,
@@ -198,126 +202,11 @@
         "branches": {
         }
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/controllers/sessoes_controller.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/controllers/sessoes_controller.rb": {
         "lines": [
           0,
           0,
           0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/ferk/Desktop/projeto/barbershop/app/controllers/usuarios_controller.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/ferk/Desktop/projeto/barbershop/app/helpers/agendamentos_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/ferk/Desktop/projeto/barbershop/app/helpers/application_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/ferk/Desktop/projeto/barbershop/app/helpers/clientes_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/ferk/Desktop/projeto/barbershop/app/helpers/sessoes_helper.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
           0,
           0,
           0,
@@ -337,7 +226,68 @@
         "branches": {
         }
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/helpers/usuarios_helper.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/controllers/usuarios_controller.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/helpers/agendamentos_helper.rb": {
         "lines": [
           0,
           0
@@ -345,7 +295,61 @@
         "branches": {
         }
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/jobs/application_job.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/helpers/application_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/helpers/clientes_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/helpers/sessoes_helper.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/helpers/usuarios_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -358,7 +362,7 @@
         "branches": {
         }
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/mailers/application_mailer.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -368,9 +372,8 @@
         "branches": {
         }
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/models/agendamento.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/models/agendamento.rb": {
         "lines": [
-          0,
           0,
           0,
           0,
@@ -392,7 +395,7 @@
         "branches": {
         }
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/models/application_record.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/models/application_record.rb": {
         "lines": [
           0,
           0,
@@ -401,7 +404,7 @@
         "branches": {
         }
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/models/cliente.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/models/cliente.rb": {
         "lines": [
           0,
           0,
@@ -414,7 +417,7 @@
         "branches": {
         }
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/models/usuario.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/models/usuario.rb": {
         "lines": [
           0,
           0,
@@ -436,47 +439,51 @@
         }
       }
     },
-    "timestamp": 1667869396
+    "timestamp": 1667875676
   },
   "Cucumber Features": {
     "coverage": {
-      "/home/ferk/Desktop/projeto/barbershop/app/controllers/agendamentos_controller.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/controllers/agendamentos_controller.rb": {
         "lines": [
           1,
           1,
-          5,
+          7,
+          7,
+          null,
+          7,
           null,
           null,
           1,
-          5,
+          0,
           null,
-          5,
+          0,
           null,
-          5,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
-          4,
-          4,
-          4,
-          null,
-          null,
+          0,
+          0,
+          0,
           null,
           null,
-          1,
-          1,
           null,
           null,
           1,
+          0,
+          0,
+          null,
+          null,
           1,
-          5,
+          1,
+          0,
           null,
           null,
           null,
           null
         ]
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/controllers/application_controller.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/controllers/application_controller.rb": {
         "lines": [
           1,
           1,
@@ -498,25 +505,25 @@
           null
         ]
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/helpers/application_helper.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/helpers/agendamentos_helper.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/helpers/agendamentos_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/helpers/clientes_helper.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/helpers/clientes_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/helpers/sessoes_helper.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/helpers/sessoes_helper.rb": {
         "lines": [
           1,
           1,
@@ -524,7 +531,7 @@
           null,
           null,
           1,
-          39,
+          36,
           null,
           null,
           1,
@@ -534,7 +541,7 @@
           null,
           null,
           1,
-          30,
+          27,
           null,
           null,
           1,
@@ -544,42 +551,13 @@
           null
         ]
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/helpers/usuarios_helper.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/helpers/usuarios_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/models/agendamento.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          5,
-          1,
-          null,
-          5,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/ferk/Desktop/projeto/barbershop/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/ferk/Desktop/projeto/barbershop/app/models/usuario.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/models/usuario.rb": {
         "lines": [
           1,
           1,
@@ -587,7 +565,7 @@
           1,
           null,
           1,
-          6,
+          0,
           null,
           null,
           1,
@@ -598,7 +576,35 @@
           null
         ]
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/controllers/sessoes_controller.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/models/agendamento.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/controllers/sessoes_controller.rb": {
         "lines": [
           1,
           1,
@@ -620,7 +626,7 @@
           null
         ]
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/controllers/usuarios_controller.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/controllers/usuarios_controller.rb": {
         "lines": [
           1,
           null,
@@ -679,7 +685,7 @@
           null
         ]
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/controllers/clientes_controller.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/controllers/clientes_controller.rb": {
         "lines": [
           1,
           1,
@@ -709,7 +715,7 @@
           null
         ]
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/models/cliente.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/models/cliente.rb": {
         "lines": [
           1,
           1,
@@ -720,7 +726,7 @@
           null
         ]
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/channels/application_cable/channel.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -730,7 +736,7 @@
         "branches": {
         }
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/channels/application_cable/connection.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -740,7 +746,7 @@
         "branches": {
         }
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/controllers/main_controller.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/controllers/main_controller.rb": {
         "lines": [
           0,
           0,
@@ -750,7 +756,7 @@
         "branches": {
         }
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/jobs/application_job.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -763,7 +769,7 @@
         "branches": {
         }
       },
-      "/home/ferk/Desktop/projeto/barbershop/app/mailers/application_mailer.rb": {
+      "/home/iago/Public/faculdade/engenharia 1107/projeto-semestral-ESI/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -774,7 +780,7 @@
         }
       }
     },
-    "timestamp": 1667869543
+    "timestamp": 1667878096
   },
   "Minitest": {
     "coverage": {
