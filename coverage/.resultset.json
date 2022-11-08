@@ -1,7 +1,80 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/felipe/Documents/projeto-semestral-ESI/app/channels/application_cable/channel.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/lib/tasks/cucumber.rake": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -11,7 +84,7 @@
         "branches": {
         }
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/channels/application_cable/connection.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -21,7 +94,7 @@
         "branches": {
         }
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/controllers/agendamentos_controller.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/agendamentos_controller.rb": {
         "lines": [
           0,
           0,
@@ -59,7 +132,7 @@
         "branches": {
         }
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/controllers/application_controller.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/application_controller.rb": {
         "lines": [
           0,
           0,
@@ -73,38 +146,6 @@
           null,
           0,
           0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/controllers/clientes_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
           0,
           0,
           0,
@@ -115,7 +156,39 @@
         "branches": {
         }
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/controllers/main_controller.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/clientes_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/main_controller.rb": {
         "lines": [
           0,
           0,
@@ -125,126 +198,11 @@
         "branches": {
         }
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/controllers/sessoes_controller.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/sessoes_controller.rb": {
         "lines": [
           0,
           0,
           0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/controllers/usuarios_controller.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/helpers/agendamentos_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/helpers/application_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/helpers/clientes_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/helpers/sessoes_helper.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
           0,
           0,
           0,
@@ -264,7 +222,68 @@
         "branches": {
         }
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/helpers/usuarios_helper.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/usuarios_controller.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/agendamentos_helper.rb": {
         "lines": [
           0,
           0
@@ -272,7 +291,61 @@
         "branches": {
         }
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/jobs/application_job.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/application_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/clientes_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/sessoes_helper.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/usuarios_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -285,7 +358,7 @@
         "branches": {
         }
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/mailers/application_mailer.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -295,7 +368,7 @@
         "branches": {
         }
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/models/agendamento.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/models/agendamento.rb": {
         "lines": [
           0,
           0,
@@ -319,7 +392,7 @@
         "branches": {
         }
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/models/application_record.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/models/application_record.rb": {
         "lines": [
           0,
           0,
@@ -328,7 +401,7 @@
         "branches": {
         }
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/models/cliente.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/models/cliente.rb": {
         "lines": [
           0,
           0,
@@ -341,7 +414,7 @@
         "branches": {
         }
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/models/usuario.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/models/usuario.rb": {
         "lines": [
           0,
           0,
@@ -363,11 +436,11 @@
         }
       }
     },
-    "timestamp": 1667865680
+    "timestamp": 1667869396
   },
   "Cucumber Features": {
     "coverage": {
-      "/home/felipe/Documents/projeto-semestral-ESI/app/controllers/agendamentos_controller.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/agendamentos_controller.rb": {
         "lines": [
           1,
           1,
@@ -403,7 +476,7 @@
           null
         ]
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/controllers/application_controller.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/application_controller.rb": {
         "lines": [
           1,
           1,
@@ -425,25 +498,25 @@
           null
         ]
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/helpers/application_helper.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/helpers/agendamentos_helper.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/agendamentos_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/helpers/clientes_helper.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/clientes_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/helpers/sessoes_helper.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/sessoes_helper.rb": {
         "lines": [
           1,
           1,
@@ -471,13 +544,13 @@
           null
         ]
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/helpers/usuarios_helper.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/usuarios_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/models/agendamento.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/models/agendamento.rb": {
         "lines": [
           1,
           1,
@@ -499,14 +572,14 @@
           null
         ]
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/models/application_record.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/models/usuario.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/models/usuario.rb": {
         "lines": [
           1,
           1,
@@ -525,7 +598,7 @@
           null
         ]
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/controllers/sessoes_controller.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/sessoes_controller.rb": {
         "lines": [
           1,
           1,
@@ -547,7 +620,7 @@
           null
         ]
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/controllers/usuarios_controller.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/usuarios_controller.rb": {
         "lines": [
           1,
           null,
@@ -606,7 +679,7 @@
           null
         ]
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/controllers/clientes_controller.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/clientes_controller.rb": {
         "lines": [
           1,
           1,
@@ -636,7 +709,7 @@
           null
         ]
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/models/cliente.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/models/cliente.rb": {
         "lines": [
           1,
           1,
@@ -647,7 +720,7 @@
           null
         ]
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/channels/application_cable/channel.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -657,7 +730,7 @@
         "branches": {
         }
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/channels/application_cable/connection.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -667,7 +740,7 @@
         "branches": {
         }
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/controllers/main_controller.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/main_controller.rb": {
         "lines": [
           0,
           0,
@@ -677,7 +750,7 @@
         "branches": {
         }
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/jobs/application_job.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -690,7 +763,7 @@
         "branches": {
         }
       },
-      "/home/felipe/Documents/projeto-semestral-ESI/app/mailers/application_mailer.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -701,7 +774,7 @@
         }
       }
     },
-    "timestamp": 1667865920
+    "timestamp": 1667869543
   },
   "Minitest": {
     "coverage": {
