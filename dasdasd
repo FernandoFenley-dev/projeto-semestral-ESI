@@ -1,0 +1,445 @@
+[33mcommit c8443c5d36f990dbdf1b7fa1cc00c4eb4e53bf2d[m[33m ([m[1;36mHEAD -> [m[1;32magendamentos-barbeiro[m[33m)[m
+Author: Fernando Fenley <fernandojfenley@gmail.com>
+Date:   Thu Nov 3 18:45:58 2022 -0300
+
+    até aqui ok
+
+[33mcommit 64e260a3e9a05061b6711aa372a1098d4e188aa3[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 739e7bd 2b2a38e
+Author: Felipe Oliveira <felipeoes@usp.br>
+Date:   Wed Oct 26 15:48:34 2022 -0300
+
+    Merge pull request #13 from FernandoFenley-dev/test/alteracao-senha
+    
+    test: adicionar testes da feature de alteracao de senha
+
+[33mcommit 2b2a38e74ebdd4f7e11b0b215167142ab1d15100[m
+Author: Felipe Oliveira <felipeoes@usp.br>
+Date:   Wed Oct 26 15:48:07 2022 -0300
+
+    test: adicionar testes da feature de alteracao de senha
+
+[33mcommit 739e7bdb609909961e3a22cd513b203a91e3228a[m[33m ([m[1;32minterface-sign-up-cliente[m[33m)[m
+Merge: 6e44717 7d2b613
+Author: Fernando Fenley <fernandojfenley@gmail.com>
+Date:   Wed Oct 26 07:46:59 2022 -0300
+
+    testes login2
+
+[33mcommit 6e44717c5b9ad9132b04281c443ad84a86d51958[m
+Author: Fernando Fenley <fernandojfenley@gmail.com>
+Date:   Wed Oct 26 07:41:16 2022 -0300
+
+    testes login
+
+[33mcommit 7d2b613c09699663bee57507fe25cd17a06bd921[m
+Merge: bde436d 9f9bb7c
+Author: Felipe Oliveira <felipeoes@usp.br>
+Date:   Tue Oct 25 23:20:48 2022 -0300
+
+    Merge pull request #12 from FernandoFenley-dev/feat/alteracao-senha
+    
+    feat: adicionar formulario de alteracao de senha
+
+[33mcommit 9f9bb7c431a85fc5b044290a723ac1bd331335ce[m
+Author: Felipe Oliveira <felipeoes@usp.br>
+Date:   Tue Oct 25 23:15:17 2022 -0300
+
+    feat: adicionar formulario de alteracao de senha
+
+[33mcommit bde436d769be1c0f77ceae3c1ba0fa9e1ece7b14[m
+Merge: 68799df 29df726
+Author: Felipe Oliveira <felipeoes@usp.br>
+Date:   Tue Oct 25 23:12:10 2022 -0300
+
+    Merge pull request #11 from FernandoFenley-dev/feat/alteracao-senha
+    
+    feat: adicionar formulario de alteracao de senha
+
+[33mcommit 29df726d41948516df8ebe2ebf371792fda7b0af[m
+Author: Felipe Oliveira <felipeoes@usp.br>
+Date:   Tue Oct 25 23:11:11 2022 -0300
+
+    feat: adicionar formulario de alteracao de senha
+
+[33mcommit 68799dfac54ca9b933c817a564363d5c21234939[m
+Merge: c4f5a6c 2138f18
+Author: Felipe Oliveira <felipeoes@usp.br>
+Date:   Mon Oct 24 23:27:01 2022 -0300
+
+    Merge pull request #10 from FernandoFenley-dev/fix/cadastro-login-usuario
+    
+    fix: corrrigir todo o MVC usuario
+
+[33mcommit 2138f1809ebf24c98e2acbddae6c8a49d042742d[m[33m ([m[1;31morigin/fix/cadastro-login-usuario[m[33m)[m
+Author: Felipe Oliveira <felipeoes@usp.br>
+Date:   Mon Oct 24 23:24:54 2022 -0300
+
+    fix: corrrigir todo o MVC usuario
+
+[33mcommit c4f5a6cdb7c45f4cbd20cbfd14963e4c3dc4ef4c[m
+Merge: 2e5f9f9 99c2f35
+Author: Jumenesox <91561633+Jumenesox@users.noreply.github.com>
+Date:   Mon Oct 24 16:12:00 2022 -0300
+
+    Merge pull request #7 from FernandoFenley-dev/revert-6-feature/cadastro-barbeiro
+    
+    Revert "adicionando view de cadastro de barbeiro, conforme história de ID 183…"
+
+[33mcommit 99c2f352712766249e69a0d9268de6e3def3839d[m
+Author: Jumenesox <91561633+Jumenesox@users.noreply.github.com>
+Date:   Mon Oct 24 16:11:52 2022 -0300
+
+    Revert "adicionando view de cadastro de barbeiro, conforme história de ID 183…"
+
+[33mcommit 2e5f9f97bdc5ecbcd39e679f5699b8844c781f72[m
+Merge: 19e8871 05ae070
+Author: Jumenesox <91561633+Jumenesox@users.noreply.github.com>
+Date:   Mon Oct 24 16:04:09 2022 -0300
+
+    Merge pull request #6 from FernandoFenley-dev/feature/cadastro-barbeiro
+    
+    adicionando view de cadastro de barbeiro, conforme história de ID 183…
+
+[33mcommit 05ae070c91d0901f078b67047d23b23a44da4775[m
+Author: Guilherme Jimenes <guilherme.jimenes@usp.br>
+Date:   Mon Oct 24 00:10:19 2022 -0300
+
+    adicionando view de cadastro de barbeiro, conforme história de ID 183495116
+
+[33mcommit 19e8871cdc4e870c7845765e35ac23ac3af8780e[m
+Merge: f92ad9f cd6efb7
+Author: Jalmijao <80426140+Jalmijao@users.noreply.github.com>
+Date:   Sun Oct 23 22:03:33 2022 -0300
+
+    Merge pull request #5 from FernandoFenley-dev/feat/agendamento-cliente
+    
+    Feat/agendamento cliente
+
+[33mcommit cd6efb77449cc852dccbea67b1e18d7c17084001[m
+Author: Jalmijao <jalmiriago@usp.br>
+Date:   Sun Oct 23 22:00:20 2022 -0300
+
+    ajuste com bundle install
+
+[33mcommit 135fd3673b1b27c745ea7ba3b0513dfdea452ad4[m
+Author: Jalmijao <jalmiriago@usp.br>
+Date:   Sun Oct 23 21:57:07 2022 -0300
+
+    adicionando testes do modelo agendamento
+
+[33mcommit 8bfa8be3e508733c678912cf919d201fd8ec221e[m
+Author: Jalmijao <jalmiriago@usp.br>
+Date:   Sun Oct 23 21:41:36 2022 -0300
+
+    ajustando testes do cucumber
+
+[33mcommit bb423bb93938c13c32d6e01eaff9c17facc899fb[m
+Author: Jalmijao <jalmiriago@usp.br>
+Date:   Sun Oct 23 19:58:25 2022 -0300
+
+    criando model e controler iniciais do agendamento do cliente, com testes basicos
+
+[33mcommit f92ad9f99c4df9974d90bc458813f6c1d654f0c3[m
+Merge: 30f6aac 9ade63f
+Author: Augusto Xavier Neto <61883585+XavierNeto@users.noreply.github.com>
+Date:   Fri Oct 21 17:12:38 2022 -0300
+
+    Merge pull request #4 from FernandoFenley-dev/feat/cadastro-cliente
+    
+    Formulário de cadastro - cliente
+
+[33mcommit 9ade63fbb5406742c402d419701015c091e3cd12[m[33m ([m[1;31morigin/feat/cadastro-cliente[m[33m)[m
+Author: Augusto Xavier Neto <augusto.neto@quintoandar.com.br>
+Date:   Sat Oct 15 11:57:02 2022 -0300
+
+    add todo note
+
+[33mcommit 4226fa2aae01d0edcafc50706d14e2a80ccfedfa[m
+Author: Augusto Xavier Neto <augusto.neto@quintoandar.com.br>
+Date:   Sat Oct 15 11:23:37 2022 -0300
+
+    add lockfile
+
+[33mcommit b2c04d4816054a0901b4d341c86f6af9237ead08[m
+Author: Augusto Xavier Neto <augusto.neto@quintoandar.com.br>
+Date:   Sat Oct 15 11:20:51 2022 -0300
+
+    fix spec files
+
+[33mcommit d2cd82e628cc6c4699f36517b869fa22eb2d494c[m
+Author: Augusto Xavier Neto <augusto.neto@quintoandar.com.br>
+Date:   Sat Oct 15 10:30:08 2022 -0300
+
+    create form
+
+[33mcommit 30f6aac85b7635a67955473e401258a14d2fae8a[m
+Author: FernandoFenley-dev <57076081+FernandoFenley-dev@users.noreply.github.com>
+Date:   Tue Oct 11 11:02:13 2022 -0300
+
+    Update README.md
+
+[33mcommit 5b5dd33a043785b6362881a264103193f6a47d18[m
+Author: Felipe Oliveira <felipeoes@usp.br>
+Date:   Sun Oct 9 13:26:33 2022 -0300
+
+    fix: config coveralls
+
+[33mcommit 3b4d41993f4dcf9c9598f4551b151ab84a4b6b2c[m
+Author: Felipe Oliveira <felipeoes@usp.br>
+Date:   Wed Oct 5 21:55:12 2022 -0300
+
+    fix: update github secrets
+
+[33mcommit fbb221eebb9268063f53c1078332995ac41862fc[m
+Author: Felipe Oliveira <felipeoes@usp.br>
+Date:   Sat Oct 1 16:43:57 2022 -0300
+
+    fix: add coveralls files
+
+[33mcommit 99de82c2db66573a65239ddac34b606dfdf67486[m
+Author: Felipe Oliveira <felipeoes@usp.br>
+Date:   Sat Oct 1 16:11:52 2022 -0300
+
+    fix: add coveralls files
+
+[33mcommit fa016ff72517995c7449dfe3c9d5bcba84358897[m
+Author: Jalmijao <jalmiriago@usp.br>
+Date:   Fri Sep 23 19:36:51 2022 -0300
+
+    ajuste versao 3.1.2
+
+[33mcommit 3353e95912899084b06ba16d85ce807f107b1a00[m
+Author: FernandoFenley-dev <57076081+FernandoFenley-dev@users.noreply.github.com>
+Date:   Fri Sep 23 17:38:25 2022 -0300
+
+    Update README.md
+
+[33mcommit 6d841273c8060e785329e701a9db6206028bab8e[m
+Author: FernandoFenley-dev <57076081+FernandoFenley-dev@users.noreply.github.com>
+Date:   Fri Sep 23 17:31:01 2022 -0300
+
+    Update ruby.yml
+
+[33mcommit a78044336f933822d276a5aceaddbaf71fb2de55[m
+Author: FernandoFenley-dev <57076081+FernandoFenley-dev@users.noreply.github.com>
+Date:   Fri Sep 23 15:47:51 2022 -0300
+
+    Update ruby.yml
+
+[33mcommit 8f0631086b8a01dd126115fc8617e61535e17a1b[m
+Author: FernandoFenley-dev <57076081+FernandoFenley-dev@users.noreply.github.com>
+Date:   Fri Sep 23 15:40:08 2022 -0300
+
+    Update ruby.yml
+
+[33mcommit 79e8abf3962abee93947c1b84c5a91ce4172d013[m
+Author: FernandoFenley-dev <57076081+FernandoFenley-dev@users.noreply.github.com>
+Date:   Fri Sep 23 15:36:57 2022 -0300
+
+    Update ruby.yml
+
+[33mcommit c7b9e97066fd245c434bfa6fe301ba51d2df2f29[m
+Author: FernandoFenley-dev <57076081+FernandoFenley-dev@users.noreply.github.com>
+Date:   Fri Sep 23 15:33:19 2022 -0300
+
+    Update ruby.yml
+
+[33mcommit c93d7c4f875d324cf2de6c6a7a85dd0aa26afe06[m
+Author: FernandoFenley-dev <57076081+FernandoFenley-dev@users.noreply.github.com>
+Date:   Fri Sep 23 15:33:03 2022 -0300
+
+    Update ruby.yml
+
+[33mcommit fba8b249e31d102b342c79e5e0cd6d16b0ac40f3[m
+Merge: cee2210 bf7c427
+Author: Fernando Fenley <fernandojfenley@gmail.com>
+Date:   Fri Sep 23 15:30:31 2022 -0300
+
+    Merge branch 'main' of https://github.com/FernandoFenley-dev/projeto-semestral-ESI
+
+[33mcommit cee22104eaf69a7f129a0924b996826e8bb9e2a7[m
+Author: Fernando Fenley <fernandojfenley@gmail.com>
+Date:   Fri Sep 23 15:30:07 2022 -0300
+
+    coveralls
+
+[33mcommit bf7c42778cba8d4459c2ba05c815a01c2782d961[m
+Author: FernandoFenley-dev <57076081+FernandoFenley-dev@users.noreply.github.com>
+Date:   Fri Sep 23 15:23:33 2022 -0300
+
+    Update README.md
+
+[33mcommit b1d304fb1ac3c9e6827202ffc1c0567f41ca3910[m
+Merge: 65c7f40 614eea7
+Author: Fernando Fenley <fernandojfenley@gmail.com>
+Date:   Fri Sep 23 15:11:52 2022 -0300
+
+    Merge branch 'main' of https://github.com/FernandoFenley-dev/projeto-semestral-ESI
+
+[33mcommit 65c7f409e5c333c9d177f5b1e1901b6e04cb44dc[m
+Author: Fernando Fenley <fernandojfenley@gmail.com>
+Date:   Fri Sep 23 15:10:55 2022 -0300
+
+    configs2
+
+[33mcommit 614eea717df4c452a7e55e68bc63e3a58169bd69[m
+Author: FernandoFenley-dev <57076081+FernandoFenley-dev@users.noreply.github.com>
+Date:   Fri Sep 23 15:03:18 2022 -0300
+
+    Update ruby.yml
+
+[33mcommit 78b8588bb7410c201e3cc4929e820f5cf1edc971[m
+Merge: 94b76d1 864f765
+Author: Fernando Fenley <fernandojfenley@gmail.com>
+Date:   Fri Sep 23 14:51:08 2022 -0300
+
+    configs
+
+[33mcommit 94b76d17747b2019ceb8eeec3f0acdfb10fa64b6[m
+Author: Fernando Fenley <fernandojfenley@gmail.com>
+Date:   Fri Sep 23 14:42:08 2022 -0300
+
+    configuracao final coveralls
+
+[33mcommit 864f76596f939df3185eab0f2ea863701e8e002e[m
+Author: FernandoFenley-dev <57076081+FernandoFenley-dev@users.noreply.github.com>
+Date:   Fri Sep 23 14:39:29 2022 -0300
+
+    Update README.md
+
+[33mcommit d7efc02419b2d3dddd49aa9b0f7100efe6efe814[m
+Author: FernandoFenley-dev <57076081+FernandoFenley-dev@users.noreply.github.com>
+Date:   Fri Sep 23 14:12:07 2022 -0300
+
+    Update README.md
+
+[33mcommit 9482480eae035ea9796e5a6c430ee4a1ac047421[m
+Author: Jalmijao <jalmiriago@usp.br>
+Date:   Fri Sep 23 13:33:06 2022 -0300
+
+    ajustando view main para local certo
+
+[33mcommit 78fdc254969dbf15e36c4bbae0398452b35f68af[m
+Author: Jalmijao <jalmiriago@usp.br>
+Date:   Fri Sep 23 13:28:07 2022 -0300
+
+    ajustando routes e adicionando main controler e main view
+
+[33mcommit b4c410f68bc64a330869dce97e77d6ca0a4b0951[m
+Author: Jalmijao <jalmiriago@usp.br>
+Date:   Fri Sep 23 12:50:15 2022 -0300
+
+    adcionando procfile para configurar porta web
+
+[33mcommit 403ffb46d24608f6c897d1d3928cfa27370867b2[m
+Author: Jalmijao <jalmiriago@usp.br>
+Date:   Fri Sep 23 00:24:02 2022 -0300
+
+    update bundle
+
+[33mcommit bb1e5fe1a07888edad9a870da04a31e58f34c3a3[m
+Author: Jalmijao <jalmiriago@usp.br>
+Date:   Fri Sep 23 00:21:53 2022 -0300
+
+    usando ruby 3.1.2
+
+[33mcommit 35baf342b7af11c13698666eeed668dcb0136cf2[m
+Author: Jalmijao <jalmiriago@usp.br>
+Date:   Fri Sep 23 00:17:44 2022 -0300
+
+    ajustando bin/bundle
+
+[33mcommit 956159f9ae9061cd9935db77233e00446f924adb[m
+Author: Iago <iago@ubunto.ubundo-domain>
+Date:   Fri Sep 23 00:10:14 2022 -0300
+
+    ajuste versao ruby para 3.1
+
+[33mcommit cddc08f4c355b8b593cb5685589bf09c11f487bb[m
+Merge: f0793c6 9b47db8
+Author: Jalmijao <80426140+Jalmijao@users.noreply.github.com>
+Date:   Thu Sep 22 22:58:05 2022 -0300
+
+    Merge pull request #1 from FernandoFenley-dev/deploy-heroky
+    
+    ajuste versão ruby para 3.1 para funcionar no heroku22
+
+[33mcommit 9b47db8db604d754ee1bbf679e9ab525ffbf3cc4[m[33m ([m[1;31morigin/deploy-heroky[m[33m)[m
+Author: Jalmijao <jalmiriago@usp.br>
+Date:   Thu Sep 22 22:57:05 2022 -0300
+
+    ajuste versão ruby para 3.1 para funcionar no heroku22
+
+[33mcommit f0793c61f51278501da3f678ba33a3ec5fef6fac[m
+Author: Fernando Fenley <fernandojfenley@gmail.com>
+Date:   Thu Sep 22 17:01:24 2022 -0300
+
+    configs
+
+[33mcommit 88c5182869c59027f0a6bf0415962b71ac483d5a[m
+Author: Fernando Fenley <fernandojfenley@gmail.com>
+Date:   Thu Sep 22 16:59:37 2022 -0300
+
+    configs
+
+[33mcommit 1b5064963f051bbb193104f0fe94b9dd320c8fc7[m
+Merge: ab8c85d 85b3ddd
+Author: Fernando Fenley <fernandojfenley@gmail.com>
+Date:   Thu Sep 22 16:23:33 2022 -0300
+
+    Merge branch 'main' of https://github.com/FernandoFenley-dev/projeto-semestral-ESI
+
+[33mcommit 85b3ddda99ddafd742a5ab645930061f2ca5d650[m
+Author: Augusto Xavier Neto <61883585+XavierNeto@users.noreply.github.com>
+Date:   Thu Sep 22 16:17:01 2022 -0300
+
+    add badge
+
+[33mcommit ab8c85d40d9590403c26f805707025be297cc2a7[m
+Author: Fernando Fenley <fernandojfenley@gmail.com>
+Date:   Thu Sep 22 16:16:48 2022 -0300
+
+    teste3
+
+[33mcommit 264d17832293cafc3e64a5317f927d1617c61587[m
+Author: Augusto Xavier Neto <61883585+XavierNeto@users.noreply.github.com>
+Date:   Thu Sep 22 16:10:08 2022 -0300
+
+    add cucumber test in actions
+
+[33mcommit b1db4a49eff35c123aba69489909bca33f17fa86[m
+Author: Augusto Xavier Neto <61883585+XavierNeto@users.noreply.github.com>
+Date:   Thu Sep 22 16:01:47 2022 -0300
+
+    add actions
+
+[33mcommit 194b811a9c0c55b3edca1ecbeb39b53b134ff2b8[m
+Author: Fernando Fenley <fernandojfenley@gmail.com>
+Date:   Thu Sep 22 15:43:16 2022 -0300
+
+    teste2
+
+[33mcommit 5c958295e89310dc0571d14d87538d50bd1b8886[m
+Author: Fernando Fenley <fernandojfenley@gmail.com>
+Date:   Thu Sep 22 14:06:31 2022 -0300
+
+    teste
+
+[33mcommit 3365aef2e9b659e8c7fc281282736e9185d262cd[m
+Author: Fernando Fenley <fernandojfenley@gmail.com>
+Date:   Thu Sep 22 13:45:46 2022 -0300
+
+    novas configurações do coverall
+
+[33mcommit 13dc2fb6a94a0e63213ee305eee40bc810df06ee[m
+Author: Fernando Fenley <fernandojfenley@gmail.com>
+Date:   Thu Sep 22 11:36:29 2022 -0300
+
+    configurando rspec e cucumber
+
+[33mcommit 3b8745b187b498f8d9ccdee8ab2e0553c4d6479e[m
+Author: Fernando Fenley <fernandojfenley@gmail.com>
+Date:   Thu Sep 22 10:44:45 2022 -0300
+
+    projeto ruby on rails

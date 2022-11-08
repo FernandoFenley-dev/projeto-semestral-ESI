@@ -10,22 +10,24 @@
   </div>
 <% end %>
 <%= form_with scope: :agendamento, url: agendamentos_path, local: true do |form| %>
-
+  <br>
   <p>
-    <%= form.label :"Nome Barbeiro"%><br>
-    <%= form.number_field :idBarbeiro %>
+    <%= form.label :"Barbeiro"%><br>
+    <%= form.select :barbeiro_id, @usuarios.map { |t| [t.nome, t.id]} %>
   </p>
 
+  <br>
   <p>
-    <%= form.label :"Nome Serviço"%><br>
-    <%= form.number_field :idServico %>
+    <%= form.label :"Serviço"%><br>
+    <%= form.select :nomeServico, @servicos.map { |t| [t]} %>
   </p>
-
+  <br>
 
   <p>
     <%= form.label :"Data Serviço"%><br>
     <%= form.datetime_select :dataAgendamento %>
   </p>
+  <br>
 
   <p>
     <%= form.submit 'Agendar' %>
