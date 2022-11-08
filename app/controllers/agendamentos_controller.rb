@@ -29,19 +29,17 @@ class AgendamentosController < ApplicationController
     end
 
     def barbeador
-        ##Book.where("created_at >= :start_date AND created_at <= :end_date",
-        ##{start_date: params[:start_date], end_date: params[:end_date]})   
         @agendamentos = Agendamento.where("barbeiro_id = :idBarbeiro 
             AND date(dataAgendamento) in (:data)",
             idBarbeiro: params[:idBarbeiro],
             data: params[:data]
         )
-        logger.debug "ENTREIIIII"
-        logger.debug "Article should be valid: #{params[:data]}"
-        logger.debug "Aqui: #{session[:idUsuario]}"
-        logger.debug "Aqui2: #{DateTime.current()}"
-        logger.debug "Article should be valid: #{Usuario.column_names}"
-        logger.debug "Article should be valid: #{Agendamento.column_names}"
+        #logger.debug "ENTREIIIII"
+        #logger.debug "Article should be valid: #{params[:data]}"
+        #logger.debug "Aqui: #{session[:idUsuario]}"
+        #logger.debug "Aqui2: #{DateTime.current()}"
+        #logger.debug "Article should be valid: #{Usuario.column_names}"
+        #logger.debug "Article should be valid: #{Agendamento.column_names}"
         
     end
 
