@@ -11,10 +11,6 @@
                 <%= link_to "Sair", logout, method: "delete" %>
               </li>
           </ul>
-        <% else %>
-          <% if controller_name == "usuarios" && action_name == "new" %>
-            <li><%= link_to "Entrar", root_path %></li>
-          <% end %>
         <% end %>
       </ul>
     </nav>

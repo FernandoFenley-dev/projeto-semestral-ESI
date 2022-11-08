@@ -10,12 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_06_211416) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_06_201500) do
   create_table "agendamentos", force: :cascade do |t|
-    t.integer "idCliente"
-    t.integer "idBarbeiro"
-    t.integer "idServico"
-    t.datetime "dataAgendamento", precision: nil
+    t.string "idCliente"
+    t.string "idBarbeiro"
+    t.string "idServico"
+    t.datetime "dataAgendamento"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "clientes", force: :cascade do |t|
