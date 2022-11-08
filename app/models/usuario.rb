@@ -17,5 +17,5 @@ class Usuario < ActiveRecord::Base
     validates :email, uniqueness: true, presence: { message: "Digite seu email!" },format: { with: URI::MailTo::EMAIL_REGEXP,
         message: "Email inválido!" }
     validates :password, presence: { message: :updating ? "Confirme sua senha" : "Crie uma senha" }
-    validates :iscliente, presence: { message: "Selecione se é cliente ou não!" }, if: :should_validate_iscliente?
+    validates :iscliente, presence: { message: "Selecione se é cliente ou não!" }
 end
