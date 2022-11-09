@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   resources :usuarios
 
   # AGENDAMENTOS DE UM BARBEADOR
-  get 'agendamentos-barbeiro/:idBarbeiro/', to: 'agendamentos#barbeador'
+  get 'agendamentos-barbeiro/:barbeiro_id/', to: 'agendamentos#barbeador'
 
   root to:"sessoes#new"
 end

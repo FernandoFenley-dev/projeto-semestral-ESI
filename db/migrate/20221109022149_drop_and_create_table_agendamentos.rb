@@ -1,4 +1,4 @@
-class CreateTableAgendamentos < ActiveRecord::Migration[7.0]
+class DropAndCreateTableAgendamentos < ActiveRecord::Migration[7.0]
   def change
     drop_table:agendamentos
     create_table :agendamentos do |t|
@@ -14,6 +14,5 @@ class CreateTableAgendamentos < ActiveRecord::Migration[7.0]
 
     add_foreign_key :agendamentos, :usuarios, column: :id
     add_foreign_key :agendamentos, :usuarios, column: :id
-
   end
 end
