@@ -10,16 +10,20 @@
   </div>
 <% end %>
 <%= form_with scope: :agendamento, url: agendamentos_path, local: true do |form| %>
-
+  <br>
   <p>
+
     <%= form.label :"Nome Barbeiro"%><br>
     <%= form.select(:idBarbeiro, options_for_select(@barbeirosDDL || Usuario.all.map { |c| [ c.nome, c.id ] }), :prompt => "Selecione o Barbeiro!") %> 
+
   </p>
 
+  <br>
   <p>
     <%= form.label :"Data Serviço"%><br>
     <%= form.datetime_select :dataAgendamento %>
   </p>
+  <br>
 
   <p>
     <%= form.submit 'Agendar' %>

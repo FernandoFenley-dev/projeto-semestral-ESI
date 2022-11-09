@@ -1,20 +1,8 @@
-<%= form_for :session, url: login_path do |f| %>
-<div class="field">
-<%= f.label :email %><br />
-<%= f.email_field :email, autofocus: true %>
-</div>
-
-<div class="field">
-<%= f.label :password %><br />
-<%= f.password_field :password, autocomplete: "off" %>
-</div>
-<div class="actions">
-<%= f.submit 'Login' %>
-<% flash.each do |type, msg| %>
-    <div>
-        <p><%= msg %> </p>
+<div class="container">
+    <div class="background"></div>
+    <div class="content">
+        <%= image_tag "logo.png", :class=>"content__logo" %>
+        <%= render 'formulario' %>
+        <%= link_to "Criar conta", cadastro_path, :class => "content__link"  %>
     </div>
-<% end %>
 </div>
-<p><%= link_to "Criar conta", cadastro_path %></p>
-<% end %>

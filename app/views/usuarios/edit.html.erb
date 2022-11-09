@@ -1,4 +1,10 @@
-<h1>Meu perfil</h1>
-<div>
-<%= render 'formulario', pagina_edicao: true %>
+<div class="container">
+    <div class="background"></div>
+    <div class="content">
+        <%= image_tag "logo.png", :class=>"content__logo" %>
+        <p class="content__link" >Alterar Perfil</p>
+        <br>
+        <%= render 'formulario', pagina_edicao: true %>
+        <%= link_to "Voltar", "/usuarios/#{session[:idUsuario]}", :class => "content__link" %></li>
+    </div>
 </div>

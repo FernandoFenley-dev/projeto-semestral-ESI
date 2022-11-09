@@ -6,8 +6,8 @@ end
 
 Dado('que eu estou logado no sistema') do
   visit 'login'
-  fill_in 'Email', :with => 'emailteste@gmail.com'
-  fill_in 'Password', :with => '123senha'
+  fill_in 'email', :with => 'emailteste@gmail.com'
+  fill_in 'password', :with => '123senha'
   click_on 'Login'
 end
 

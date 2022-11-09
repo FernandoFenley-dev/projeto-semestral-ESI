@@ -28,7 +28,7 @@ end
   end
 
   Então('deverei ver o nome de barbeiro {string}') do |string|
-    expect(page).to have_content(string)
+    expect(page).to have_content(@barbeiro.nome)
   end
   
   Quando('seleciono o barbeiro {string}') do |string|
