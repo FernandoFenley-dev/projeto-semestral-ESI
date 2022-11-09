@@ -1,6 +1,6 @@
 class AgendamentosController < ApplicationController
     def new
-        @barbeiros = Usuario.where("iscliente = 1")
+        @barbeiros = Usuario.where("iscliente = 0")
         @barbeirosDDL = @barbeiros.pluck(:nome,:id)
 
         @agendamento = Agendamento.new
@@ -24,7 +24,8 @@ class AgendamentosController < ApplicationController
 
     def show
         @agendamento = Agendamento.find(params[:id])
-        @barbeiros = Usuario.where("iscliente = 1")
+        @barbeiro = Usuario.find(@agendamento.idBarbeiro)
+
     end
 
     private
