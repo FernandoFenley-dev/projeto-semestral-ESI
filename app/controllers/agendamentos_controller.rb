@@ -1,6 +1,6 @@
 class AgendamentosController < ApplicationController
     def new
-        @barbeiros = Usuario.where("iscliente = 0")
+        @barbeiros = Usuario.where(iscliente:false)
         @barbeirosDDL = @barbeiros.pluck(:nome,:id)
 
         @agendamento = Agendamento.new
@@ -8,7 +8,7 @@ class AgendamentosController < ApplicationController
 
     def create
         @agendamento = Agendamento.new(agendamento_params)
-        #@agendamento.idCliente=session[:usuario_id]
+        #@agendamento.cliente_id=session[:usuario_id]
         @agendamento.cliente_id=session[:idUsuario]
         logger.debug "Aqui: #{@agendamento}"
 
@@ -17,8 +17,8 @@ class AgendamentosController < ApplicationController
             redirect_to @agendamento
         else
             @usuarios = Usuario.where(iscliente: true)
-            @servicos = Array["Cabelo", "Barba", "Cabelo e Barba"]
-            puts "ERROR"
+            puts @agendamento.errors.full_messages
+
             render :new, status: :unprocessable_entity, content_type: "text/html"
             headers["Content-Type"] = "text/html"
         end
@@ -27,14 +27,14 @@ class AgendamentosController < ApplicationController
 
     def show
         @agendamento = Agendamento.find(params[:id])
-        @barbeiro = Usuario.find(@agendamento.idBarbeiro)
+        @barbeiro = Usuario.find(@agendamento.barbeiro_id)
 
     end
 
     def barbeador
-        @agendamentos = Agendamento.where("barbeiro_id = :idBarbeiro 
+        @agendamentos = Agendamento.where("barbeiro_id = :barbeiro_id 
             AND date(dataAgendamento) in (:data)",
-            idBarbeiro: params[:idBarbeiro],
+            barbeiro_id: params[:barbeiro_id],
             data: params[:data]
         )
         #logger.debug "ENTREIIIII"
@@ -48,7 +48,7 @@ class AgendamentosController < ApplicationController
 
     private
     def agendamento_params
-        params.require(:agendamento).permit(:idCliente, :idBarbeiro,:dataAgendamento)
+        params.require(:agendamento).permit(:cliente_id, :barbeiro_id,:dataAgendamento)
     end
 
 end

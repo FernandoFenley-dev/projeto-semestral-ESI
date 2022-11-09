@@ -31,9 +31,9 @@ Dado('que estou na página de Serviços Agendados') do
 end
 
 Quando('que não há agendamentos para este dia') do
-    @agendamentos = Agendamento.where("barbeiro_id = :idBarbeiro 
+    @agendamentos = Agendamento.where("barbeiro_id = :barbeiro_id 
       AND date(dataAgendamento) in (:data)",
-      idBarbeiro: 1,
+      barbeiro_id: 1,
       data: DateTime.new(2023,2,23))
 
       expect(@agendamentos.length()).to eql(0)

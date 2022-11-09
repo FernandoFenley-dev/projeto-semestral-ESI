@@ -6,6 +6,10 @@ Para que eu possa agendar um horário com o cabeleleiro
 Eu quero escolher data, horário e cabeleleiro
 
 Cenário: Agendamento de serviço com sucesso
+Dado que estou na página inicial
+Quando preencho o campo "email" com "emailteste@gmail.com"
+Quando preencho o campo "password" com "123senha"
+E clico em Login
 Dado que existe um barbeiro chamado "teste" cadastrado
 Dado que estou na página de agendamento de serviço
 Quando seleciono o barbeiro "teste"
@@ -27,7 +31,7 @@ Dado que existe um barbeiro chamado "teste" cadastrado
 Dado que estou na página de agendamento de serviço
 Quando seleciono o ano "2023"
 E clico em Agendar
-Então deverei ver a mensagem de erro "Digite o nome do Barbeiro!"
+Então deverei ver a mensagem de erro "Selecione o Barbeiro!"
 
 
 Cenário: Agendamento de serviço com dataAgendamento inválido, data no passado
