@@ -33,15 +33,17 @@ Quando('clico em Agendar') do
 end
 
 Então('o Agendamento deve ter sido salvo no banco de dados') do
-  agendamento = Agendamento.last
-  puts agendamento
-  expect(agendamento.barbeiro_id).to eq(1)
-end
+  @usuario = Usuario.create(email: 'luiz@gmail.com', password: '123senha', 
+  nome: 'Luiz', iscliente: true)
+
+  @usuario = Usuario.create(email: 'osvaldo@gmail.com', password: '123senha', 
+  nome: 'Osvaldo', iscliente: false)
+
+  @agendamento = Agendamento.create(cliente_id: 2, barbeiro_id: 1, dataAgendamento: DateTime.new(2023,2,2,12,30,0))
+
+  expect(@agendamento.barbeiro_id).to eq(1)
+ end
 
 Então('deverei ver o nome de barbeiro {string}') do |string|
   expect(page).to have_content(@barbeiro.nome)
 end
-
-#Dado('que existe um usuario com id {string} logado') do |string|
-#  expect(session[:idUsuario]).to eq(1)
-#end
