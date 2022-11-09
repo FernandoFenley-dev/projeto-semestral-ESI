@@ -18,4 +18,8 @@ RSpec.describe Usuario, type: :model do
     usuario.email = "emailteste@gmail.com"
     expect(usuario).not_to be_valid
   end
+  it 'novo deve ser validado se é cliente' do
+    usuario = Usuario.new
+    expect(usuario.should_validate_iscliente?).to be_truthy
+  end
 end
