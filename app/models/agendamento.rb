@@ -5,7 +5,7 @@ class Agendamento < ActiveRecord::Base
 
     validates :cliente_id, presence: { message: "Não possui i nome do cliente!" }
     validates :barbeiro_id, presence: { message: "Selecione o Barbeiro!" }
-    validates :nomeServico, presence: { message: "Selecione o Serviço!" }
+
 
     validate :valid_date?
 
