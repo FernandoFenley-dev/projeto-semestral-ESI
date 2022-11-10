@@ -30,15 +30,22 @@ class AgendamentosController < ApplicationController
     def show
         @agendamento = Agendamento.find(params[:id])
         @barbeiro = Usuario.find(@agendamento.barbeiro_id)
-
     end
 
     def barbeador
-        @agendamentos = Agendamento.where("barbeiro_id = :barbeiro_id 
-            AND date(agendamentos.dataAgendamento) in (:data)",
-            barbeiro_id: params[:barbeiro_id],
-            data: params[:data]
-        )
+        if Rails.env.development? || Rails.env.test?
+            @agendamentos = Agendamento.where("barbeiro_id = :barbeiro_id 
+                AND date(dataAgendamento) in (:data)",
+                barbeiro_id: params[:barbeiro_id],
+                data: params[:data]
+            )
+        else
+            @agendamentos = Agendamento.where("barbeiro_id = :barbeiro_id 
+                AND to_char(dataAgendamento, 'yyyy-mm-dd') in (:data)",
+                barbeiro_id: params[:barbeiro_id],
+                data: params[:data]
+            )
+        end
         @agendamentos = @agendamentos.uniq.sort_by! {|obj| obj.dataAgendamento  unless obj.blank?}
     end
 
