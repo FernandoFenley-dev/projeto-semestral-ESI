@@ -12,7 +12,7 @@ Dado('que existe um barbeiro chamado {string} cadastrado') do |string|
   if @barbeiro.save
     puts "SUCESSO"
   else
-    puts @user.errors.full_messages
+    puts @usuario.errors.full_messages
   end
 end 
 

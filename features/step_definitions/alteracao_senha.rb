@@ -22,10 +22,15 @@ end
 Então('o Usuario deve ter sido salvo no banco de dados') do
   usuario = Usuario.order("id").last
   expect(usuario.nome).to eq('Teste')
-  expect(page).to have_current_path('/usuarios/1')
+  expect(page).to have_current_path('/')
 end
 
 Então('deverei ser redirecionado para a página de usuário') do
   expect(page.status_code).to eq(200)
-  expect(page).to have_current_path('/usuarios/1')
+  expect(page).to have_current_path('/perfil/1')
+end
+
+Então('deverei ser redirecionado para a página raiz') do
+  expect(page.status_code).to eq(200)
+  expect(page).to have_current_path('/')
 end

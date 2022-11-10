@@ -1,5 +1,5 @@
 class AgendamentosController < ApplicationController
-    before_action :require_user_logged_in!
+    # before_action :require_user_logged_in!
 
     def new
         @barbeiros = Usuario.where(iscliente:false)
