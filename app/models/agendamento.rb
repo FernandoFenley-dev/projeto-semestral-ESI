@@ -10,11 +10,11 @@ class Agendamento < ActiveRecord::Base
     validate :valid_date?
 
     def valid_date?
-        if dataAgendamento > DateTime.now.next_year(1).to_time
-            errors.add(:dataAgendamento, "A data agendada precisa ser em até um ano!")
+        if data_agendamento > DateTime.now.next_year(1).to_time
+            errors.add(:data_agendamento, "A data agendada precisa ser em até um ano!")
         end
-        if dataAgendamento < Date.current()
-            errors.add(:dataAgendamento, "A data agendada precisa ser no futuro!")
+        if data_agendamento < Date.current()
+            errors.add(:data_agendamento, "A data agendada precisa ser no futuro!")
         end
       
     end

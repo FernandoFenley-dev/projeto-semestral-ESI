@@ -4,20 +4,20 @@ RSpec.describe Agendamento, type: :model do
   it 'invalido sem nome do Cliente' do
     agendamento = Agendamento.new
     agendamento.barbeiro_id   = 1
-    agendamento.dataAgendamento  = Time.now
+    agendamento.data_agendamento  = Time.now
     expect(agendamento).not_to be_valid
   end
   it 'invalido sem nome do barbeiro' do
     agendamento = Agendamento.new
     agendamento.cliente_id = 1
-    agendamento.dataAgendamento  = Time.now
+    agendamento.data_agendamento  = Time.now
     expect(agendamento).not_to be_valid
   end
   it 'invalido sem nome do serviço' do
     agendamento = Agendamento.new
     agendamento.cliente_id = 1
     agendamento.barbeiro_id   = 1
-    agendamento.dataAgendamento  = Time.now
+    agendamento.data_agendamento  = Time.now
     expect(agendamento).not_to be_valid
   end
   it 'exemplo válido' do
@@ -30,7 +30,7 @@ RSpec.describe Agendamento, type: :model do
     agendamento = Agendamento.new
     agendamento.cliente_id = usuarioCliente.id
     agendamento.barbeiro_id   = usuarioBarbeiro.id
-    agendamento.dataAgendamento  = DateTime.now.next_month(1).to_time
+    agendamento.data_agendamento  = DateTime.now.next_month(1).to_time
     expect(agendamento).to be_valid
  end
 end

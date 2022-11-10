@@ -15,7 +15,7 @@ RSpec.describe "Agendamentos", type: :request do
       @barbeiro = Usuario.create(email: 'osvaldo@gmail.com', password: '123senha', 
       nome: 'Osvaldo', iscliente: false)
       
-      @agendamento = Agendamento.create(cliente_id: @cliente.id, barbeiro_id: @barbeiro.id, dataAgendamento: DateTime.new(2023,2,2,12,30,0))
+      @agendamento = Agendamento.create(cliente_id: @cliente.id, barbeiro_id: @barbeiro.id, data_agendamento: DateTime.new(2023,2,2,12,30,0))
 
       get "/agendamentos/1"
       expect(response).to have_http_status(:success)

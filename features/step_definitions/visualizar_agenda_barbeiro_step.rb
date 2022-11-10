@@ -5,7 +5,7 @@ Dado('que estou na página inicial para barbeiros') do
     @usuario = Usuario.create(email: 'osvaldo@gmail.com', password: '123senha', 
     nome: 'Osvaldo', iscliente: false)
 
-    Agendamento.create(cliente_id: 2, barbeiro_id: 1, dataAgendamento: DateTime.new(2023,2,2,12,30,0))
+    Agendamento.create(cliente_id: 2, barbeiro_id: 1, data_agendamento: DateTime.new(2023,2,2,12,30,0))
     
     visit 'login'
 
@@ -31,7 +31,7 @@ end
 
 Quando('que não há agendamentos para este dia') do
     @agendamentos = Agendamento.where("barbeiro_id = :barbeiro_id 
-      AND date(dataAgendamento) in (:data)",
+      AND date(data_agendamento) in (:data)",
       barbeiro_id: 1,
       data: DateTime.new(2023,2,23))
 

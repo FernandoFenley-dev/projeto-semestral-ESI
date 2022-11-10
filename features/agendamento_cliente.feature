@@ -34,7 +34,7 @@ E clico em Agendar
 Então deverei ver a mensagem de erro "Selecione o Barbeiro!"
 
 
-Cenário: Agendamento de serviço com dataAgendamento inválido, data no passado
+Cenário: Agendamento de serviço com data_agendamento inválido, data no passado
 Dado que existe um barbeiro chamado "teste" cadastrado
 Dado que estou na página de agendamento de serviço
 Quando seleciono o barbeiro "teste"
@@ -43,7 +43,7 @@ E clico em Agendar
 Então deverei ver a mensagem de erro "A data agendada precisa ser no futuro!"
 
 
-Cenário: Agendamento de serviço com dataAgendamento inválido, data a mais de um ano no futuro
+Cenário: Agendamento de serviço com data_agendamento inválido, data a mais de um ano no futuro
 Dado que existe um barbeiro chamado "teste" cadastrado
 Dado que estou na página de agendamento de serviço
 Quando seleciono o barbeiro "teste"

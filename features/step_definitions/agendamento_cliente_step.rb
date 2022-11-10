@@ -25,7 +25,7 @@ Quando('seleciono o barbeiro {string}') do |string|
 end
 
 Quando('seleciono o ano {string}') do |string|
-  select string, :from => "agendamento[dataAgendamento(1i)]"
+  select string, :from => "agendamento[data_agendamento(1i)]"
 end
 
 Quando('clico em Agendar') do
@@ -39,7 +39,7 @@ Então('o Agendamento deve ter sido salvo no banco de dados') do
   @usuario = Usuario.create(email: 'osvaldo@gmail.com', password: '123senha', 
   nome: 'Osvaldo', iscliente: false)
 
-  @agendamento = Agendamento.create(cliente_id: 2, barbeiro_id: 1, dataAgendamento: DateTime.new(2023,2,2,12,30,0))
+  @agendamento = Agendamento.create(cliente_id: 2, barbeiro_id: 1, data_agendamento: DateTime.new(2023,2,2,12,30,0))
 
   expect(@agendamento.barbeiro_id).to eq(1)
  end

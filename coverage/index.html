@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-10T13:33:33-03:00">2022-11-10T13:33:33-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-10T13:58:33-03:00">2022-11-10T13:58:33-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -1523,7 +1523,7 @@
 
             
 
-            <code class="ruby">                AND date(dataAgendamento) in (:data)&quot;,</code>
+            <code class="ruby">                AND date(data_agendamento) in (:data)&quot;,</code>
           </li>
         </div>
       
@@ -1589,7 +1589,7 @@
 
             
 
-            <code class="ruby">                AND to_char(dataAgendamento, &#39;yyyy-mm-dd&#39;) in (:data)&quot;,</code>
+            <code class="ruby">                AND to_char(data_agendamento, &#39;yyyy-mm-dd&#39;) in (:data)&quot;,</code>
           </li>
         </div>
       
@@ -1644,7 +1644,7 @@
 
             
 
-            <code class="ruby">        @agendamentos = @agendamentos.uniq.sort_by! {|obj| obj.dataAgendamento  unless obj.blank?}</code>
+            <code class="ruby">        @agendamentos = @agendamentos.uniq.sort_by! {|obj| obj.data_agendamento  unless obj.blank?}</code>
           </li>
         </div>
       
@@ -1699,7 +1699,7 @@
 
             
 
-            <code class="ruby">        params.require(:agendamento).permit(:cliente_id, :barbeiro_id,:dataAgendamento)</code>
+            <code class="ruby">        params.require(:agendamento).permit(:cliente_id, :barbeiro_id,:data_agendamento)</code>
           </li>
         </div>
       
@@ -3917,7 +3917,7 @@
 
             
 
-            <code class="ruby">        if dataAgendamento &gt; DateTime.now.next_year(1).to_time</code>
+            <code class="ruby">        if data_agendamento &gt; DateTime.now.next_year(1).to_time</code>
           </li>
         </div>
       
@@ -3928,7 +3928,7 @@
 
             
 
-            <code class="ruby">            errors.add(:dataAgendamento, &quot;A data agendada precisa ser em até um ano!&quot;)</code>
+            <code class="ruby">            errors.add(:data_agendamento, &quot;A data agendada precisa ser em até um ano!&quot;)</code>
           </li>
         </div>
       
@@ -3950,7 +3950,7 @@
 
             
 
-            <code class="ruby">        if dataAgendamento &lt; Date.current()</code>
+            <code class="ruby">        if data_agendamento &lt; Date.current()</code>
           </li>
         </div>
       
@@ -3961,7 +3961,7 @@
 
             
 
-            <code class="ruby">            errors.add(:dataAgendamento, &quot;A data agendada precisa ser no futuro!&quot;)</code>
+            <code class="ruby">            errors.add(:data_agendamento, &quot;A data agendada precisa ser no futuro!&quot;)</code>
           </li>
         </div>
       

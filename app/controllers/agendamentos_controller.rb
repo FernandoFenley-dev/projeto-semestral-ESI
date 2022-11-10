@@ -35,23 +35,23 @@ class AgendamentosController < ApplicationController
     def barbeador
         if Rails.env.development? || Rails.env.test?
             @agendamentos = Agendamento.where("barbeiro_id = :barbeiro_id 
-                AND date(dataAgendamento) in (:data)",
+                AND date(data_agendamento) in (:data)",
                 barbeiro_id: params[:barbeiro_id],
                 data: params[:data]
             )
         else
             @agendamentos = Agendamento.where("barbeiro_id = :barbeiro_id 
-                AND to_char(dataAgendamento, 'yyyy-mm-dd') in (:data)",
+                AND to_char(data_agendamento, 'yyyy-mm-dd') in (:data)",
                 barbeiro_id: params[:barbeiro_id],
                 data: params[:data]
             )
         end
-        @agendamentos = @agendamentos.uniq.sort_by! {|obj| obj.dataAgendamento  unless obj.blank?}
+        @agendamentos = @agendamentos.uniq.sort_by! {|obj| obj.data_agendamento  unless obj.blank?}
     end
 
     private
     def agendamento_params
-        params.require(:agendamento).permit(:cliente_id, :barbeiro_id,:dataAgendamento)
+        params.require(:agendamento).permit(:cliente_id, :barbeiro_id,:data_agendamento)
     end
 
 end
