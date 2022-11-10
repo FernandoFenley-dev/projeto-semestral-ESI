@@ -29,6 +29,7 @@ class UsuariosController < ApplicationController
       flash[:success] = "Perfil atualizado com sucesso!"
       redirect_to root_path
     else
+      flash[:danger] = "Erro ao atualizar perfil"
       render :edit, status: :unprocessable_entity, content_type: "text/html"
       headers["Content-Type"] = "text/html"
     end

@@ -13,7 +13,7 @@ Dado('que estou na página inicial para barbeiros') do
     fill_in 'password', :with => '123senha'
 
     click_on 'Login'
-    visit 'usuarios/1'
+    visit root_path
 end
 
 Quando('clicar no botão Minha Agenda') do
