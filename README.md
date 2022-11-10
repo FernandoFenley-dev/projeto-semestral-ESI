@@ -11,7 +11,7 @@ Sistema SaS que possibilita automatizar e centralizar o agendamento de horários
 - Pivotal Tracker: https://www.pivotaltracker.com/n/projects/2603046
 - Heroku: https://go-barber-es.herokuapp.com/
 
-### Integrantes
+### Integrantes r
 
 | Nome                             | N. USP  |
 | ---------------------------------|:------: |
