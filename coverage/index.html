@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-10T09:24:30-03:00">2022-11-10T09:24:30-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-10T10:20:07-03:00">2022-11-10T10:20:07-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,7 +23,7 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="red">
-  75.51%
+  75.68%
 </span>
 
      </span>
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>147</b> relevant lines,
-    <span class="green"><b>111</b> lines covered</span> and
+    <b>148</b> relevant lines,
+    <span class="green"><b>112</b> lines covered</span> and
     <span class="red"><b>36</b> lines missed. </span>
     (<span class="red">
-  75.51%
+  75.68%
 </span>
 )
   </div>
@@ -94,12 +94,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#890e41c3ed8a209b1ac7d2425ce592a853501525" class="src_link" title="app/controllers/agendamentos_controller.rb">app/controllers/agendamentos_controller.rb</a></td>
-            <td class="yellow strong cell--number t-file__coverage">83.33 %</td>
-            <td class="cell--number">49</td>
-            <td class="cell--number">24</td>
-            <td class="cell--number">20</td>
+            <td class="yellow strong cell--number t-file__coverage">84.00 %</td>
+            <td class="cell--number">50</td>
+            <td class="cell--number">25</td>
+            <td class="cell--number">21</td>
             <td class="cell--number">4</td>
-            <td class="cell--number">3.29</td>
+            <td class="cell--number">3.24</td>
             
           </tr>
         
@@ -302,14 +302,14 @@
     <span class="group_name">Controllers</span>
     (<span class="covered_percent">
       <span class="red">
-  77.78%
+  78.0%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.64
+         2.63
        </span>
     </span> hits/line
     )
@@ -322,11 +322,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>99</b> relevant lines,
-    <span class="green"><b>77</b> lines covered</span> and
+    <b>100</b> relevant lines,
+    <span class="green"><b>78</b> lines covered</span> and
     <span class="red"><b>22</b> lines missed. </span>
     (<span class="red">
-  77.78%
+  78.0%
 </span>
 )
   </div>
@@ -351,12 +351,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#890e41c3ed8a209b1ac7d2425ce592a853501525" class="src_link" title="app/controllers/agendamentos_controller.rb">app/controllers/agendamentos_controller.rb</a></td>
-            <td class="yellow strong cell--number t-file__coverage">83.33 %</td>
-            <td class="cell--number">49</td>
-            <td class="cell--number">24</td>
-            <td class="cell--number">20</td>
+            <td class="yellow strong cell--number t-file__coverage">84.00 %</td>
+            <td class="cell--number">50</td>
+            <td class="cell--number">25</td>
+            <td class="cell--number">21</td>
             <td class="cell--number">4</td>
-            <td class="cell--number">3.29</td>
+            <td class="cell--number">3.24</td>
             
           </tr>
         
@@ -1088,7 +1088,7 @@
     <h3>app/controllers/agendamentos_controller.rb</h3>
     <h4>
       <span class="yellow">
-  83.33%
+  84.0%
 </span>
 
       lines covered
@@ -1097,8 +1097,8 @@
     
 
     <div class="t-line-summary">
-      <b>24</b> relevant lines.
-      <span class="green"><b>20</b> lines covered</span> and
+      <b>25</b> relevant lines.
+      <span class="green"><b>21</b> lines covered</span> and
       <span class="red"><b>4</b> lines missed.</span>
     </div>
 
@@ -1523,7 +1523,7 @@
 
             
 
-            <code class="ruby">            AND date(dataAgendamento) in (:data)&quot;,</code>
+            <code class="ruby">            AND date(agendamentos.dataAgendamento) in (:data)&quot;,</code>
           </li>
         </div>
       
@@ -1561,13 +1561,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="42">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="42">
+            <span class="hits">2</span>
             
 
-            <code class="ruby">    end</code>
+            
+
+            <code class="ruby">        @agendamentos = @agendamentos.uniq.sort_by! {|obj| obj.dataAgendamento  unless obj.blank?}</code>
           </li>
         </div>
       
@@ -1578,18 +1578,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="44">
-            <span class="hits">2</span>
+          <li class="never" data-hits="" data-linenumber="44">
+            
             
 
             
 
-            <code class="ruby">    private</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -1600,12 +1600,23 @@
 
             
 
+            <code class="ruby">    private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="46">
+            <span class="hits">2</span>
+            
+
+            
+
             <code class="ruby">    def agendamento_params</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="5" data-linenumber="46">
+          <li class="covered" data-hits="5" data-linenumber="47">
             <span class="hits">5</span>
             
 
@@ -1616,7 +1627,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="47">
+          <li class="never" data-hits="" data-linenumber="48">
             
             
 
@@ -1627,7 +1638,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="48">
+          <li class="never" data-hits="" data-linenumber="49">
             
             
 
@@ -1638,7 +1649,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="49">
+          <li class="never" data-hits="" data-linenumber="50">
             
             
 

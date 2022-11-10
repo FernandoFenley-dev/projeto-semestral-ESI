@@ -35,7 +35,7 @@ class AgendamentosController < ApplicationController
 
     def barbeador
         @agendamentos = Agendamento.where("barbeiro_id = :barbeiro_id 
-            AND date(dataAgendamento) in (:data)",
+            AND date(agendamentos.dataAgendamento) in (:data)",
             barbeiro_id: params[:barbeiro_id],
             data: params[:data]
         )

@@ -1,16 +1,16 @@
 <p>
-  <strong>nome Cliente:</strong>
-  <%= @agendamento.cliente_id %>
+  <strong>Cliente:</strong>
+  <%= @agendamento.cliente.nome %>
 </p>
 
 <p>
-  <strong>nome barbeiro:</strong>
+  <strong>Barbeiro:</strong>
   <%= @barbeiro.nome %>
 </p>
 
 <p>
-  <strong>data agendada:</strong>
-  <%= @agendamento.dataAgendamento %>
+  <strong>Data agendada:</strong>
+  <%= @agendamento.dataAgendamento.strftime("%d/%m/%Y, às %k:%M") %>
 </p>
 
 <p>Agendamento realizado com sucesso!</p>
