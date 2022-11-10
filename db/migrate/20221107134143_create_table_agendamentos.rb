@@ -1,6 +1,5 @@
 class CreateTableAgendamentos < ActiveRecord::Migration[7.0]
   def change
-    drop_table:agendamentos
     create_table :agendamentos do |t|
 
       t.string :nomeServico

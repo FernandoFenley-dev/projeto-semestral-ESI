@@ -1,8 +1,5 @@
 class UsuariosController < ApplicationController
-  # before_action :checa_usuario?, except: [:new, :create]
-  def index
-    @usuarios = Usuario.all
-  end
+  before_action :require_user_logged_in!, except: [:new, :create]
 
   def new
     @usuario = Usuario.new
@@ -11,16 +8,12 @@ class UsuariosController < ApplicationController
   def create
     @usuario = Usuario.new(usuario_params)
     if @usuario.save
-      redirect_to @usuario
-      sign_in
+      logar(@usuario)
+      redirect_to root_path
     else
       render :new, status: :unprocessable_entity, content_type: "text/html"
       headers["Content-Type"] = "text/html"
     end
-  end
-
-  def show
-    @usuario = Usuario.find(params[:id])
   end
 
   def edit
@@ -34,7 +27,7 @@ class UsuariosController < ApplicationController
     if @usuario.update(usuario_params)
       # Mensagem de sucesso
       flash[:success] = "Perfil atualizado com sucesso!"
-      redirect_to @usuario
+      redirect_to root_path
     else
       render :edit, status: :unprocessable_entity, content_type: "text/html"
       headers["Content-Type"] = "text/html"
@@ -49,6 +42,7 @@ class UsuariosController < ApplicationController
   end
 
   private
+  
   def usuario_params
     params.require(:usuario).permit(:nome, :email, :password, :iscliente)
   end

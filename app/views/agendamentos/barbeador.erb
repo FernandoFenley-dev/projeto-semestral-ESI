@@ -1,7 +1,7 @@
 <h1>Listagem de agendamentos - <%= Date.parse(params[:data]).to_fs(:long) %></h1>
-<%= link_to "<", "/agendamentos-barbeiro/#{session[:idUsuario]}?data=#{(params[:data].to_date-1).to_s}" %>
+<%= link_to "<", "/agendamentos-barbeiro/#{Current.usuario.id}?data=#{(params[:data].to_date-1).to_s}" %>
 <span><%= Date.parse(params[:data]).strftime('%m/%d/%Y') %></span>
-<%= link_to ">", "/agendamentos-barbeiro/#{session[:idUsuario]}?data=#{(params[:data].to_date+1).to_s}" %>
+<%= link_to ">", "/agendamentos-barbeiro/#{Current.usuario.id}?data=#{(params[:data].to_date+1).to_s}" %>
 <br>
 <% if @agendamentos.blank? %>
  
@@ -23,4 +23,4 @@
     <% end %>
 <% end %>
 
-<%= link_to "Voltar", "/usuarios/#{session[:idUsuario]}" %></li>
+<%= link_to "Voltar", "/usuarios/#{Current.usuario.id}" %></li>

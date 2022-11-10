@@ -3,6 +3,9 @@
     <div class="content">
         <%= image_tag "logo.png", :class=>"content__logo" %>
         <%= render 'formulario', pagina_edicao: false %>
-        <a href="login" class="content__link">&larr; Voltar para o login</a>
+        <div class="content__link">
+         &larr; 
+        <%= link_to 'Voltar para o login', login_path, class:"content__link" %>
+        </div>
     </div>
 </div>

@@ -4,7 +4,46 @@
         <%= image_tag "logo.png", :class=>"content__logo" %>
         <p class="content__link" >Alterar Perfil</p>
         <br>
-        <%= render 'formulario', pagina_edicao: true %>
-        <%= link_to "Voltar", "/usuarios/#{session[:idUsuario]}", :class => "content__link" %></li>
+
+        <%= form_for Current.usuario do |f| %>
+            <div class="content__field">
+                <%= f.text_field :nome, placeholder: "Nome" %>
+            </div>
+            <div class="content__field">
+                <%= f.email_field :email, placeholder: "E-mail", id:"email" %>
+            </div>
+            <div class="content__field">
+                <%= f.password_field :password, placeholder: "Senha", id:"password" %>
+            </div>
+            <div class="content__btn">
+                <%= f.submit "Confirmar" , :id=>"btn" %>
+       
+                
+            </div>
+
+            <% flash.each do |type, msg| %>
+                <div>
+                    <p><%= msg %> </p>
+                </div>
+            <% end %>
+        <% end %>
+        
+
+        <%= link_to "Voltar", root_path, :class => "content__link" %></li>
     </div>
 </div>
+
+<script>
+// Desabilita o botão de Confirmar se o campo de senha estiver vazio
+    var btn = document.getElementById("btn");
+    var password = document.getElementById("password");
+    var email = document.getElementById("email");
+    btn.disabled = true;
+    password.addEventListener("keyup", function(){
+        if(password.value.length > 0){
+            btn.disabled = false;
+        }else{
+            btn.disabled = true;
+        }
+    });
+</script>
