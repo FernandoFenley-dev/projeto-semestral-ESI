@@ -2,12 +2,12 @@
   <div>
     <nav>
       <ul>
-        <% if logado? %>
+        <% if Current.usuario.present? %>
           <ul>
-              <li><%= link_to "Meu perfil", perfil_path(usuario_atual) %></li>
+              <li><%= link_to "Meu perfil", perfil_path(Current.usuario) %></li>
               
               <% if !session[:isBarbeiro] %>
-                <li><%= link_to "Minha Agenda",  "/agendamentos-barbeiro/#{@usuario.id}?data=#{Date.current()}" %></li>
+                <li><%= link_to "Minha Agenda",  "/agendamentos-barbeiro/#{Current.usuario.id}?data=#{Date.current()}" %></li>
               <% end %>
 
               <% if session[:isBarbeiro] %>
@@ -15,7 +15,7 @@
               <% end %>
               
               <li>
-                <%= link_to "Sair", logout, method: "delete" %>
+                <%= button_to "Sair", logout_path, method: :delete %>
               </li>
           </ul>
         <% end %>

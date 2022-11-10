@@ -1,4 +1,6 @@
 class AgendamentosController < ApplicationController
+    before_action :require_user_logged_in!
+
     def new
         @barbeiros = Usuario.where(iscliente:false)
         @barbeirosDDL = @barbeiros.pluck(:nome,:id)
@@ -9,7 +11,7 @@ class AgendamentosController < ApplicationController
     def create
         @agendamento = Agendamento.new(agendamento_params)
         #@agendamento.cliente_id=session[:usuario_id]
-        @agendamento.cliente_id=session[:idUsuario]
+        @agendamento.cliente_id=session[:usuario_id]
         logger.debug "Aqui: #{@agendamento}"
 
         if @agendamento.save
@@ -37,13 +39,6 @@ class AgendamentosController < ApplicationController
             barbeiro_id: params[:barbeiro_id],
             data: params[:data]
         )
-        #logger.debug "ENTREIIIII"
-        #logger.debug "Article should be valid: #{params[:data]}"
-        #logger.debug "Aqui: #{session[:idUsuario]}"
-        #logger.debug "Aqui2: #{DateTime.current()}"
-        #logger.debug "Article should be valid: #{Usuario.column_names}"
-        #logger.debug "Article should be valid: #{Agendamento.column_names}"
-        
     end
 
     private
