@@ -39,5 +39,4 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_09_022236) do
   end
 
   add_foreign_key "agendamentos", "usuarios", column: "id"
-  add_foreign_key "agendamentos", "usuarios", column: "id"
 end

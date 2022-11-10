@@ -39,6 +39,7 @@ class AgendamentosController < ApplicationController
             barbeiro_id: params[:barbeiro_id],
             data: params[:data]
         )
+        @agendamentos = @agendamentos.uniq.sort_by! {|obj| obj.dataAgendamento  unless obj.blank?}
     end
 
     private

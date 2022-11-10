@@ -12,7 +12,6 @@ class CreateTableAgendamentos < ActiveRecord::Migration[7.0]
     end
 
     add_foreign_key :agendamentos, :usuarios, column: :id
-    add_foreign_key :agendamentos, :usuarios, column: :id
 
   end
 end
