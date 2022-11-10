@@ -14,7 +14,7 @@
   <p>
 
     <%= form.label :"Nome Barbeiro"%><br>
-    <%= form.select(:barbeiro_id, options_for_select(@barbeirosDDL || Usuario.all.map { |c| [ c.nome, c.id ] }), :prompt => "Selecione o Barbeiro!") %> 
+    <%= form.select(:barbeiro_id, options_for_select(@barbeirosDDL || Usuario.all.select{ |usr| usr.iscliente == false }.map { |c| [ c.nome, c.id ] }), :prompt => "Selecione o Barbeiro!") %> 
 
   </p>
 

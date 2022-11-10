@@ -3,9 +3,8 @@ class Agendamento < ActiveRecord::Base
     belongs_to :cliente, class_name: 'Usuario'
     belongs_to :barbeiro, class_name: 'Usuario'
 
-    validates :cliente_id, presence: { message: "Não possui i nome do cliente!" }
+    validates :cliente_id, presence: { message: "Não possui o cliente!" }
     validates :barbeiro_id, presence: { message: "Selecione o Barbeiro!" }
-
 
     validate :valid_date?
 

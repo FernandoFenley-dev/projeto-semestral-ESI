@@ -12,7 +12,7 @@ class AgendamentosController < ApplicationController
         @agendamento = Agendamento.new(agendamento_params)
         #@agendamento.cliente_id=session[:usuario_id]
         @agendamento.cliente_id=session[:usuario_id]
-        logger.debug "Aqui: #{@agendamento}"
+        logger.debug "Aqui: #{@agendamento.cliente_id}"
 
         if @agendamento.save
             puts "SUCESSO"
