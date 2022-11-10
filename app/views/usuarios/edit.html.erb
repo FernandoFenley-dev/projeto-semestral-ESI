@@ -38,12 +38,14 @@
     var btn = document.getElementById("btn");
     var password = document.getElementById("password");
     var email = document.getElementById("email");
-    btn.disabled = true;
-    password.addEventListener("keyup", function(){
+    if(password.value == ""){
+        btn.disabled = true;
+        password.addEventListener("keyup", function(){
         if(password.value.length > 0){
             btn.disabled = false;
         }else{
             btn.disabled = true;
         }
-    });
+        });
+    }
 </script>

@@ -1,32 +1,38 @@
 <%= form_with model: @usuario, url: cadastro_path do |f| %>
-            <% if @usuario.errors.any? %>
-            <div id="error_explanation">
-                        <div class="alert-error">
-                                   O formulário contém <%= pluralize(@usuario.errors.count, "erro") %>.
-                        </div>
-                        <ul>
-                                   <% @usuario.errors.full_messages.each do |msg| %>
-                                   <li><%= msg %></li>
-                                   <% end %>
-                        </ul>
-            </div>
-<% end %>
-            <div class="content__field">
-                <%= f.text_field :nome, placeholder: "Nome" %>
-            </div>
-            <div class="content__field">
-                <%= f.email_field :email, placeholder: "E-mail", id:"email" %>
-            </div>
-            <div class="content__field">
-                <%= f.password_field :password, placeholder: "Senha", id:"password" %>
-            </div>
-            <div class="content__btn">
-                <%= f.submit "Cadastrar" %>
-            </div>
-
-            <% flash.each do |type, msg| %>
-                <div>
-                    <p><%= msg %> </p>
-                </div>
-            <% end %>
+    <% if @usuario.errors.any? %>
+    <div id="error_explanation">
+        <div class="alert-error">
+                O formulário contém <%= pluralize(@usuario.errors.count, "erro") %>.
+        </div>
+        <ul>
+                <% @usuario.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+                <% end %>
+        </ul>
+    </div>
+    <% end %>
+    <div class="content__radio">
+        <%= f.radio_button :iscliente, true, {checked: true} %>
+        <%= f.label :iscliente_true, "Sou cliente" %>
+        <%= f.radio_button :iscliente, false %>
+        <%= f.label :iscliente_false, "Sou cabeleireiro" %>
+    </div>
+    <div class="content__field">
+        <%= f.text_field :nome, placeholder: "Nome" %>
+    </div>
+    <div class="content__field">
+        <%= f.email_field :email, placeholder: "E-mail", id:"email" %>
+    </div>
+    <div class="content__field">
+        <%= f.password_field :password, placeholder: "Senha", id:"password" %>
+    </div>
+    <div class="content__btn">
+        <%= f.submit "Cadastrar" %>
+    </div>
+    
+    <% flash.each do |type, msg| %>
+        <div>
+            <p><%= msg %> </p>
+        </div>
+    <% end %>
 <% end %>
