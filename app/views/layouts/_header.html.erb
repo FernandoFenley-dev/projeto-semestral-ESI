@@ -21,17 +21,26 @@
 
             <div class="header__page_links_container">
                 <% if !session[:isBarbeiro] %>
-                  <li><%= link_to "Minha Agenda",  "/agendamentos-barbeiro/#{Current.usuario.id}?data=#{Date.current()}" %></li>
+
+                  <%= link_to 'Dashboard',
+                  root_path,
+                  # Checa se o link atual é o mesmo que o link para o qual o usuário está sendo redirecionado e adiciona a classe 'active' para que o link fique destacado
+                  :class=> (request.path == root_path ? 'header__page_link_active' : "header__page_link") %>
+
+                  <%= link_to "Minha agenda",  "/agendamentos-barbeiro/#{Current.usuario.id}?data=#{Date.current()}",
+                  :class=> (request.path['agendamentos-barbeiro'] ? 'header__page_link_active' : "header__page_link")
+                  %>
                 <% end %>
 
                 <% if session[:isBarbeiro] %>
-                <%= link_to 'Meus agendamentos', agendamentos_new_path,
-                # Checa se o link atual é o mesmo que o link para o qual o usuário está sendo redirecionado e adiciona a classe 'active' para que o link fique destacado
-                :class=> (request.path == agendamentos_new_path ? 'header__page_link_active' : "header__page_link") %>
-              
+                  <%= link_to 'Meus agendamentos',
+                  root_path,
+                  # Checa se o link atual é o mesmo que o link para o qual o usuário está sendo redirecionado e adiciona a classe 'active' para que o link fique destacado
+                  :class=> (request.path == root_path ? 'header__page_link_active' : "header__page_link") %>
+                
 
-                <%= link_to 'Agendar serviço', agendamentos_new_path,
-                :class=>"header__page_link" %>
+                  <%= link_to 'Agendar serviço', agendamentos_new_path,
+                  :class=> (request.path == agendamentos_new_path ? 'header__page_link_active' : "header__page_link") %>
                 <% end %>
             </div>
             

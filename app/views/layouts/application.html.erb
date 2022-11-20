@@ -12,9 +12,6 @@
 
   <body>
    <% current_URI = request.env['PATH_INFO'] %>
-  <% puts current_URI
-      puts current_URI
-  %>
     <% if current_URI != '/login' && current_URI != '/cadastro'  %>
         <%= render 'layouts/header' %>
     <% end %>

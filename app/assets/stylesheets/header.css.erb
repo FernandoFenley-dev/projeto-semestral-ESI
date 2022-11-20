@@ -63,10 +63,6 @@
 .header__page_links_container {
     display: flex;
     align-items: center;
-
-    &:first-child {
-        margin-left: -40px;
-    }
 }
 
 .header__page_link {
@@ -81,22 +77,26 @@
     margin-left: 2em;
 }
 
-.header__page_link:first-child {
-    margin-left: 0px;
-}
-
-.header__page_link:hover {
-    color: #FF9000;
-}
-
 .header__page_link_active {
     display: flex;
     align-items: center;
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 500;
+    color: #FF9000;
     font-size: 16px;
     text-decoration: none;
     margin-left: 2em;
+}
+
+.header__page_link:first-child {
+    margin-left: -40px;
+}
+
+.header__page_link_active:first-child {
+    margin-left: -40px;
+}
+
+.header__page_link:hover {
     color: #FF9000;
 }
