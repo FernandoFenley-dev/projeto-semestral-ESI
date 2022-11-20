@@ -22,3 +22,13 @@ Então deverei visualizar a barra de navegação superior
 E a barra de navegação deve conter links para as páginas "Dashboard" e "Minha agenda"
 Quando eu clicar no link "Minha agenda"
 Então deverei ser redirecionado para a página "Minha agenda"
+
+Cenário: Usar a barra de navegação para sair do sistema
+Dado que estou registrado no sistema
+Dado que eu estou logado no sistema
+Quando eu for redirecionado para a página de dashboard
+Então deverei visualizar a barra de navegação superior
+E a barra de navegação deve conter um botão para sair do sistema
+Quando eu clicar no botão de logout
+Então deverei ser deslogado do sistema
+Então deverei ver a mensagem "Usuário deslogado com sucesso"

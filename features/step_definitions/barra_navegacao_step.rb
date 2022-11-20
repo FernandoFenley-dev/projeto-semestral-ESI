@@ -33,6 +33,25 @@ Então('deverei ser redirecionado para a página "Agendar serviço"') do
 end
 
 Então('deverei ser redirecionado para a página "Minha agenda"') do
-  # Espera que o current_path tenha a substring "/agendamentos-barbeiro/"
   expect(page).to have_current_path(/\/agendamentos-barbeiro\//)
+end
+
+Então('a barra de navegação deve conter um botão para sair do sistema') do
+  # Classe do botão de logout: header__logout_icon
+  expect(page).to have_css('.header__logout_icon')
+end
+
+Quando('eu clicar no botão de logout') do
+  # Classe do botão de logout: header__logout_icon
+  find('button.header__logout_icon').click
+end
+
+Então('deverei ser deslogado do sistema') do
+  # A sessão do usuário é destruída ao clicar no botão de logout
+  expect(Current.usuario).to be_nil
+  expect(page).to have_current_path('/login')
+end
+
+Então('deverei ver a mensagem "Usuário deslogado com sucesso"') do 
+  expect(page).to have_content('Usuário deslogado com sucesso')
 end
