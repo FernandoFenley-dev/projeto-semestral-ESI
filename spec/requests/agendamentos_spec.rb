@@ -21,4 +21,18 @@ RSpec.describe "Agendamentos", type: :request do
       expect(response).to have_http_status(:success)
     end
   end
+    describe "Destroy agendamento" do
+    it "agendamento destroy" do
+      @cliente = Usuario.create(email: 'augusto@gmail.com', password: '123456789',
+      nome: 'Augusto', iscliente: true)
+
+      @barbeiro = Usuario.create(email: 'clovis@gmail.com', password: '987654321',
+      nome: 'Clovis', iscliente: false)
+
+      @agendamento = Agendamento.create(cliente_id: @cliente.id, barbeiro_id: @barbeiro.id, data_agendamento: DateTime.new(2023,2,2,12,30,0))
+
+      delete '/agendamentos-barbeiro/1/', :params => { :id =>  @agendamento.id }
+      expect { get "/agendamentos/1" }.to raise_exception(ActiveRecord::RecordNotFound)
+    end
+  end
 end
