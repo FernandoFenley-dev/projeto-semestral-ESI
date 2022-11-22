@@ -3,6 +3,12 @@
 <span><%= Date.parse(params[:data]).strftime('%d/%m/%Y') %></span>
 <%= link_to ">", "/agendamentos-barbeiro/#{session[:usuario_id]}?data=#{(params[:data].to_date+1).to_s}" %>
 <br>
+
+
+<%= date_select('data_alterar', 'date') %>
+
+<%= button_tag "Alterar Data", type: 'button', :onclick => "changeDate(#{session[:usuario_id]});"%>
+
 <% if @agendamentos.blank? %>
  
     <p>Não há agendamentos neste dia.</p>
@@ -23,4 +29,14 @@
     <% end %>
 <% end %>
 
+
 <%= link_to "Voltar", root_path %></li>
+
+<script>
+function changeDate(userId) {
+    var data = document.getElementById("data_alterar_date_1i").value +"-"+ document.getElementById("data_alterar_date_2i").value +"-"+
+    document.getElementById("data_alterar_date_3i").value;
+    window.location.href = "http://localhost:3000/agendamentos-barbeiro/"+userId+"?data="+data;
+}
+</script>
+
