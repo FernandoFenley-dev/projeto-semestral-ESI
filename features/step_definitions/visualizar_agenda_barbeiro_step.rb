@@ -42,3 +42,20 @@ Então('deverei ver a mensagem de aviso') do
     expect(page).to have_content('Não há agendamentos neste dia.')
 end
 
+Quando('seleciono o ano do agendamento {string}') do |string|
+    select string, :from => "data_alterar_date_1i"
+end
+Quando('seleciono o mes do agendamento {string}') do |string|
+    select string, :from => "data_alterar_date_2i"
+end
+
+Quando('seleciono o dia do agendamento {string}') do |string|
+    select string, :from => "data_alterar_date_3i"
+end
+Quando('clico em Alterar Data') do
+    click_on 'Alterar Data'
+  end
+
+Então('deverei ver a mensagem {string}') do |string|
+    expect(page).to have_content(string)
+end
