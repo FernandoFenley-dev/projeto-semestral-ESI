@@ -47,7 +47,7 @@ class AgendamentosController < ApplicationController
   def destroy
     @agendamento = Agendamento.find(params[:id])
     @agendamento.destroy
-    redirect_to @agendamento
+    redirect_to '/'
   end
 
   private
