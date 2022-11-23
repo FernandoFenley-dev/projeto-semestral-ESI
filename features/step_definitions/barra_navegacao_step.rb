@@ -51,7 +51,3 @@ Então('deverei ser deslogado do sistema') do
   expect(Current.usuario).to be_nil
   expect(page).to have_current_path('/login')
 end
-
-Então('deverei ver a mensagem "Usuário deslogado com sucesso"') do 
-  expect(page).to have_content('Usuário deslogado com sucesso')
-end
