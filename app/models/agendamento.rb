@@ -15,7 +15,11 @@ class Agendamento < ActiveRecord::Base
         if data_agendamento < Date.current()
             errors.add(:data_agendamento, "A data agendada precisa ser no futuro!")
         end
-      
+
+        # Checa se a data escolhida é pelo menos 10 minutos maior que o DateTime atual
+        if  data_agendamento < DateTime.now + 9.minutes
+            errors.add(:data_agendamento, "A data agendada (horário) precisa ser no mínimo 10 minutos maior que a atual!")
+        end
     end
       
 end

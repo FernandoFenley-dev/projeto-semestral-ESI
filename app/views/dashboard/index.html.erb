@@ -15,13 +15,11 @@
          
          <% if !@proximo_agendamento.present? %>
             <p class="dashboard__sem_agendamento">
-               Você não tem nenhum agendamento para este dia
+               Você não tem nenhum agendamento futuro neste dia
             </p>
          <% else %>
             <div>
-               <span class="dashboard__proximo_agendamento_hora">
                <%= render 'cartao_agendamento', agendamento: @proximo_agendamento, primeiro: true %>
-               </span>
             </div>
 
             <div>
@@ -43,6 +41,7 @@
       <% end %>
    </div>
    <div class="dashboard__right_container">
+
       <p> Aqui vai entrar o picker de calendário </p>
    </div>
 </div>
