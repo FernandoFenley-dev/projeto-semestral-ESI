@@ -1,6 +1,4 @@
 class AgendamentosController < ApplicationController
-  # before_action :require_user_logged_in!
-
   def new
     @barbeiros = Usuario.where(iscliente: false)
     @barbeirosDDL = @barbeiros.pluck(:nome, :id)
@@ -10,12 +8,9 @@ class AgendamentosController < ApplicationController
 
   def create
     @agendamento = Agendamento.new(agendamento_params)
-    #@agendamento.cliente_id=session[:usuario_id]
     @agendamento.cliente_id = session[:usuario_id]
-    logger.debug "Aqui: #{@agendamento.cliente_id}"
 
     if @agendamento.save
-      puts "SUCESSO"
       redirect_to @agendamento
     else
       @usuarios = Usuario.where(iscliente: true)

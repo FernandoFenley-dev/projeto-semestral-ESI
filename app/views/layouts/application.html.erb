@@ -10,7 +10,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="body-container">
    <% current_URI = request.env['PATH_INFO'] %>
     <% if current_URI != '/login' && current_URI != '/cadastro'  %>
         <%= render 'layouts/header' %>
