@@ -10,8 +10,11 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= render 'layouts/header' %>
+  <body class="body-container">
+   <% current_URI = request.env['PATH_INFO'] %>
+    <% if current_URI != '/login' && current_URI != '/cadastro'  %>
+        <%= render 'layouts/header' %>
+    <% end %>
     <%= yield %>
   </body>
 </html>

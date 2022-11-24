@@ -23,4 +23,6 @@ Rails.application.routes.draw do
 
   # AGENDAMENTOS DE UM BARBEADOR
   get 'agendamentos-barbeiro/:barbeiro_id/', to: 'agendamentos#barbeador'
+  delete 'agendamentos-barbeiro/:barbeiro_id/', to: 'agendamentos#destroy'
+
 end

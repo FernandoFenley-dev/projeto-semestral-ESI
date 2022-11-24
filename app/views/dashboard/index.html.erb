@@ -1,6 +1,48 @@
-<h1>Dashboard</h1>
+<div class="dashboard__container">
+   <div class="dashboard__left_container">
 
-<% if Current.usuario %>
-   Logado como: <%= Current.usuario.nome %><br>
-   Email: <%= Current.usuario.email %><br>
-<% end %>
+      <% if Current.usuario.iscliente %>
+         <p class="dashboard__title">
+            Horários agendados
+         </p>
+         <span class="dashboard__subtitle">
+         Hoje | <%= Date.today.strftime("%d/%m/%Y") %>
+         </span>
+
+         <p class="dashboard__proximo_agendamento">
+            Agendamento seguinte
+         </p>
+         
+         <% if !@proximo_agendamento.present? %>
+            <p class="dashboard__sem_agendamento">
+               Você não tem nenhum agendamento para este dia
+            </p>
+         <% else %>
+            <div>
+               <span class="dashboard__proximo_agendamento_hora">
+               <%= render 'cartao_agendamento', agendamento: @proximo_agendamento, primeiro: true %>
+               </span>
+            </div>
+
+            <div>
+
+             <p class="dashboard__proximo_agendamento proximos">
+               Próximos agendamentos
+            </p>
+               <% if @agendamentos.empty? %>
+                  <p class="dashboard__sem_agendamento proximos">
+                     Você não tem próximos agendamentos
+                  </p>
+               <% else %>
+                  <% @agendamentos.each do |agendamento| %>
+                     <%= render 'cartao_agendamento', agendamento: agendamento, primeiro: false %>
+                  <% end %> 
+               <% end %>
+            </div>
+         <% end %> 
+      <% end %>
+   </div>
+   <div class="dashboard__right_container">
+      <p> Aqui vai entrar o picker de calendário </p>
+   </div>
+</div>

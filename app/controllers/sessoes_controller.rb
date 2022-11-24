@@ -1,5 +1,4 @@
 class SessoesController < ApplicationController
-  # before_action :bloquear_acesso, except: [:destroy]
   def new; end
 
   def create

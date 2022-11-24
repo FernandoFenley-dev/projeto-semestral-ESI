@@ -1,26 +1,43 @@
 <h1>Listagem de agendamentos - <%= Date.parse(params[:data]).to_fs(:long) %></h1>
-<%= link_to "<", "/agendamentos-barbeiro/#{session[:usuario_id]}?data=#{(params[:data].to_date-1).to_s}" %>
+<%= link_to "<", "/agendamentos-barbeiro/#{session[:usuario_id]}?data=#{(params[:data].to_date - 1).to_s}" %>
 <span><%= Date.parse(params[:data]).strftime('%d/%m/%Y') %></span>
-<%= link_to ">", "/agendamentos-barbeiro/#{session[:usuario_id]}?data=#{(params[:data].to_date+1).to_s}" %>
+<%= link_to ">", "/agendamentos-barbeiro/#{session[:usuario_id]}?data=#{(params[:data].to_date + 1).to_s}" %>
 <br>
+
+
+<%= date_select('data_alterar', 'date') %>
+
+<%= button_tag "Alterar Data", type: 'button', :onclick => "changeDate(#{session[:usuario_id]});"%>
+
 <% if @agendamentos.blank? %>
- 
-    <p>Não há agendamentos neste dia.</p>
+
+  <p>Não há agendamentos neste dia.</p>
 
 <% else %>
-    <br>
-    <% @agendamentos.each do |agendamento| %>
-        <p>
-            <strong>Cliente:</strong>
-            <%= agendamento.cliente.nome %>
-        </p>
+  <br>
+  <% @agendamentos.each do |agendamento| %>
+    <p>
+      <strong>Cliente:</strong>
+      <%= agendamento.cliente.nome %>
+    </p>
 
-        <p>
-            <strong>Horário:</strong>
-            <%= agendamento.data_agendamento.strftime("%k:%M") %>
-        </p>
-        <br>
-    <% end %>
+    <p>
+      <strong>Horário:</strong>
+      <%= agendamento.data_agendamento.strftime("%k:%M") %>
+    </p>
+    <%= button_to "Cancelar agendamento", agendamento, :method => :delete, form: { data: { turbo_confirm: 'Tem certeza que deseja cancelar o agendamento?' } } %>
+    <br>
+  <% end %>
 <% end %>
 
+
 <%= link_to "Voltar", root_path %></li>
+
+<script>
+function changeDate(userId) {
+    var data = document.getElementById("data_alterar_date_1i").value +"-"+ document.getElementById("data_alterar_date_2i").value +"-"+
+    document.getElementById("data_alterar_date_3i").value;
+    window.location.href = "http://localhost:3000/agendamentos-barbeiro/"+userId+"?data="+data;
+}
+</script>
+

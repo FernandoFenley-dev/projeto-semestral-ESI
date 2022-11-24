@@ -15,4 +15,6 @@
 
 <p>Agendamento realizado com sucesso!</p>
 
+<%= button_to "Cancelar agendamento", @agendamento, :method => :delete, form: { data: { turbo_confirm: 'Tem certeza que deseja cancelar o agendamento?' } } %>
+
 <%= link_to "Voltar", root_path %></li>

@@ -1,25 +1,54 @@
 <header>
-  <div>
-    <nav>
-      <ul>
-        <% if Current.usuario.present? %>
-          <ul>
-              <li><%= link_to "Meu perfil", perfil_path(Current.usuario) %></li>
+    <div class="header__container">
+          <% if Current.usuario.present? %>
+            <div class="header__left_container">
+              <%= image_tag "logo.png", :class=>"header__logo" %>
+              <div class="header__user_info">
               
-              <% if !session[:isBarbeiro] %>
-                <li><%= link_to "Minha Agenda",  "/agendamentos-barbeiro/#{Current.usuario.id}?data=#{Date.current()}" %></li>
-              <% end %>
+                <%= link_to perfil_path(Current.usuario) do %>
+                  <%= image_tag "user.jpg", :id=>"header__user_img" %>
+                <% end %>
 
-              <% if session[:isBarbeiro] %>
-                <li><%= link_to 'agendar servico', agendamentos_new_path %></li>
-              <% end %>
+                <div class="header__user_name">
+                  <span class="header__user_welcome"> Bem vindo, </span>
+                    <br/> 
+                    <span class="header__user_info__name">
+                    <%= Current.usuario.nome %> 
+                    </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="header__page_links_container">
+                <% if !session[:isBarbeiro] %>
+
+                  <%= link_to 'Dashboard',
+                  root_path,
+                  # Checa se o link atual é o mesmo que o link para o qual o usuário está sendo redirecionado e adiciona a classe 'active' para que o link fique destacado
+                  :class=> (request.path == root_path ? 'header__page_link_active' : "header__page_link") %>
+
+                  <%= link_to "Minha agenda",  "/agendamentos-barbeiro/#{Current.usuario.id}?data=#{Date.current()}",
+                  :class=> (request.path['agendamentos-barbeiro'] ? 'header__page_link_active' : "header__page_link")
+                  %>
+                <% end %>
+
+                <% if session[:isBarbeiro] %>
+                  <%= link_to 'Meus agendamentos',
+                  root_path,
+                  # Checa se o link atual é o mesmo que o link para o qual o usuário está sendo redirecionado e adiciona a classe 'active' para que o link fique destacado
+                  :class=> (request.path == root_path ? 'header__page_link_active' : "header__page_link") %>
+                
+
+                  <%= link_to 'Agendar serviço', agendamentos_new_path,
+                  :class=> (request.path == agendamentos_new_path ? 'header__page_link_active' : "header__page_link") %>
+                <% end %>
+            </div>
+            
+            <%= button_to logout_path, method: :delete, :class=>"header__logout_icon" do %>
+              <%= image_tag "icon_logout.png",
+                :class=>"header__logout_icon" %>
               
-              <li>
-                <%= button_to "Sair", logout_path, method: :delete %>
-              </li>
-          </ul>
-        <% end %>
-      </ul>
-    </nav>
-  </div>
+            <% end %>
+          <% end %>
+    </div>
 </header>

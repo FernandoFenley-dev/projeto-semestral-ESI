@@ -21,4 +21,9 @@
     list-style: none;
     border: 0;
     box-sizing: border-box;
+    font-family: Roboto Slab;
+}
+
+.body-container {
+    background-color: #312E38;
 }
