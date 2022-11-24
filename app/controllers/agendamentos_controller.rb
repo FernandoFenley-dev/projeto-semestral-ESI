@@ -10,16 +10,16 @@ class AgendamentosController < ApplicationController
     @agendamento = Agendamento.new(agendamento_params)
     @agendamento.cliente_id = session[:usuario_id]
 
+
     if @agendamento.save
-      redirect_to @agendamento
+        redirect_to @agendamento
     else
-      @usuarios = Usuario.where(iscliente: true)
-      puts @agendamento.errors.full_messages
+        @usuarios = Usuario.where(iscliente: true)
+        puts @agendamento.errors.full_messages
 
-      render :new, status: :unprocessable_entity, content_type: "text/html"
-      headers["Content-Type"] = "text/html"
+        render :new, status: :unprocessable_entity, content_type: "text/html"
+        headers["Content-Type"] = "text/html"
     end
-
   end
 
   def show
