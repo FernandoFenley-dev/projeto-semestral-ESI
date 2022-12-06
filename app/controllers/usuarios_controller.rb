@@ -1,5 +1,5 @@
 class UsuariosController < ApplicationController
-  before_action :require_user_logged_in!, except: [:new, :create]
+  before_action :require_user_logged_in!, except: [:new, :create, :password, :recover_password]
 
   def new
     @usuario = Usuario.new
@@ -40,6 +40,24 @@ class UsuariosController < ApplicationController
     @usuario.destroy
     logout
     redirect_to root_path
+  end
+
+  def recover_password
+    if !params[:email].blank?
+      user = Usuario.find_by(email: params[:email])
+      if user.present?
+        ApplicationMailer.with(user: user).recover_password_email.deliver_later
+        flash[:success] = "Email enviado com sucesso!" 
+        redirect_to root_path
+      else
+        flash[:danger] = "Usuário não encontrado."
+        render :password, status: :unprocessable_entity, content_type: "text/html"
+        headers["Content-Type"] = "text/html"
+      end
+    else
+      render :password, content_type: "text/html"
+      headers["Content-Type"] = "text/html"
+    end
   end
 
   private
