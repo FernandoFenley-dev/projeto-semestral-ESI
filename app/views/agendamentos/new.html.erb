@@ -14,14 +14,14 @@
   <p>
 
     <%= form.label :"Nome Barbeiro"%><br>
-    <%= form.select(:barbeiro_id, options_for_select(@barbeirosDDL || Usuario.all.select{ |usr| usr.iscliente == false }.map { |c| [ c.nome, c.id ] }), :prompt => "Selecione o Barbeiro!") %> 
+    <%= form.select(:barbeiro_id, options_for_select(@barbeirosDDL || Usuario.all.select{ |usr| usr.iscliente == false }.map { |c| [ c.nome, c.id ] }),:prompt => "Selecione o Barbeiro!") %> 
 
   </p>
 
   <br>
   <p>
     <%= form.label :"Data Serviço"%><br>
-    <%= form.datetime_select :data_agendamento %>
+    <%= form.datetime_select :data_agendamento, start_year: Date.today.year, end_year:Date.today.year + 1, minute_step: 30, start_hour: 9, end_hour: 17%>
   </p>
   <br>
 
@@ -31,3 +31,4 @@
 <% end %>
 
 <%= link_to "Voltar", root_path %>
+
