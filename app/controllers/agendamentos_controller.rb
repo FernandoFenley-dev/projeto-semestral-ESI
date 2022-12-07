@@ -22,7 +22,6 @@ class AgendamentosController < ApplicationController
         render :new, status: :unprocessable_entity, content_type: "text/html"
         headers["Content-Type"] = "text/html"
     end
-    
   end
 
   def show
