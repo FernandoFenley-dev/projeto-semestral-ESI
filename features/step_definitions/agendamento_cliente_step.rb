@@ -8,12 +8,8 @@ Dado('que existe um barbeiro chamado {string} cadastrado') do |string|
   @barbeiro.updated_at=Time.now
   @barbeiro.password="123"
   @barbeiro.iscliente=false
-  
-  if @barbeiro.save
-    puts "SUCESSO"
-  else
-    puts @usuario.errors.full_messages
-  end
+  @barbeiro.save
+
 end 
 
 Dado('que existe um horario marcado pro barbeiro {string}') do |string|
@@ -27,12 +23,8 @@ Dado('que existe um horario marcado pro barbeiro {string}') do |string|
 
   @agendamento = Agendamento.create(cliente_id: 1, barbeiro_id: 2, data_agendamento: DateTime.new(2023,12,6,10,30,0))
 
-  if @agendamento.save
-    puts "SUCESSO AGENDAMENTO"
-    puts @agendamento.barbeiro_id
-  else
-    puts @usuario.errors.full_messages
-  end
+  @agendamento.save
+
 end 
 
 

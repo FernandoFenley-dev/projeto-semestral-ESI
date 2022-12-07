@@ -36,13 +36,7 @@ class Agendamento < ActiveRecord::Base
                                               data: data_agendamento
             )
         end
-        puts "data agendamento"
-        puts data_agendamento
-
-        puts @agendamentos.length
         if @agendamentos.length >0
-            puts "Já EXISTE AGENDAMENTO NO HOIRRIO"
-
             errors.add(:data_agendamento, "Já existe um agendamento para este barbeiro nessa data")
         end
 
