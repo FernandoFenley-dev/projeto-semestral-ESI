@@ -17,6 +17,7 @@ Quando seleciono o ano "2023"
 E clico em Agendar
 Então o Agendamento deve ter sido salvo no banco de dados
 
+
 Cenário: Ver nome do barbeiro após salvar o agendamento na tela de servico agendado
 Dado que existe um barbeiro chamado "teste" cadastrado
 Dado que estou na página de agendamento de serviço

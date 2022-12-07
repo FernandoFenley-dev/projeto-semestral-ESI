@@ -8,12 +8,15 @@ Eu quero ser capaz de alterar minha senha
 Cenário: Recuperação de senha com sucesso
 Dado que estou registrado no sistema
 Dado que estou na página de recuperação de senha
-Quando preencho o campo "email" com "teste@gmail.com"
+Dado que existe um cliente chamado "teste" cadastrado
+Quando preencho o campo "email" com "cliente@teste.com"
 E clico no botão Enviar email
-Então deverei receber um email contendo o link para redefinição de senha
+Então deverei ver a mensagem "Email enviado com sucesso!"
+
+
 
 Cenário: Recuperação de senha sem preenchimento do campo email
 Dado que estou registrado no sistema
 Dado que estou na página de recuperação de senha
 E deixo o campo "email" vazio
-Então deverei ver o botão Enviar email desabilitado
+Então deverei ver a mensagem "Por favor, insira seu endereço de email. Enviaremos um email para que possa recuperar sua senha"
