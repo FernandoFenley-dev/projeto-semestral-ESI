@@ -682,6 +682,24 @@
           null,
           null,
           1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
           null,
           1,
           2,
@@ -785,13 +803,18 @@
           0,
           0,
           0,
+          null,
+          0,
+          0,
+          0,
+          0,
           0
         ],
         "branches": {
         }
       }
     },
-    "timestamp": 1670344374
+    "timestamp": 1670345109
   },
   "Minitest": {
     "coverage": {
