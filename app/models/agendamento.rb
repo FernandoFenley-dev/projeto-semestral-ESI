@@ -20,6 +20,25 @@ class Agendamento < ActiveRecord::Base
         if  data_agendamento < DateTime.now + 9.minutes
             errors.add(:data_agendamento, "A data agendada (horário) precisa ser no mínimo 10 minutos maior que a atual!")
         end
+
+        if Rails.env.development? || Rails.env.test?
+
+            @agendamentos = Agendamento.where("barbeiro_id = :barbeiro_id
+                      AND data_agendamento in (:data)",
+                                              barbeiro_id: barbeiro_id,
+                                              data: data_agendamento
+            )
+          else
+
+            @agendamentos = Agendamento.where("barbeiro_id = :barbeiro_id
+                      AND to_char(data_agendamento, 'yyyy-mm-dd hh:mm:ss') in (:data)",
+                                              barbeiro_id: barbeiro_id,
+                                              data: data_agendamento
+            )
+        end
+        if @agendamentos.length >0
+            errors.add(:data_agendamento, "Já existe um agendamento para este barbeiro nessa data")
+        end
+
     end
-      
 end

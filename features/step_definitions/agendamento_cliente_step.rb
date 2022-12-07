@@ -8,13 +8,25 @@ Dado('que existe um barbeiro chamado {string} cadastrado') do |string|
   @barbeiro.updated_at=Time.now
   @barbeiro.password="123"
   @barbeiro.iscliente=false
-  
-  if @barbeiro.save
-    puts "SUCESSO"
-  else
-    puts @usuario.errors.full_messages
-  end
+  @barbeiro.save
+
 end 
+
+Dado('que existe um horario marcado pro barbeiro {string}') do |string|
+  @usuario = Usuario.create(email: 'luiz@gmail.com', password: '123senha', 
+  nome: 'luiz', iscliente: true)
+
+
+  @usuario = Usuario.create(email: 'osvaldo@gmail.com', password: '123senha', 
+  nome: 'teste', iscliente: false)
+
+
+  @agendamento = Agendamento.create(cliente_id: 1, barbeiro_id: 2, data_agendamento: DateTime.new(2023,12,6,10,30,0))
+
+  @agendamento.save
+
+end 
+
 
 Dado('que estou na página de agendamento de serviço') do
     visit 'agendamentos/new'
@@ -26,6 +38,22 @@ end
 
 Quando('seleciono o ano {string}') do |string|
   select string, :from => "agendamento[data_agendamento(1i)]"
+end
+
+Quando('seleciono o mes {string}') do |string|
+  select string, :from => "agendamento[data_agendamento(2i)]"
+end
+
+Quando('seleciono o dia {string}') do |string|
+  select string, :from => "agendamento[data_agendamento(3i)]"
+end
+
+Quando('seleciono a hora {string}') do |string|
+  select string, :from => "agendamento[data_agendamento(4i)]"
+end
+
+Quando('seleciono o minuto {string}') do |string|
+  select string, :from => "agendamento[data_agendamento(5i)]"
 end
 
 Quando('clico em Agendar') do

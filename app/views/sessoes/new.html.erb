@@ -3,6 +3,7 @@
     <div class="content">
         <%= image_tag "logo.png", :class=>"content__logo" %>
         <%= render 'formulario' %>
-        <%= link_to "Criar conta", cadastro_path, :class => "content__link"  %>
+        <%= link_to 'Esqueci minha senha', "/recuperar-senha", :class => "content__link content__link--password" %>
+        <%= link_to "Criar conta", cadastro_path, :class => "content__link content__link--register"  %>
     </div>
 </div>

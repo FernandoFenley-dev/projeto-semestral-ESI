@@ -1,7 +1,7 @@
 Então('que eu agendei {string} serviços para o dia') do |string|
     # OBS: dependendo da hora que este teste rodar, pode ser que o agendamento não seja mais exibido na página inicial, pois o agendamento é feito para o dia seguinte.
 
-    @data_atual = DateTime.now
+    @data_atual = Time.now
 
     # Usuário teste
     @usuario = Usuario.create(email: 'emailteste@gmail.com' , password: '123senha', nome: 'Teste', iscliente: true)
@@ -19,16 +19,18 @@ Então('que eu agendei {string} serviços para o dia') do |string|
     # adiciona 10 minutos ao dia atual
     num_agendamentos = string.to_i
     mins = 0
-    num_agendamentos.times do |i|
-        mins = mins + 20
-        @agendamento = Agendamento.create(cliente_id: 1, barbeiro_id: 2, data_agendamento: @data_atual + mins.minutes)
 
-        # Verifica se o agendamento foi salvo
-        expect(@agendamento).to be_valid
+    for a in 1..2 do
+        mins = mins + 10
+        @data_atual=@data_atual+mins.minutes
+        criarAgendamento(@data_atual )
     end
     
     @agendamentos = Agendamento.where(cliente_id: 1, barbeiro_id: 2)
     expect(@agendamentos.count).to eq(num_agendamentos)
+end
+def criarAgendamento(data_atual)
+    @agendamento = Agendamento.create(cliente_id: 1, barbeiro_id: 2, data_agendamento: data_atual )
 end
 
 Então('eu devo ver uma lista de agendamentos do dia') do

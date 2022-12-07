@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   # PÁGINA PERFIL
   get 'perfil/:id' => 'usuarios#edit', as: :perfil
 
+  # PÁGINA RECUPERAÇÃO DE SENHA
+  get 'recuperar-senha' => 'usuarios#password'
+  post 'recuperar-senha' => 'usuarios#recover_password'
 
   get 'agendamentos/new' => 'agendamentos#new', as: :agendamentos_new
 
