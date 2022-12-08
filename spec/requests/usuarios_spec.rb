@@ -8,4 +8,16 @@ RSpec.describe "Usuarios", type: :request do
     end
   end
 
+  context "with valid attributes" do
+    it "creates a new contact" do
+      usuarioBarbeiro = create(:usuario).should be_valid
+    end
+  end
+  context "with invalid attributes" do
+    it "creates a new contact" do
+      usuarioBarbeiro = create(:invalido_usuario)
+      usuarioBarbeiro.nome=nil
+      usuarioBarbeiro.should_not be_valid
+    end
+  end
 end
