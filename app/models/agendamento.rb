@@ -31,7 +31,7 @@ class Agendamento < ActiveRecord::Base
           else
 
             @agendamentos = Agendamento.where("barbeiro_id = :barbeiro_id
-                      AND to_char(data_agendamento, 'yyyy-mm-dd hh:mm:ss') in (:data)",
+                      AND to_char(data_agendamento, 'yyyy-mm-dd hh\:mm\:ss') in (:data)",
                                               barbeiro_id: barbeiro_id,
                                               data: data_agendamento
             )

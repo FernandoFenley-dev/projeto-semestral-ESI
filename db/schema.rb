@@ -51,6 +51,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_07_205657) do
     t.datetime "updated_at", null: false
     t.string "password_digest"
     t.boolean "iscliente"
+    t.string "profile_image", default: "01"
   end
 
 end
