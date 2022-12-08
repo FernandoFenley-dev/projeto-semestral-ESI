@@ -6,7 +6,7 @@
               <div class="header__user_info">
               
                 <%= link_to perfil_path(Current.usuario) do %>
-                  <%= image_tag "user.jpg", :id=>"header__user_img" %>
+                  <%= image_tag "avatar_#{Current.usuario.profile_image}.png", :id=>"header__user_img" %>
                 <% end %>
 
                 <div class="header__user_name">

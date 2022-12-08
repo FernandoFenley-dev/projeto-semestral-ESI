@@ -42,6 +42,14 @@ class UsuariosController < ApplicationController
     redirect_to root_path
   end
 
+  def img
+    @usuario = Usuario.find(session[:usuario_id])
+    logger.debug "Person attributes hash: #{params[:id]}"
+    @usuario.updating = false
+    @usuario.update(profile_image: params[:id]);
+    redirect_to '/'
+  end
+
   private
   
   def usuario_params

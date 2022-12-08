@@ -2,6 +2,19 @@
     <div class="background"></div>
     <div class="content">
         <%= image_tag "logo.png", :class=>"content__logo" %>
+
+        <%= image_tag "avatar_#{Current.usuario.profile_image}.png", :id=>"user_profile_img" %>
+        <div class="content__img__update">
+        
+        
+        <%= link_to link_to "string method", "/perfil-image/02" %>
+
+        <span>01</span>
+        
+        <span>02</span><span>03</span><span>04</span><span>05</span>
+
+        </div>
+
         <p class="content__link" >Alterar Perfil</p>
         <br>
 

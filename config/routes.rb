@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   # PÁGINA PERFIL
   get 'perfil/:id' => 'usuarios#edit', as: :perfil
-
+  get 'perfil-image/:id', to: 'usuarios#img'
 
   get 'agendamentos/new' => 'agendamentos#new', as: :agendamentos_new
 
