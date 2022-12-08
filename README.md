@@ -17,8 +17,7 @@ Sistema SaS que possibilita automatizar e centralizar o agendamento de horários
 | ---------------------------------|:------: |
 | Fernando José Germinio Fenley    | 11207630|
 | Felipe Oliveira do Espirito Santo| 11925242|
-| Jalmir Iago Alves da Silva       | 11808999|
-| Guilherme Dias Jimenes           | 11911021|   
+| Jalmir Iago Alves da Silva       | 11808999|   
 | Augusto Xavier Neto              | 11367581|
 | Juan Kineipe                     | 11894610|
 
