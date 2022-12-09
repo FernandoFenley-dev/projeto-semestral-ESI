@@ -21,11 +21,13 @@ class Agendamento < ActiveRecord::Base
             errors.add(:data_agendamento, "A data agendada (horário) precisa ser no mínimo 10 minutos maior que a atual!")
         end
 
+
         @agendamentos = Agendamento.where("barbeiro_id = :barbeiro_id
         AND data_agendamento in (:data)",
                                 barbeiro_id: barbeiro_id,
                                 data: data_agendamento
-)
+        )
+
         if @agendamentos.length >0
             errors.add(:data_agendamento, "Já existe um agendamento para este barbeiro nessa data")
         end
