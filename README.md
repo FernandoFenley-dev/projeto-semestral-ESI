@@ -13,13 +13,13 @@ Sistema SaS que possibilita automatizar e centralizar o agendamento de horários
 
 ### Integrantes
 
-| Nome                             | N. USP  |
-| ---------------------------------|:------: |
-| Fernando José Germinio Fenley    | 11207630|
-| Felipe Oliveira do Espirito Santo| 11925242|
-| Jalmir Iago Alves da Silva       | 11808999|   
-| Augusto Xavier Neto              | 11367581|
-| Juan Kineipe                     | 11894610|
+| Nome                              |  N. USP  |
+|-----------------------------------|:--------:|
+| Augusto Xavier Neto               | 11367581 |
+| Felipe Oliveira do Espirito Santo | 11925242 |
+| Fernando José Germinio Fenley     | 11207630 |   
+| Jalmir Iago Alves da Silva        | 11808999 |
+| Juan Kineipe                      | 11894610 |
 
 
 
