@@ -4,7 +4,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/5d225158bfe03f113f7a/maintainability)](https://codeclimate.com/github/FernandoFenley-dev/projeto-semestral-ESI/maintainability)
 
-[![Coverage Status](https://coveralls.io/repos/github/FernandoFenley-dev/projeto-semestral-ESI/badge.svg?branch=main)](https://coveralls.io/github/FernandoFenley-dev/projeto-semestral-ESI?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/FernandoFenley-dev/projeto-semestral-ESI/badge.png?branch=main)](https://coveralls.io/github/FernandoFenley-dev/projeto-semestral-ESI?branch=main)
 
 Sistema SaS que possibilita automatizar e centralizar o agendamento de horários de atendimento para clientes de uma barbearia.
 
