@@ -1,0 +1,30 @@
+<%= form_with(model: contato) do |form| %>
+  <% if contato.errors.any? %>
+  <div id="error_explanation">
+    <ul>
+    <% @contato.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nome, style: "display: block" %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.label :mensagem, style: "display: block" %>
+    <%= form.text_field :mensagem %>
+  </div>
+
+  <div>
+    <%= form.submit 'Enviar mensagem' %>
+  </div>
+<% end %>

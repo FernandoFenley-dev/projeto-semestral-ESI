@@ -41,6 +41,9 @@
 
                   <%= link_to 'Agendar serviço', agendamentos_new_path,
                   :class=> (request.path == agendamentos_new_path ? 'header__page_link_active' : "header__page_link") %>
+
+                  <%= link_to 'Contato', contatos_path,
+                  :class=> (request.path == contatos_path ? 'header__page_link_active' : "header__page_link") %>
                 <% end %>
             </div>
             
