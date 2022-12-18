@@ -44,7 +44,9 @@
       <span class="dashboard__proximo_agendamento">
          EM BREVE...
       </span>
-
+      <%= month_calendar(events: @agendamentos) do |date, agendamentos|  %>
+         <%= date %>
+      <% end %>
       <p> Pickler de calendário </p>
    </div>
 </div>
