@@ -37,7 +37,7 @@
 function changeDate(userId) {
     var mes=document.getElementById("data_alterar_date_2i").value;
     var dia=document.getElementById("data_alterar_date_3i").value;
-
+    var link="";
     if(mes.length==1){
       mes='0'+mes;
     }
@@ -45,7 +45,12 @@ function changeDate(userId) {
       dia='0'+dia;
     }
     var data = document.getElementById("data_alterar_date_1i").value +"-"+ mes +"-"+ dia;
-    window.location.href = "http://localhost:3000/agendamentos-barbeiro/"+userId+"?data="+data;
+    if(window.location.href.includes("localhost")){
+      link = "http://localhost:3000/agendamentos-barbeiro/"+userId+"?data="+data;
+    }else{
+      link = "https://go-barber-es.herokuapp.com/agendamentos-barbeiro/"+userId+"?data="+data;
+    }
+    window.location.href = link;
 }
 </script>
 
