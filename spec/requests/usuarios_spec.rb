@@ -19,7 +19,7 @@ RSpec.describe "Usuarios", type: :request do
         password: '123senha' 
       }
     
-    expect(response).to be_redirect
+      expect(response).to be_redirect
 
       get "/perfil-image/01"
       expect(response).to be_redirect
