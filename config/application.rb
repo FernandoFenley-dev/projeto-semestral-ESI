@@ -1,4 +1,6 @@
 require_relative "boot"
+require File.expand_path('../boot', __FILE__)
+
 
 require "rails/all"
 
@@ -10,6 +12,8 @@ module Barbershop
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
+    config.autoload_paths += %W(#{config.root}/lib) # componente calendario
+    config.i18n.default_locale = :"pt-BR" # mudar a linguagem para pt-br
 
     # Configuration for the application, engines, and railties goes here.
     #

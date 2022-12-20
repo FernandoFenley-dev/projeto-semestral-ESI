@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_10_192201) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_17_125608) do
   create_table "agendamentos", force: :cascade do |t|
     t.datetime "data_agendamento"
     t.datetime "created_at", null: false
@@ -27,6 +27,29 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_10_192201) do
     t.string "senha"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "contatos", force: :cascade do |t|
+    t.string "nome"
+    t.string "email"
+    t.string "mensagem"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "delayed_jobs", force: :cascade do |t|
+    t.integer "priority", default: 0, null: false
+    t.integer "attempts", default: 0, null: false
+    t.text "handler", null: false
+    t.text "last_error"
+    t.datetime "run_at"
+    t.datetime "locked_at"
+    t.datetime "failed_at"
+    t.string "locked_by"
+    t.string "queue"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["priority", "run_at"], name: "delayed_jobs_priority"
   end
 
   create_table "usuarios", force: :cascade do |t|

@@ -6,7 +6,12 @@
             Horários agendados
          </p>
          <span class="dashboard__subtitle">
-         Hoje | <%= Date.today.strftime("%d/%m/%Y") %>
+         <% if Date.today == @data %>
+            Hoje
+         <% else %>
+            Data
+         <% end %>
+         | <%= @data.strftime("%d/%m/%Y") %>
          </span>
 
          <p class="dashboard__proximo_agendamento">
@@ -27,12 +32,12 @@
              <p class="dashboard__proximo_agendamento proximos">
                Próximos agendamentos
             </p>
-               <% if @agendamentos.empty? %>
+               <% if @agendamentos_dia.empty? %>
                   <p class="dashboard__sem_agendamento proximos">
-                     Você não tem próximos agendamentos
+                     Você não tem próximos agendamentos neste dia
                   </p>
                <% else %>
-                  <% @agendamentos.each do |agendamento| %>
+                  <% @agendamentos_dia.each do |agendamento| %>
                      <%= render 'cartao_agendamento', agendamento: agendamento, primeiro: false %>
                   <% end %> 
                <% end %>
@@ -41,12 +46,6 @@
       <% end %>
    </div>
    <div class="dashboard__right_container">
-      <span class="dashboard__proximo_agendamento">
-         EM BREVE...
-      </span>
-      <%= month_calendar(events: @agendamentos) do |date, agendamentos|  %>
-         <%= date %>
-      <% end %>
-      <p> Pickler de calendário </p>
+      <%= render 'calendario/layout/show', agendamentos: @agendamentos, datas_agendamentos: @datas_agendamentos %>
    </div>
 </div>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @contato %>
+
+<div>
+  <%= link_to "Editar mensagem", edit_contato_path(@contato) %> |
+  <%= link_to "Voltar aos contatos realizados", contatos_path %>
+
+  <%= button_to "Apagar mensagem", @contato, method: :delete %>
+</div>

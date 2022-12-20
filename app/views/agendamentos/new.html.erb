@@ -1,34 +1,35 @@
-<h1>Cadastro agendamento</h1>
-
-<% if @agendamento.errors.any? %>
-  <div id="error_explanation">
-    <ul>
-    <% @agendamento.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-    </ul>
-  </div>
-<% end %>
-<%= form_with scope: :agendamento, url: agendamentos_path, local: true do |form| %>
-  <br>
-  <p>
-
-    <%= form.label :"Nome Barbeiro"%><br>
-    <%= form.select(:barbeiro_id, options_for_select(@barbeirosDDL || Usuario.all.select{ |usr| usr.iscliente == false }.map { |c| [ c.nome, c.id ] }),:prompt => "Selecione o Barbeiro!") %> 
-
-  </p>
-
-  <br>
-  <p>
-    <%= form.label :"Data Serviço"%><br>
-    <%= form.datetime_select :data_agendamento, start_year: Date.today.year, end_year:Date.today.year + 1, minute_step: 30, start_hour: 9, end_hour: 17%>
-  </p>
-  <br>
-
-  <p>
-    <%= form.submit 'Agendar' %>
-  </p>
-<% end %>
-
-<%= link_to "Voltar", root_path %>
-
+<div class="agendamento">
+    <%= image_tag "logo.png", :class=>"content__logo agendamento__logo" %>
+	<div class="agendamento__content">
+		<h1 class="agendamento__title">Cadastro <span>agendamento</span></h1>
+		<% if @agendamento.errors.any? %>
+		<div id="error_explanation">
+			<ul>
+			<% @agendamento.errors.full_messages.each do |msg| %>
+			<li><%= msg %></li>
+			<% end %>
+			</ul>
+		</div>
+		<% end %>
+		<%= form_with scope: :agendamento, url: agendamentos_path, local: true do |form| %>
+		<br>
+		<p class="agendamento__field">
+			<%= form.label :"Nome Barbeiro"%><br>
+			<%= form.select(:barbeiro_id, options_for_select(@barbeirosDDL || Usuario.all.select{ |usr| usr.iscliente == false }.map { |c| [ c.nome, c.id ] }),:prompt => "Selecione o Barbeiro!") %> 
+		</p>
+		<br>
+		<p class="agendamento__field">
+			<%= form.label :"Data Serviço"%><br>
+			<%= form.datetime_select :data_agendamento, start_year: Date.today.year, end_year:Date.today.year + 1, minute_step: 30, start_hour: 9, end_hour: 17%>
+		</p>
+		<br>
+		<div class="content__btn">
+			<%= form.submit 'Agendar' %>
+		</div>
+		<% end %>
+		<div class="content__link">
+			&larr; 
+			<%= link_to "Voltar", root_path, class:"content__link" %>
+		</div>
+	</div>
+</div>

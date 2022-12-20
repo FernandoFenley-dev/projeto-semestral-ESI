@@ -4,7 +4,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/5d225158bfe03f113f7a/maintainability)](https://codeclimate.com/github/FernandoFenley-dev/projeto-semestral-ESI/maintainability)
 
-[![Coverage Status](https://coveralls.io/repos/github/FernandoFenley-dev/projeto-semestral-ESI/badge.svg?branch=main)](https://coveralls.io/github/FernandoFenley-dev/projeto-semestral-ESI?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/FernandoFenley-dev/projeto-semestral-ESI/badge.png?branch=main)](https://coveralls.io/github/FernandoFenley-dev/projeto-semestral-ESI?branch=main)
 
 Sistema SaS que possibilita automatizar e centralizar o agendamento de horários de atendimento para clientes de uma barbearia.
 
@@ -13,14 +13,13 @@ Sistema SaS que possibilita automatizar e centralizar o agendamento de horários
 
 ### Integrantes
 
-| Nome                             | N. USP  |
-| ---------------------------------|:------: |
-| Fernando José Germinio Fenley    | 11207630|
-| Felipe Oliveira do Espirito Santo| 11925242|
-| Jalmir Iago Alves da Silva       | 11808999|
-| Guilherme Dias Jimenes           | 11911021|   
-| Augusto Xavier Neto              | 11367581|
-| Juan Kineipe                     | 11894610|
+| Nome                              |  N. USP  |
+|-----------------------------------|:--------:|
+| Augusto Xavier Neto               | 11367581 |
+| Felipe Oliveira do Espirito Santo | 11925242 |
+| Fernando José Germinio Fenley     | 11207630 |   
+| Jalmir Iago Alves da Silva        | 11808999 |
+| Juan Kineipe                      | 11894610 |
 
 
 

@@ -1,0 +1,32 @@
+<div class="">
+  <div class="calendario__header">
+      <%= link_to root_path(data: @data - 1.month), class: "" do %>
+        <i class="calendario__icones">
+        &larr;
+        </i>
+      <% end %>
+      <span class='calendario__title'>
+        <%= "#{I18n.l @data, :format => "%B"} #{@data.year}" %>
+      </span>
+      <%= link_to root_path(data: @data + 1.month), class: "" do %>
+        <i class="calendario__icones">
+        &rarr;
+        </i>
+      <% end %>
+  </div>
+</div>
+<div class="calendario__container">
+  <div class="">
+    <%= calendario @data do |data| %>
+      <% if @datas_agendamentos.include?(data.to_s) %>
+          <%= link_to root_path(data: data), class: "calendario__contem_agendamento" do %>
+            <%= data.day %>
+          <% end %>
+      <% else %>
+      <%= link_to root_path(data: data), class: "calendario__dia" do %> 
+        <%= data.day %>
+      <% end %>
+      <% end %>
+    <% end %>
+  </div>
+</div>
