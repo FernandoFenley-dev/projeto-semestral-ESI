@@ -44,10 +44,9 @@ class UsuariosController < ApplicationController
 
   def img
     @usuario = Usuario.find(session[:usuario_id])
-    logger.debug "Person attributes hash: #{params[:id]}"
-    @usuario.updating = false
-    @usuario.update(profile_image: params[:id]);
-    redirect_to '/'
+    @usuario.profile_image = params[:id]
+    @usuario.save(:validate => false)
+    redirect_to "/perfil/#{session[:usuario_id]}"
   end
 
   private

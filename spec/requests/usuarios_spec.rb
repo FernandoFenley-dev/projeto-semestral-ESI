@@ -8,4 +8,24 @@ RSpec.describe "Usuarios", type: :request do
     end
   end
 
+  describe "GET /perfil-image/:id" do
+    it "returns http success" do
+      @barbeiro = Usuario.create(email: 'osvaldo@gmail.com', password: '123senha', 
+      nome: 'Osvaldo', iscliente: false)
+      
+      post '/login', params: {
+    
+        email: "osvaldo@gmail.com",
+        password: '123senha' 
+      }
+    
+    expect(response).to be_redirect
+
+      get "/perfil-image/01"
+      expect(response).to be_redirect
+
+      expect(response).to redirect_to('/perfil/1')
+    end
+  end
+
 end

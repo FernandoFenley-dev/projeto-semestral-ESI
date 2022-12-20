@@ -3,15 +3,14 @@
     <div class="content">
         <%= image_tag "logo.png", :class=>"content__logo" %>
 
-        <%= image_tag "avatar_#{Current.usuario.profile_image}.png", :id=>"user_profile_img" %>
+        <%= image_tag "avatar_#{Current.usuario.profile_image}.png", :id=>"user_profile_img", :alt => "avatar_#{Current.usuario.profile_image}" %>
         <div class="content__img__update">
-        
-        
-        <%= link_to link_to "string method", "/perfil-image/02" %>
-
-        <span>01</span>
-        
-        <span>02</span><span>03</span><span>04</span><span>05</span>
+                
+            <%= link_to link_to "Avatar 01", "/perfil-image/01", :id => "avatar_01", :class => "link-#{Current.usuario.profile_image == '01' ? "true" : "false"}" %> |
+            <%= link_to link_to "Avatar 02", "/perfil-image/02", :id => "avatar_02", :class => "link-#{Current.usuario.profile_image == '02' ? "true" : "false"}" %> |
+            <%= link_to link_to "Avatar 03", "/perfil-image/03", :id => "avatar_03", :class => "link-#{Current.usuario.profile_image == '03' ? "true" : "false"}" %> |
+            <%= link_to link_to "Avatar 04", "/perfil-image/04", :id => "avatar_04", :class => "link-#{Current.usuario.profile_image == '04' ? "true" : "false"}" %> |
+            <%= link_to link_to "Avatar 05", "/perfil-image/05", :id => "avatar_05", :class => "link-#{Current.usuario.profile_image == '05' ? "true" : "false"}" %> 
 
         </div>
 
@@ -45,20 +44,3 @@
         <%= link_to "Voltar", root_path, :class => "content__link" %></li>
     </div>
 </div>
-
-<script>
-// Desabilita o botão de Confirmar se o campo de senha estiver vazio
-    var btn = document.getElementById("btn");
-    var password = document.getElementById("password");
-    var email = document.getElementById("email");
-    if(password.value == ""){
-        btn.disabled = true;
-        password.addEventListener("keyup", function(){
-        if(password.value.length > 0){
-            btn.disabled = false;
-        }else{
-            btn.disabled = true;
-        }
-        });
-    }
-</script>
