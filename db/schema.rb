@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_07_205657) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_17_125608) do
   create_table "agendamentos", force: :cascade do |t|
     t.datetime "data_agendamento"
     t.datetime "created_at", null: false
@@ -25,6 +25,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_07_205657) do
     t.string "nome"
     t.string "email"
     t.string "senha"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "contatos", force: :cascade do |t|
+    t.string "nome"
+    t.string "email"
+    t.string "mensagem"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -51,6 +59,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_07_205657) do
     t.datetime "updated_at", null: false
     t.string "password_digest"
     t.boolean "iscliente"
+    t.string "profile_image", default: "01"
   end
 
 end

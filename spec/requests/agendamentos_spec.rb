@@ -21,7 +21,7 @@ RSpec.describe "Agendamentos", type: :request do
       expect(response).to have_http_status(:success)
     end
   end
-    describe "Destroy agendamento" do
+  describe "Destroy agendamento" do
     it "agendamento destroy" do
       @cliente = Usuario.create(email: 'augusto@gmail.com', password: '123456789',
       nome: 'Augusto', iscliente: true)
