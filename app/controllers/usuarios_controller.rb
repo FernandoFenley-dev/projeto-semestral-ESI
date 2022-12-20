@@ -59,6 +59,13 @@ class UsuariosController < ApplicationController
       headers["Content-Type"] = "text/html"
     end
   end
+  
+  def img
+    @usuario = Usuario.find(session[:usuario_id])
+    @usuario.profile_image = params[:id]
+    @usuario.save(:validate => false)
+    redirect_to "/perfil/#{session[:usuario_id]}"
+  end
 
   private
   
