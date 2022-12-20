@@ -1,133 +1,116 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/helpers/agendamentos_helper.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/agendamentos_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/helpers/application_helper.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/helpers/contatos_helper.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/contatos_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/helpers/sessoes_helper.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/sessoes_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/helpers/usuarios_helper.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/usuarios_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/contatos_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          1,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/application_controller.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/models/agendamento.rb": {
         "lines": [
           1,
           null,
-          null,
           1,
           1,
           null,
           1,
-          0,
-          null,
+          1,
           null,
           1,
-          0,
-          null,
           null,
           1,
+          6,
           0,
+          null,
+          6,
           0,
           null,
           null,
-          1,
+          null,
+          6,
+          3,
+          null,
+          null,
+          null,
+          6,
+          null,
+          null,
+          null,
+          null,
+          null,
+          6,
           0,
-          0,
+          null,
           null,
           null,
           null
         ]
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/models/contato.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/mailers/application_mailer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          5,
+          5,
+          5,
+          null,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/models/usuario.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/models/cliente.rb": {
         "lines": [
           1,
           1,
@@ -137,7 +120,7 @@
           null
         ]
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/models/application_record.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/models/application_record.rb": {
         "lines": [
           1,
           null,
@@ -145,7 +128,292 @@
           null
         ]
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/channels/application_cable/channel.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/models/contato.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/contatos_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          4,
+          null,
+          4,
+          4,
+          4,
+          2,
+          null,
+          4,
+          2,
+          null,
+          null,
+          null,
+          null,
+          1,
+          3,
+          3,
+          4,
+          2,
+          null,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          2,
+          4,
+          2,
+          null,
+          null,
+          null,
+          1,
+          1,
+          7,
+          null,
+          null,
+          1,
+          7,
+          null,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          19,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/agendamentos_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          2,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/models/current.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/clientes_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/usuarios_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -155,7 +423,7 @@
         "branches": {
         }
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/channels/application_cable/connection.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -165,110 +433,7 @@
         "branches": {
         }
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/agendamentos_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/clientes_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/dashboard_controller.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/dashboard_controller.rb": {
         "lines": [
           0,
           0,
@@ -288,7 +453,7 @@
         "branches": {
         }
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/main_controller.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/main_controller.rb": {
         "lines": [
           0,
           0,
@@ -298,7 +463,7 @@
         "branches": {
         }
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/sessoes_controller.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/sessoes_controller.rb": {
         "lines": [
           0,
           0,
@@ -323,81 +488,7 @@
         "branches": {
         }
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/usuarios_controller.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/jobs/application_job.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -405,257 +496,379 @@
           null,
           null,
           null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/mailers/application_mailer.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/models/agendamento.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/models/cliente.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/models/current.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/models/usuario.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
           0
         ],
         "branches": {
         }
       }
     },
-    "timestamp": 1671285610
+    "timestamp": 1671579051
   },
   "Cucumber Features": {
     "coverage": {
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/sessoes_controller.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/sessoes_controller.rb": {
         "lines": [
           1,
           1,
           null,
+          1,
+          23,
+          23,
+          11,
+          11,
+          null,
+          null,
+          12,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          162,
+          null,
+          null,
+          1,
+          34,
+          null,
+          null,
+          1,
+          11,
+          11,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/agendamentos_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/contatos_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/sessoes_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/helpers/usuarios_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/models/usuario.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/dashboard_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          16,
+          15,
+          null,
+          15,
+          null,
+          15,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/models/current.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/agendamentos_controller.rb": {
+        "lines": [
+          1,
           1,
           8,
           8,
-          0,
-          0,
-          null,
-          null,
-          8,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          62,
-          null,
-          null,
-          1,
           8,
           null,
           null,
           1,
+          7,
+          7,
+          7,
+          null,
           0,
+          null,
+          null,
+          7,
+          3,
+          null,
+          4,
+          4,
+          null,
+          4,
+          4,
+          null,
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null,
+          1,
+          5,
+          5,
+          null,
+          null,
+          null,
+          null,
+          null,
           0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          5,
+          null,
+          1,
+          5,
+          5,
           null,
           null,
           1,
           0,
           0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          7,
           null,
           null,
           null
         ]
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/helpers/agendamentos_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/helpers/contatos_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/helpers/sessoes_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/helpers/usuarios_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/models/usuario.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/dashboard_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/models/current.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/models/agendamento.rb": {
         "lines": [
           1,
           null,
           1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          15,
+          1,
+          null,
+          15,
+          1,
+          null,
+          null,
+          null,
+          15,
+          1,
+          null,
+          null,
+          null,
+          15,
+          null,
+          null,
+          null,
+          null,
+          null,
+          15,
+          2,
+          null,
+          null,
+          null,
           null
         ]
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/contatos_controller.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/usuarios_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          2,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/clientes_controller.rb": {
+        "lines": [
+          1,
+          1,
+          5,
+          null,
+          null,
+          1,
+          5,
+          5,
+          null,
+          1,
+          null,
+          4,
+          4,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          5,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/models/cliente.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/models/application_record.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/contatos_controller.rb": {
         "lines": [
           1,
           1,
@@ -722,7 +935,7 @@
           null
         ]
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/models/contato.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/models/contato.rb": {
         "lines": [
           1,
           1,
@@ -732,15 +945,21 @@
           null
         ]
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/models/application_record.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/mailers/application_mailer.rb": {
         "lines": [
+          1,
+          1,
           1,
           null,
           1,
+          0,
+          0,
+          0,
+          null,
           null
         ]
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/channels/application_cable/channel.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -750,7 +969,7 @@
         "branches": {
         }
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/channels/application_cable/connection.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -760,110 +979,7 @@
         "branches": {
         }
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/agendamentos_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/clientes_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/main_controller.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/controllers/main_controller.rb": {
         "lines": [
           0,
           0,
@@ -873,81 +989,7 @@
         "branches": {
         }
       },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/controllers/usuarios_controller.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/jobs/application_job.rb": {
+      "/home/ferk/Desktop/projeto/barbershop/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -955,83 +997,13 @@
           null,
           null,
           null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/mailers/application_mailer.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/models/agendamento.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/augustoneto/Documents/Projects/Personal/projeto-semestral-ESI/app/models/cliente.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
           0
         ],
         "branches": {
         }
       }
     },
-    "timestamp": 1671289070
+    "timestamp": 1671579057
   },
   "Minitest": {
     "coverage": {
