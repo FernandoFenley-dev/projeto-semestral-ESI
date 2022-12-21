@@ -14,6 +14,7 @@ module Barbershop
     config.load_defaults 7.0
     config.autoload_paths += %W(#{config.root}/lib) # componente calendario
     config.i18n.default_locale = :"pt-BR" # mudar a linguagem para pt-br
+    config.time_zone = 'Brasilia' # mudar o fuso horário para Brasilia
 
     # Configuration for the application, engines, and railties goes here.
     #

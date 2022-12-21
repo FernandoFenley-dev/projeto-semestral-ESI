@@ -16,9 +16,9 @@
   </div>
 </div>
 <div class="calendario__container">
-  <div class="">
+  <div>
     <%= calendario @data do |data| %>
-      <% if @datas_agendamentos.include?(data.to_s) %>
+      <% if @datas_agendamentos.present? && @datas_agendamentos.include?(data.to_s) %>
           <%= link_to root_path(data: data), class: "calendario__contem_agendamento" do %>
             <%= data.day %>
           <% end %>

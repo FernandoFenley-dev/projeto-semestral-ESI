@@ -34,7 +34,7 @@ class Calendario < Struct.new(:view, :data, :datas_agendamentos, :callback)
       classes << "calendario__dia_hoje" if day == Date.today
       classes << "calendario__dia_selecionado" if day.month == data.month && day.year == data.year && day.day == data.day
       classes << "calendario__outro_mes" if day.month != data.month
-      classes << "calendario__contem_agendamento" if datas_agendamentos.include?(day.to_s)
+      classes << "calendario__contem_agendamento" if datas_agendamentos && datas_agendamentos.include?(day.to_s)
       classes.empty? ? nil : classes.join(" ")
     end
 

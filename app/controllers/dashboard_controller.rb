@@ -6,7 +6,7 @@ class DashboardController < ApplicationController
 
         # Recupera todos os agendamentos do mês do usuário logado, caso seja um cliente. Só são recuperados agendamentos em que a data de agendamento (inclusive a hora) seja maior ou igual a data (hora) atual. E menor que a data (hora) do fim do mês.
         if Current.usuario.iscliente
-            @agendamentos = Agendamento.where("cliente_id = ? AND data_agendamento >= ? AND data_agendamento < ?", Current.usuario.id, Date.today.beginning_of_month, Date.today.end_of_month).order(data_agendamento: :asc)
+            @agendamentos = Agendamento.where("cliente_id = ? AND data_agendamento >= ? AND data_agendamento < ?", Current.usuario.id, @data.beginning_of_month, @data.end_of_month).order(data_agendamento: :asc)
         
             # @agendamentos = Agendamento.where("cliente_id = ? AND data_agendamento >= ? AND data_agendamento < ?", Current.usuario.id, DateTime.now, DateTime.now.end_of_day).order(data_agendamento: :asc)
 

@@ -9,7 +9,7 @@ Cenário: Visualizar agendamentos - sem agendamentos
 Dado que estou registrado no sistema
 Dado que eu estou logado no sistema
 Quando eu for redirecionado para a página de dashboard
-Então deverei ver a mensagem "Você não tem nenhum agendamento futuro neste dia"
+Então deverei ver a mensagem "Você não tem nenhum agendamento neste dia"
 
 
 Cenário: Visualizar agendamentos - com agendamentos
