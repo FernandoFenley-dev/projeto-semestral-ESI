@@ -40,7 +40,7 @@ Então('eu devo ver uma lista de agendamentos do dia') do
 
     # Link para os agendamentos
     @agendamentos.each do |agendamento|
-        expect(page).to have_xpath("//a[@href=\"\/agendamentos\/#{agendamento.id}\"]")
+        expect(page).to have_css("a[href='/agendamentos/#{agendamento.id}']")
     end
 end
 
