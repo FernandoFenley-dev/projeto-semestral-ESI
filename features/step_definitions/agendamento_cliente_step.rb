@@ -15,15 +15,27 @@ end
 Dado('que existe um horario marcado pro barbeiro {string}') do |string|
   @usuario = Usuario.create(email: 'luiz@gmail.com', password: '123senha', 
   nome: 'luiz', iscliente: true)
-
+  @usuario.save
 
   @usuario = Usuario.create(email: 'osvaldo@gmail.com', password: '123senha', 
   nome: 'teste', iscliente: false)
+  @usuario.save
 
+  visit 'agendamentos/new' 
+  
+  select 'teste', :from => "agendamento_barbeiro_id"
 
-  @agendamento = Agendamento.create(cliente_id: 1, barbeiro_id: 2, data_agendamento: DateTime.new(2023,12,6,10,30,0))
+  select '2023', :from => "agendamento[data_agendamento(1i)]"
+  
+  select 'Dezembro', :from => "agendamento[data_agendamento(2i)]"
 
-  @agendamento.save
+  select '6', :from => "agendamento[data_agendamento(3i)]"
+
+  select '10', :from => "agendamento[data_agendamento(4i)]"
+
+  select '30', :from => "agendamento[data_agendamento(5i)]"
+
+  click_on 'Agendar'
 
 end 
 

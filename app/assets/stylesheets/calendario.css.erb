@@ -1,0 +1,188 @@
+.calendario__container {
+    width: 352px;
+    height: 362px;
+    font-family: Roboto Slab;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-left: 120px;
+}
+
+.calendario__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 352px;
+    height: 50px;
+
+    background: #3E3B47;
+    border-radius: 10px 10px 0px 0px;
+    padding: 0px 12px;
+    margin-left: 120px;
+}
+
+.calendario__title {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #F4EDE8;
+}
+
+.calendario__icones {
+    color: #999591;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 21px;
+}
+
+.calendario {
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    height: 312px;
+}
+
+.calendario__dia {
+    color: #666360;
+}
+
+.calendario__dia_hoje:after {
+    border: 1px solid #FF9000;
+}
+
+.calendario__dia_selecionado:after {
+    background: #FF9000 !important;
+    color: #F4EDE8 !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.calendario__dia_selecionado {
+    color: #F4EDE8 !important;
+}
+
+.calendario__contem_agendamento:after {
+    background: #3E3B47;
+    color: #F4EDE8 !important;
+    border-radius: 10px;
+}
+
+.calendario__dia_hoje .calendario__contem_agendamento:after {
+    background: #3E3B47;
+    color: #F4EDE8 !important;
+}
+
+.calendario__outro_mes {
+    visibility: hidden;
+}
+
+.calendario__tr_semana {
+    margin-top: -8px;
+}
+
+.table {
+    width: 100%;
+    background-color: #28262E;
+    color: #666360;
+    padding: 8px;
+}
+
+.table tr {
+  height: 3em; 
+}
+
+.table th {
+    color: #F4EDE8;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.table td {
+    vertical-align: top;
+    color: #666360;
+
+    font-family: 'Roboto Slab';
+    font-style: medium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+}
+
+#calendar {
+  width: 100%; 
+}
+
+#calendar tr {
+  height: 3em; 
+}
+
+thead tr {
+  font-weight: 700; 
+}
+
+tbody td {
+  width: 40px;
+  border-radius: 10px;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  position: relative;
+  z-index: 0; 
+}
+
+tbody td:after {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 10px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    z-index: -1; 
+}
+
+tbody td:hover, .selected {
+  color: #fff;
+  border: none; 
+}
+
+tbody td:hover:after, .selected:after {
+    background: #3E3B47;
+    color: #F4EDE8;
+
+    
+}
+
+a {
+    color: #F4EDE8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F4EDE8;
+    opacity: 0.8;
+    text-decoration: none;
+}

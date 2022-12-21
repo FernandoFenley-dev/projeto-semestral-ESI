@@ -1,7 +1,7 @@
 Então('que eu agendei {string} serviços para o dia') do |string|
     # OBS: dependendo da hora que este teste rodar, pode ser que o agendamento não seja mais exibido na página inicial, pois o agendamento é feito para o dia seguinte.
 
-    @data_atual = Time.now
+    @data_atual = DateTime.now
 
     # Usuário teste
     @usuario = Usuario.create(email: 'emailteste@gmail.com' , password: '123senha', nome: 'Teste', iscliente: true)
@@ -23,19 +23,19 @@ Então('que eu agendei {string} serviços para o dia') do |string|
     for a in 1..2 do
         mins = mins + 10
         @data_atual=@data_atual+mins.minutes
-        criarAgendamento(@data_atual )
+        criarAgendamento(@data_atual)
     end
     
     @agendamentos = Agendamento.where(cliente_id: 1, barbeiro_id: 2)
     expect(@agendamentos.count).to eq(num_agendamentos)
 end
-def criarAgendamento(data_atual)
-    @agendamento = Agendamento.create(cliente_id: 1, barbeiro_id: 2, data_agendamento: data_atual )
+
+def criarAgendamento(data)
+    @agendamento = Agendamento.create(cliente_id: 1, barbeiro_id: 2, data_agendamento: data )
 end
 
 Então('eu devo ver uma lista de agendamentos do dia') do
     @agendamentos = Agendamento.where(cliente_id: 1, barbeiro_id: 2)
-
     visit '/'
 
     # Link para os agendamentos
@@ -55,7 +55,6 @@ end
 Então('eu devo somente ver o agendamento mais próximo do dia-hora atual') do
     @proximo_agendamento = @agendamentos.order(:data_agendamento).first
 
-    puts @proximo_agendamento.data_agendamento
     barbeiro = Usuario.find(@proximo_agendamento.barbeiro_id)
 
     expect(page).to have_content(barbeiro.nome)

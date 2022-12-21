@@ -39,7 +39,7 @@ Dado que existe um barbeiro chamado "teste" cadastrado
 Dado que estou na página de agendamento de serviço
 Quando seleciono o barbeiro "teste"
 Quando seleciono o ano "2022"
-E seleciono o mes "January"
+E seleciono o mes "Janeiro"
 E clico em Agendar
 Então deverei ver a mensagem de erro "A data agendada precisa ser no futuro!"
 
@@ -49,7 +49,7 @@ Dado que existe um barbeiro chamado "teste" cadastrado
 Dado que estou na página de agendamento de serviço
 Quando seleciono o barbeiro "teste"
 Quando seleciono o ano "2023"
-E seleciono o mes "December"
+E seleciono o mes "Dezembro"
 E seleciono o dia "30"
 E clico em Agendar
 Então deverei ver a mensagem de erro "A data agendada precisa ser em até um ano!"
@@ -59,7 +59,7 @@ Dado que existe um horario marcado pro barbeiro "teste"
 Dado que estou na página de agendamento de serviço
 Quando seleciono o barbeiro "teste"
 E seleciono o ano "2023"
-E seleciono o mes "December"
+E seleciono o mes "Dezembro"
 E seleciono o dia "6"
 E seleciono a hora "10"
 E seleciono o minuto "30"
@@ -71,11 +71,9 @@ Dado que existe um barbeiro chamado "teste" cadastrado
 Dado que estou na página de agendamento de serviço
 Quando seleciono o barbeiro "teste"
 E seleciono o ano "2023"
-E seleciono o mes "December"
+E seleciono o mes "Dezembro"
 E seleciono o dia "6"
 E seleciono a hora "10"
 E seleciono o minuto "30"
 E clico em Agendar
 Então deverei ver a mensagem "Agendamento realizado com sucesso"
-
-
