@@ -1,20 +1,22 @@
-<p>
-  <strong>Cliente:</strong>
-  <%= @agendamento.cliente.nome %>
-</p>
-
-<p>
-  <strong>Barbeiro:</strong>
-  <%= @barbeiro.nome %>
-</p>
-
-<p>
-  <strong>Data agendada:</strong>
-  <%= @agendamento.data_agendamento.strftime("%d/%m/%Y, às %k:%M") %>
-</p>
-
-<p>Agendamento realizado com sucesso!</p>
-
-<%= button_to "Cancelar agendamento", @agendamento, :method => :delete, form: { data: { turbo_confirm: 'Tem certeza que deseja cancelar o agendamento?' } } %>
-
-<%= link_to "Voltar", root_path %></li>
+<div class="container__agendamento">
+	<p class="container__agendamento__title">
+		<strong>Cliente:</strong>
+		<%= @agendamento.cliente.nome %>
+	</p>
+	<p class="container__agendamento__title">
+		<strong>Barbeiro:</strong>
+		<%= @barbeiro.nome %>
+	</p>
+	<p class="container__agendamento__title">
+		<strong>Data agendada:</strong>
+		<%= @agendamento.data_agendamento.strftime("%d/%m/%Y, às %k:%M") %>
+	</p>
+	<p class="container__agendamento__warning">Agendamento realizado com sucesso!</p>
+	<div class="container__agendamento__btn">
+		<%= button_to "Cancelar agendamento", @agendamento, :method => :delete, form: { data: { turbo_confirm: 'Tem certeza que deseja cancelar o agendamento?' } } %>
+	</div>
+	<div class="content__link">
+		&larr; 
+		<%= link_to "Voltar", root_path, class:"content__link" %>
+	</div>
+</div>
