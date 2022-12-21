@@ -4,6 +4,7 @@
             
             <div class="cartao_agendamento__info_usuario">
                 <%= image_tag "user.jpg", :id=>"primeiro__foto" %>
+                <%= image_tag "avatar_#{agendamento.barbeiro.profile_image}.png", :id=>"primeiro__foto" %>
 
                 <span class="cartao_agendamento_nome_usuario">
                     <%= agendamento.barbeiro.nome %>
@@ -22,7 +23,7 @@
     <%= link_to agendamento_path(agendamento), :class => "a" do %>
         <div class="cartao_agendamento__container proximos">
             <div class="cartao_agendamento__info_usuario">
-                <%= image_tag "user.jpg", :id=>"header__user_img" %>
+                <%= image_tag "avatar_#{agendamento.barbeiro.profile_image}.png", :id=>"header__user_img" %>
 
                 <span class="cartao_agendamento_nome_usuario">
                     <%= agendamento.barbeiro.nome %>
