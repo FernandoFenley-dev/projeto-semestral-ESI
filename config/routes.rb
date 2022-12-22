@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   # PÁGINA RECUPERAÇÃO DE SENHA
   get 'recuperar-senha' => 'usuarios#password'
   post 'recuperar-senha' => 'usuarios#recover_password'
+  get 'perfil-image/:id', to: 'usuarios#img'
 
   get 'agendamentos/new' => 'agendamentos#new', as: :agendamentos_new
 
