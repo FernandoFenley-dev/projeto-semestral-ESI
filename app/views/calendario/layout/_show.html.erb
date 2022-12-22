@@ -1,15 +1,15 @@
 <div class="">
   <div class="calendario__header">
-      <%= link_to root_path(data: @data - 1.month), class: "" do %>
-        <i class="calendario__icones">
+      <%= link_to root_path(data: @data - 1.month) do %>
+        <i class="calendario__icones esquerda">
         &larr;
         </i>
       <% end %>
       <span class='calendario__title'>
         <%= "#{I18n.l @data, :format => "%B"} #{@data.year}" %>
       </span>
-      <%= link_to root_path(data: @data + 1.month), class: "" do %>
-        <i class="calendario__icones">
+      <%= link_to root_path(data: @data + 1.month) do %>
+        <i class="calendario__icones direita">
         &rarr;
         </i>
       <% end %>
