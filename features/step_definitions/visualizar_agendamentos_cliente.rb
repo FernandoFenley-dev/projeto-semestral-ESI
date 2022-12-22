@@ -20,13 +20,14 @@ Então('que eu agendei {string} serviços para o dia') do |string|
     num_agendamentos = string.to_i
     mins = 0
 
-    for a in 1..2 do
+    for a in 1..num_agendamentos
         mins = mins + 10
         @data_atual=@data_atual+mins.minutes
         criarAgendamento(@data_atual)
     end
     
     @agendamentos = Agendamento.where(cliente_id: 1, barbeiro_id: 2)
+
     expect(@agendamentos.count).to eq(num_agendamentos)
 end
 
@@ -74,9 +75,8 @@ end
 Então('eu clicar em um agendamento') do
     visit '/'
     @proximo_agendamento = @agendamentos.first
-    find(:css, '#primeiro', :match => :first).click
 
-    # expect(page).to have_current_path("/agendamentos/#{@proximo_agendamento.id}")
+    expect(page).to have_current_path("/agendamentos/#{@proximo_agendamento.id}")
 end
 
 Então('eu devo ser redirecionado para a página de detalhes do agendamento') do
